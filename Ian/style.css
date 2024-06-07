@@ -51,12 +51,15 @@ h4{
 
 .mainContainer{
     display: flex;
-    justify-content: space-between;
-    margin: auto;
+    position: relative;
+    width: 70%;
+    height:110%;
+    left: 10%;
+    justify-content: space-around;
 }
 
 .content{
-    width: 50%;
+    width: 40%;
     margin-left: 20px;
     font-size: 16px;
 }
@@ -72,10 +75,16 @@ h4{
 
 .resume:hover{
     cursor: pointer;
-    background-color: #21ECD3;
+    background-color: #131212;
+    color:white;
+
 }
 
 .strongText{
     color: #21ECD3;
     font-size: 20px;
+}
+
+.userImage{
+    border-radius: 50%;
 }
