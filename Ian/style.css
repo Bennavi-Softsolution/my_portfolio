@@ -1,0 +1,90 @@
+body{
+    background-color: #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #f7e9e9;
+}
+
+.navBar{
+    background-color: #131212;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navLinks{
+    display: flex;
+}
+
+.Logo{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 30px;
+    /* border-radius: 20px; */
+}
+
+h4{
+    position: relative;
+    top: -10px;
+}
+
+.link{
+    margin: 10px;
+    padding: 10px;
+}
+
+.link:hover{
+    color: #b89797;
+    cursor: pointer;
+    background-color: #292727;
+    border-radius: 20px;
+}
+
+.aboutContent{
+    margin-top: 90px;
+}
+
+.mainContainer{
+    display: flex;
+    position: relative;
+    width: 70%;
+    height:110%;
+    left: 10%;
+    justify-content: space-around;
+}
+
+.content{
+    width: 40%;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.resume{
+    height: 40px;
+    background-color: #49d6c6;
+    border: 0;
+    border-radius: 10px;
+    text-decoration:double;
+    color: #131212;
+}
+
+.resume:hover{
+    cursor: pointer;
+    background-color: #131212;
+    color:white;
+
+}
+
+.strongText{
+    color: #21ECD3;
+    font-size: 20px;
+}
