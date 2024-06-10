@@ -572,6 +572,23 @@ background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
 border-radius: 10px;
 
 }
+
+.project-sub2{
+
+/* Rectangle 54 */
+
+position: absolute;
+width: 417px;
+height: 84px;
+left: 280px;
+top: 25px;
+
+background: linear-gradient(90deg, #FCFAFA 46.63%, #827F7F 90.06%);
+border-radius: 10px;
+ /* transform: rotate(-5.61deg);  */
+
+
+}
 .portfolio-title{
 
 /* Project 1 */
@@ -588,11 +605,25 @@ line-height: 29px;
 
 color: #FFFFFF;
 
-
-
-
-
 }
+
+.portfolio-title2{
+
+  /* Project 1 */
+  
+  position: absolute;
+  width: 174px;
+  height: 35px;
+  right: 15px;
+  font-family: 'Sansita';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  
+  color: #FFFFFF;
+  
+  }
 .project-content{
 /* An admission Module for East Africa V stands for I am not Sure and so does I */
 
@@ -610,5 +641,54 @@ background-clip: text;
 text-fill-color: transparent;
 
 
+
+}
+/*Project image sections starts here*/
+.project-image{
+ /* Ellipse 1 */
+position: absolute;
+width: 114px;
+height: 116px;
+top: 5px;
+left: 680px;
+background: url("assets/Ellipse\ 1.png");
+background-repeat: no-repeat;
+
+}
+
+/*Project image sections starts here*/
+.project-image2{
+  /* Ellipse 1 */
+ position: absolute;
+ width: 114px;
+ height: 116px;
+ top: 5px;
+ right: 670px;
+ background: url("assets/Ellipse\ 1.png");
+ background-repeat: no-repeat;
+ 
+ }
+
+.project-fork{
+  /* Code Fork */
+
+position: absolute;
+width: 59px;
+height: 59px;
+left: 820px;
+top: 30px;
+background: url("assets/Code Fork (1).png");
+
+}
+
+.project-fork2{
+  /* Code Fork */
+
+position: absolute;
+width: 59px;
+height: 59px;
+right: 820px;
+top: 30px;
+background: url("assets/Code Fork (1).png");
 
 }
