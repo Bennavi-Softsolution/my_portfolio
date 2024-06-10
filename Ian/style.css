@@ -2,7 +2,7 @@
 body{
     background-color: #000000;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    /* color: white; */
     min-height: 100vh;
     display: flex; /*display navbar content in column direction*/
     flex-direction: column;
@@ -241,13 +241,88 @@ h4{
     left: -60%;
 }
 
+/* Skills Content */
+
+.Skills{
+    width: 95%;
+    background-color: #131212;
+    position: relative;
+    left: 1%;
+    /*leaving margin from the left end */
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding-left: 40px;
+}
+
+.SkillsContainer{
+    margin-bottom: 20px;
+}
+
+.skill{
+    display: flex;
+    font-size: 25px;
+    margin: 10px;
+    align-items: center;
+}
+
+.title{
+    float: left;
+    width: 15%;
+    margin-bottom: 5px;
+    font-family: "Titillium Web", sans-serif; /*embedded font for the content in the index.html file, header section*/
+    font-weight: 500;
+    font-style: normal;
+}
+
+.skillColor{
+    background-color: #666262;
+    width: 70%;
+    height: 15px;
+    border-radius: 20px;
+}
+
+/* the percentages of the different skills in color codes */
+
+.percentage1{
+    background-color: rgb(219, 76, 25);
+    width: 70%;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.percentage2{
+    background-color:#36cebc;
+    width: 90%;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.percentage3{
+    background-color:rgb(56, 145, 56);
+    width: 80%;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.percentage4{
+    background-color:rgb(226, 226, 44);
+    width: 75%;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+
+}
+
 
 /* Footer content */
 .Footer {
     width: 100%;
     text-align: center;
     margin-top: auto;
-    background-color: #000;
+    background-color: #0f0f0f;
     background-image: url("./assets/Rectangle\ 61.png");
     background-repeat: repeat-x; /* Repeat the wave horizontally */
     background-size: cover;
