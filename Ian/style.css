@@ -7,7 +7,7 @@ body{
     display: flex; /*display navbar content in column direction*/
     flex-direction: column;
     color: #f7e9e9;
-    overflow-x: hidden;
+    overflow-x: hidden;  
 }
 
 .navBar{
@@ -122,11 +122,13 @@ h4{
     display: flex;
     flex-direction: column; /* Align items vertically */
     align-items: flex-start; /* Align items to the start (left) */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .Footer .copyright {
     width: 100%; /* Make sure the div takes up the full width */
     text-align: center; /* Center align the copyright text */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -138,7 +140,7 @@ h4{
     margin-bottom: 10px; /* margin between buttons */
     padding: 10px 20px; /* padding for buttons */
     border-radius: 5px;
-    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #footer-phone {
