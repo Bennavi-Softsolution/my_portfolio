@@ -692,3 +692,131 @@ top: 30px;
 background: url("assets/Code Fork (1).png");
 
 }
+/*contact section starts here*/
+.contact-section{
+/* Rectangle 43 */
+
+position: absolute;
+width: 100%;
+height:480px;
+top: 1800px;
+background-image: url("assets/Rectangle\ 44.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*contact section starts here*/
+.contact-head{
+  /* Contact Me */
+
+position: absolute;
+width: 233px;
+height: 43px;
+left: 30px;
+
+font-family: 'Sansita';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+
+color: #FFFFFF;
+
+
+
+}
+
+.phone-icon{
+/* Phone */
+
+position: absolute;
+width: 40px;
+height: 90px;
+left: 8px;
+top: 47px;
+
+background: url("assets/Phone.png");
+
+
+}
+.phone-number{
+  /* +254746433157 */
+
+position: absolute;
+width: 159px;
+height: 28px;
+left: 64px;
+top: 78px;
+
+font-family: 'Sansita';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+}
+.envelope-icon{
+  /* Envelope */
+position: absolute;
+width: 36px;
+height: 90px;
+left: 12px;
+top: 120px;
+
+background: url("assets/Envelope.png");
+
+}
+.email{
+/* sugelinus020@gmail.com */
+
+position: absolute;
+width: 234px;
+height: 26px;
+left: 64px;
+top: 152px;
+
+font-family: 'Sansita';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+
+}
+.location-icon{
+/* Place Marker */
+
+position: absolute;
+width: 45px;
+height: 90px;
+left: 3px;
+top: 188px;
+
+background: url("assets/Place\ Marker.png");
+
+
+}
+.location-content{
+  /* Eldoret, Kenya */
+
+position: absolute;
+width: 155px;
+height: 22px;
+left: 58px;
+top: 222px;
+
+font-family: 'Sansita';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+}
