@@ -361,7 +361,7 @@ body {
 .suges-footer {
     position: fixed; /* Changed to fixed to keep it at the bottom of the viewport */
     width: 100%; /* Full width of the viewport */
-    height: 80px;
+    height: 50px;
     bottom: 0; /* Positioned at the bottom of the viewport */
     background: #ECF0F1;
   }
