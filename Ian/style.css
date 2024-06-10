@@ -111,10 +111,11 @@ h4{
 /* Skills Content */
 
 .Skills{
-    width: 90%;
+    width: 95%;
     background-color: #131212;
     position: relative;
-    left: 5%; /*leaving margin from the left end*/
+    left: 1%;
+    /*leaving margin from the left end */
     margin-bottom: 30px;
     border-radius: 20px;
     padding-left: 40px;
