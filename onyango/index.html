@@ -27,6 +27,77 @@
       <li><a>CONTACT</a></li>
     </ul>
   </nav>
+
+  <div class="home">
+    <p class="about">
+        Hey! I’m <br>
+        Stanley Onyango, a <br>
+        software developer. I<br>
+        build custom website <br>
+        solutions that help <br>
+        your business grow.
+    </p>
+        <img class="profile" src="./assets/user.png" alt="profile">
+    <button type="button" class="button">
+        Hire Me
+    </button>                    
+   </div> 
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 0 Q 20 10 100 0" fill="none" stroke="white" stroke-width="1" />
+    </svg>
+
+
+    <div class="container-fluid">
+      <div class="ject">
+         <button class="proj"> <h3 class="txt"> MY PROJECTS </h3> </button>
+   <ul>  
+      <li>    
+  <div class="namba" onclick="toggleDescription('desc1')">
+      <span>Project 1</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc1" class="namba-description">
+      This is the description for Project 1. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+      </li>
+  
+      <li>
+  <div class="namba" onclick="toggleDescription('desc2')">
+      <span>Project 2</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc2" class="namba-description">
+      This is the description for Project 2. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+  </li>
+  
+  <li>
+  <div class="namba" onclick="toggleDescription('desc3')">
+      <span>Project 3</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc3" class="namba-description">
+      This is the description for Project 3. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+  </li>
+   </ul>
+      </div>
+ 
+      
+  
+      </div>
+  </div>
+  <script>
+    function toggleDescription(id) {
+        var description = document.getElementById(id);
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    }
+</script>
+
   <section class="section">
     <div class="section_container">
       <div class="content">
@@ -47,6 +118,7 @@
       </div>
     </div>
   </section>
+
 </body>
 
 </html>
