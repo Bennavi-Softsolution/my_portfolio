@@ -9,6 +9,7 @@
     rel="stylesheet"
   />
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     
@@ -40,6 +41,139 @@
             I'm Stanley onyango, a software developer. 
             I build custom website solution 
             that help your business grow
+
+</head>
+
+<body>
+  <nav class="nav_content">
+    <div>
+      <a href="#"><i class="ri-github-fill"></i></a>
+    </div>
+    <label for="check" class="checkbox">
+      <i class="ri-menu-2-line"></i>
+    </label>
+    <ul>
+      <li><a>SKILLS</a></li>
+      <li><a>PROJECT</a></li>
+      <li><a>RESUME</a></li>
+      <li><a>CONTACT</a></li>
+    </ul>
+  </nav>
+  
+  <div class="home">
+    <p class="about">
+        Hey! I’m <br>
+        Stanley Onyango, a <br>
+        software developer. I<br>
+        build custom website <br>
+        solutions that help <br>
+        your business grow.
+    </p>
+        <img class="profile" src="./assets/user.png" alt="profile">
+    <button type="button" class="button">
+        Hire Me
+    </button>                    
+   </div> 
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0 0 Q 20 10 100 0" fill="none" stroke="white" stroke-width="1" />
+    </svg>
+
+<!--container for the project section-->
+    <div class="container-fluid">
+      <div class="ject">
+        <!--button for "my project" heading-->
+         <button class="proj"> <h3 class="txt"> MY PROJECTS </h3> </button>
+<!--List of projects begins here-->
+   <ul style=" list-style-type: none; padding: 0; margin: 0;">  
+
+   <br>
+
+      <li>    
+  <div class="namba" onclick="toggleDescription('desc1')">
+      <span>Project 1</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc1" class="namba-description">
+      This is the description for Project 1. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+      </li>
+  
+      <li>
+  <div class="namba" onclick="toggleDescription('desc2')">
+      <span>Project 2</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc2" class="namba-description">
+      This is the description for Project 2. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+  </li>
+  
+  <li>
+  <div class="namba" onclick="toggleDescription('desc3')">
+      <span>Project 3</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc3" class="namba-description">
+      This is the description for Project 3. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+  </li>
+   </ul>
+   <!--list of projects ends here-->
+
+   <!--Download Resume button-->
+      <button class="cvitae"><p>DOWNLOAD RESUME   <img src="../onyango/asset/download.png"></p></button>
+
+      </div>
+ <!--section for contacts starts-->
+      <div class="last-sect">
+        <p class="tt"> TALK TO ME: </p>
+        <button class="icones-buton">
+         <a href="#">
+           <img src="../onyango/asset/VectorX.png" alt="Twitter" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/mail.png" alt="Mail" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/github.png" alt="Github" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/linkedin.png" alt="Linkedln" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/VectorIG.png" alt="Instagram" class="icone">
+         </a>
+        </button>
+      </div>
+
+      </div>
+  </div>
+
+
+
+
+  <script>
+    function toggleDescription(id) {
+        var description = document.getElementById(id);
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    }
+</script>
+
+  <section class="section">
+    <div class="section_container">
+      <div class="content">
+        <h1 class="title">
+          Hey!
+        </h1>
+        <p class="about">I’m
+          Stanley onyango, a software developer. 
+          I build custom website solution 
+          that help your business grow.       
+
           </p>
           <div class="action_btn">
             <button class="hire_me">Hire Me</button>
@@ -64,5 +198,14 @@
         </div>
       </div>
       </div>
+
     </section>
   </body>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
+

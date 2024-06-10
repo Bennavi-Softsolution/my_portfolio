@@ -1,4 +1,5 @@
 
+
 /* DEFAULT SPECIFICATION */
 :root {
     --max-width: 1200px;
@@ -210,3 +211,141 @@
     }
   
   }
+=======
+    /* Stanley Onyango */
+    body {
+position: relative;
+width: 750px;
+background: #074C59;
+padding: 20PX;
+  }
+
+/* Group 11 */
+.ject {
+  position: relative;
+  width: 688.67px;
+  height: 630px;
+  }
+
+  /* button for my project */
+.proj {
+padding: 20px;
+text-align: center;
+background: rgba(179, 216, 214, 0.41);
+border-radius: 20px;
+width: 280px;
+height: 60px;
+margin-bottom: 10px; /* reduce space between the heading and the list*/
+}
+
+
+
+/* MY PROJECTS */
+.proj .txt{
+margin: 0;
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+
+/* Project listing */
+.namba{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+
+/* icon for each project*/
+.namba-icone img{
+width: 20px;
+}
+
+/* project description */
+.namba-description {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Resume button */
+.cvitae {
+width: 348.58px;
+height: 77px;
+background: rgba(179, 216, 214, 0.41);
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20px; /* Add margin-top to create space between the project list and the button */
+}
+
+
+
+/* Text and icon within the resume button */
+.cvitae p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cvitae img {
+    margin-left: 10px;
+    width: 20px; /* Adjust the size of the download icon */
+  }
+
+  /* section for contacts */
+.last-sect{ 
+position: relative; 
+width: 463px;
+height: 131.01px;
+margin-top: 30px;
+}
+
+/* TALK TO ME: text */
+.last_sect .tt {
+width: 262px;
+height: 50px;
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+text-align: center;
+color: #e2ca8d;
+}
+
+/* button for the icons */
+.icones-buton{
+display: flex;
+justify-content: center;
+width: 463px;
+height: 66.01px;
+color: #527d7b
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: transform 0.3s ease;  
+}
+
+.icone:hover {
+    transform: scale(1.2);
+  }
+
