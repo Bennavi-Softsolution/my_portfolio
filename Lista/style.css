@@ -1,0 +1,11 @@
+body{
+    background-color:#FFFFFF;
+    
+    div {
+        background-color: rgb(203, 143, 68);
+
+        width:300px;
+        margin:auto;
+      }
+    
+}
