@@ -7,15 +7,6 @@ body {
     flex-direction: column;
     
   }
-  
-  /* Styles for screens smaller than 768px */
-  @media (max-width: 100%) {
-    .navbar {
-      height: 50px; /* Adjust height for smaller screens */
-    }
-}
-
-/* General Navbar Styling */
 /* Navbar */
 .navbar {
     position: fixed;
@@ -104,108 +95,14 @@ body {
     line-height: 28px;
     color: #FFFFFF;
   }
-  
-  /* Profile Picture */
-  .profile-picture {
-    width: 10%;
-    height: auto;
-    margin-left: 2rem;
-  }
-  
-  /* Container */
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 7rem 1rem; /* Adjusted padding */
-  }
-  
-  /* Portfolio Section */
   .portfolio-section {
     padding: 2%;
     text-align: left;
     background: white;
     max-width: 800px;
-    margin: 0 auto; /* Centered */
-  }
-  
-  /* Resume Button */
-  .resume-button {
-    margin-top: 1rem;
-  }
-  
-  /* Skills */
-  .skills {
-    position: relative; /* Changed to relative */
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Suge's footer */
-  .suges-footer {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    bottom: 0;
-    background: #ECF0F1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Footer Icons */
-  .footer-icon {
-    width: 40px;
-    height: auto;
-    margin: 0 10px; /* Adjusted margin */
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    /* Navbar */
-    .navbar {
-      height: 50px;
-    }
-  
-    /* Searchbar */
-    .searchbar {
-      width: 20%;
-      left: 5%;
-    }
-  
-    /* Navigation Links Container */
-    .nav-links {
-      width: 60%;
-    }
-  
-    /* Contact Button */
-    .contact-button {
-      width: 20%;
-      left: 75%;
-    }
-  
-    /* Contact Text */
-    .contact {
-      width: 19.4%;
-      left: 80%;
-    }
-  
-    
-    }
-    
-
-.profile-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.portfolio-section {
-    padding: 2%;
-    text-align: left;
-    background: white;
-    max-width: 800px;
-    margin: 0;
+    margin: 0 auto;
+    top: 20%;
+   
 }
 
 /* Typography for the text within the portfolio section */
@@ -230,9 +127,15 @@ body {
     cursor: pointer;
     left: 500px;
 }
-
-/* Rectangle 55 */
-.skills {
+  
+  /* Profile Picture */
+  .profile-picture {
+    width: 10%;
+    height: auto;
+    margin-left: 2rem;
+  }
+  
+  .skills {
     position: absolute;
     width: 100%;
     height: 40vh;
@@ -503,10 +406,76 @@ body {
     background: url("assets/TwitterX.png"); /* Placeholder URL */
   }
   
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+      height: 50px;
+      width: 100%;
+    }
+  
+    /* Searchbar */
+    .searchbar {
+      max-width: 100%;
+      left: 0%;
+      top: 40px;
+    }
+    .search {
+      position: absolute;
+      width: 2%;
+      height: 29px;
+      left: 0%;
+      top:40px;
+      background: url('assets/Search.png');
+    }
+  
+    /* Navigation Links Container */
+    .nav-links {
+      width: auto;
+      position: unset;
+    }
+  
+    /* Contact Button */
+    .contact-button {
+      max-width: 100%;
+      left: 18%;
+      top: 40px;
+    }
+  
+    /* Contact Text */
+    .contact {
+      max-width: 100%;
+      left: 20%;
+      top: 38px;
+      font-size: medium;
+      
+    }
 
-
-
-  @media screen and (max-width: 600px)
-  {
-
+    .portfolio-section {
+      
+      text-align: left;
+      background: white;
+      max-width: 100;
+      left: 20%;
+      font-size: medium /* Centered */
+    }
+    
+    /* Resume Button */
+    .resume-button {
+      margin-top: 1rem;
+    }
+  
+    /* Profile Picture */
+    .profile-picture {
+      width: 20%;
   }
+    }
+    
+
+
+
+
+
+
+
+  
