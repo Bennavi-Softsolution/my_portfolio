@@ -1,56 +1,65 @@
-body{
+body {
     font-family: sans-serif;
-   
-}
-    
-    
-    /* General Navbar Styling */
-.navbar {
-    position: absolute;
     width: 100%;
-    height: 64px;
-    left: 0;
-    top: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+  }
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    font-size: 20px;
     background: #ECF0F1;
-}
-
-/* searchbar */
-.searchbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  /* Searchbar */
+  .searchbar {
     position: absolute;
-    width: 191px;
+    width: 10%;
     height: 27px;
-    left: 28px;
+    left: 3%;
     top: 19px;
     background: linear-gradient(90deg, #D9D9D9 0%, #737373 100%);
     border-radius: 10px;
-}
-
-/* Search */
-.search {
+  }
+  
+  /* Search Icon */
+  .search {
     position: absolute;
-    width: 31px;
+    width: 2%;
     height: 29px;
-    left: 48px;
+    left: 3%;
     top: 17px;
     background: url('assets/Search.png');
-}
-
-/* Navigation Links Container */
-.nav-links {
+  }
+  
+  /* Navigation Links Container */
+  .nav-links {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0;
-    gap: 87px;
+    gap: 10%; /* Adjusted gap */
     position: absolute;
-    width: 337.85px;
+    width: 40%;
     height: 28px;
-    left: 700px;
+    left: 30%;
     top: 27px;
-}
-
-/* Individual Navigation Link */
-.nav-link {
+  }
+  
+  /* Individual Navigation Link */
+  .nav-link {
     font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -59,44 +68,414 @@ body{
     color: #000000;
     flex: none;
     flex-grow: 0;
-}
-
-/* Contact Button */
-.contact-button {
+  }
+  
+  /* Contact Button */
+  .contact-button {
     position: absolute;
-    width: 150px;
+    width: 10%;
     height: 26px;
-    left: 1400px;
+    left: 80%; /* Adjusted left value */
     top: 27px;
     background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
     border-radius: 10px;
-}
-
-/* Contact Text */
-.contact {
+  }
+  
+  /* Contact Text */
+  .contact {
     position: absolute;
-    width: 94px;
+    width: 9.4%;
     height: 24px;
-    left: 1425px;
+    left: 82%; /* Adjusted left value */
     top: 23px;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 23px;
     line-height: 28px;
     color: #FFFFFF;
+  }
+  .portfolio-section {
+    padding: 2%;
+    text-align: left;
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 20%;
+   
 }
 
-
-
-/* Rectangle 55 */
-.skills{  
-position: absolute;
-width: 100%;
-height: 318px;
-top: 289px;
-background-image: url("assets/Rectangle 55.png");
-background-repeat: no-repeat;
-background-size: cover;
-
+/* Typography for the text within the portfolio section */
+.portfolio-text {
+    font-family: 'Sansita', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
 }
+
+/* Resume Button Styling */
+.resume-button {
+    position: absolute;
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    left: 500px;
+}
+  
+  /* Profile Picture */
+  .profile-picture {
+    width: 10%;
+    height: auto;
+    margin-left: 2rem;
+  }
+  
+  .skills {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    top: 70%;
+    background-image: url("assets/Screenshot 2024-06-07 125042.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rectangle-61 {
+    position: absolute;
+    width: 50%;
+    height: 30vh;
+    left: 25%;
+    top: 77%;
+    background: linear-gradient(90deg, #D9D9D9 0%, #AEA8A8 26.5%);
+    border-radius: 15px;
+}
+
+/* Frame 63 */
+#frame-63 {
+    position: absolute;
+    width: 482px;
+    height: 207px;
+    left: 550px;
+    top: 600px;
+  }
+  
+  /* Vector */
+  #vector {
+    position: absolute;
+    left: 0%;
+    right: 90.04%;
+    top: 0.48%;
+    bottom: 84.65%;
+    background-image: url("assets/Vector (1).png");
+  }
+  
+  /* Html */
+  #html {
+    position: absolute;
+    width: 31px;
+    height: 19px;
+    left: 9px;
+    top: 58px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  /* css-4 logo */
+  #css-4-logo {
+    position: absolute;
+    width: 39px;
+    height: 28px;
+    left: 0px;
+    top: 134px;
+    background-image: url("assets/css-4 logo.png");
+  }
+  
+  /* CSS */
+  #CSS {
+    position: absolute;
+    width: 24px;
+    height: 19px;
+    left: 3px;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  /* Javascript logo */
+  #Javascript-logo {
+    position: absolute;
+    width: 68px;
+    height: 30px;
+    left: 207px;
+    top: 0px;
+    background-image: url("assets/Javascript logo.png");
+  }
+  /* JavaScript */
+
+  /* PHP */
+  #php-logo {
+    position: absolute;
+    width: 26px;
+    height: 19px;
+    left: 441px;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  
+  /* Group 47 */
+  #Group-47 {
+    position: absolute;
+    width: 47.96px;
+    height: 30.67px;
+    left: 427px;
+    top: 1px;
+    color: #000000;
+    
+  }
+  #Rectangle-57 {
+    position: absolute;
+    width: 48px;
+    height: 41px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    background-image: url("assets/Group 47.png");
+    border-radius: 3px;
+  }
+  
+  /* php logo */
+  #php-logo {
+    position: absolute;
+    width: 62px;
+    height: 48px;
+    left: 420px;
+    top: 114px;
+    background-image: url("assets/php logo.png");
+  }
+  
+  /* Vector */
+/* Python */
+#Python {
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    left: 201px;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  /* Vector 2 */
+  #vector2 {
+    position: absolute;
+    left: 45.44%;
+    right: 48.34%;
+    top: 60.87%;
+    bottom: 21.74%;
+    
+    background-image: url("assets/Vector (2).png");
+  }
+  
+  /* JavaScript */
+#JavaScript {
+    position: absolute;
+    width: 74px;
+    height: 19px;
+    left: 201px;
+    top: 58px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+/* PHP */
+#PHP {
+    position: absolute;
+    width: 26px;
+    height: 19px;
+    left: 441px;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+#MySQL {
+    position: absolute;
+    width: 42px;
+    height: 19px;
+    left: 433px;
+    top: 58px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  /* Skills */
+#Skills {
+    position: absolute;
+    width: 84px;
+    height: 43px;
+    left: -455px;
+    top: -55px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+  }
+  
+
+  /* Suge's footer */
+.suges-footer {
+    position: fixed; /* Changed to fixed to keep it at the bottom of the viewport */
+    width: 100%; /* Full width of the viewport */
+    height: 80px;
+    bottom: 0; /* Positioned at the bottom of the viewport */
+    background: #ECF0F1;
+  }
+  
+  /* GitHub */
+  .github {
+    position: absolute;
+    width: 64px;
+    height: 90px;
+    left: 0;
+    top: 5px; /* Adjusted top value */
+    background: url("assets/GitHub.png"); /* Placeholder URLs */
+  }
+  
+  /* Envelope */
+  .envelope {
+    position: absolute;
+    width: 51px;
+    height: 90px;
+    left: 87px;
+    top: 5px;; /* Adjusted top value */
+    background: url("assets/Envelope.png"); /* Placeholder URL */
+  }
+  
+  /* LinkedIn */
+  .linkedin {
+    position: absolute;
+    width: 48px;
+    height: 90px;
+    left: 171px;
+    top: 5px; /* Adjusted top value */
+    background: url("assets/LinkedIn.png"); /* Placeholder URL */
+  }
+  
+  /* TwitterX */
+  .twitterx {
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    left: 253px;
+    top: 5px; /* Adjusted top value */
+    background: url("assets/TwitterX.png"); /* Placeholder URL */
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+      height: 50px;
+      width: 100%;
+    }
+  
+    /* Searchbar */
+    .searchbar {
+      max-width: 100%;
+      left: 0%;
+      top: 40px;
+    }
+    .search {
+      position: absolute;
+      width: 2%;
+      height: 29px;
+      left: 0%;
+      top:40px;
+      background: url('assets/Search.png');
+    }
+  
+    /* Navigation Links Container */
+    .nav-links {
+      width: auto;
+      position: unset;
+    }
+  
+    /* Contact Button */
+    .contact-button {
+      max-width: 100%;
+      left: 18%;
+      top: 40px;
+    }
+  
+    /* Contact Text */
+    .contact {
+      max-width: 100%;
+      left: 20%;
+      top: 38px;
+      font-size: medium;
+      
+    }
+
+    .portfolio-section {
+      
+      text-align: left;
+      background: white;
+      max-width: 100;
+      left: 20%;
+      font-size: medium /* Centered */
+    }
+    
+    /* Resume Button */
+    .resume-button {
+      margin-top: 1rem;
+    }
+  
+    /* Profile Picture */
+    .profile-picture {
+      width: 20%;
+  }
+    }
+    
+
+
+
+
+
+
+
+  
