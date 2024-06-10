@@ -4,7 +4,7 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     min-height: 100vh;
-    display: flex;
+    display: flex; /*display navbar content in column direction*/
     flex-direction: column;
     color: #f7e9e9;
     overflow-x: hidden;
@@ -16,11 +16,12 @@ body{
     height: 70px;
     padding: 5px;
     font-size: 20px;
-    display: flex;
+    display: flex; /*arrange containers in row direction*/
     justify-content: space-between;
-    position: absolute;
+    position: absolute; /*Positioning navbar*/
     top: 0;
     left: 0;
+    right: 0;
 }
 
 .navLinks{
@@ -51,18 +52,19 @@ h4{
     border-radius: 20px;
 }
 
+/* Designing the about content */
 .aboutContent{
     margin-top: 90px;
 }
 
 .mainContainer{
     display: flex;
-    position: relative;
+    position: relative; /*Positioning the content accordingly to the page's width*/
     width: 70%;
-    height:110%;
-    left: 10%;
+    height:100%;
+    left: 0;
     justify-content: space-around;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Titillium Web", sans-serif; /*embedded font for the content in the index.html file, header section*/
     font-weight: 200;
     font-style: normal;
 }
@@ -94,6 +96,19 @@ h4{
     font-size: 20px;
 }
 
+.image{
+    height: 100%;
+    position:relative;
+    top:30px;
+    left: 0;
+}
+
+.userImage{
+    height: 100%;
+    border-radius: 50%; /*make image rounded*/
+}
+
+/* Footer content */
 .Footer {
     width: 100%;
     text-align: center;
