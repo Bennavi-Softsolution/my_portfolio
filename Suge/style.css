@@ -476,7 +476,7 @@ body {
 
 position: absolute;
 width: 100%;
-height: 658px;
+height: 1000px;
 left: 0px;
 top: 800px;
 
@@ -503,7 +503,7 @@ background-image: url("assets/Rectangle\ 48.png");
 /*Portfolio text*/
 .Portfolio-head{
 width: 313px;
-height: 44px;
+height: 50px;
 margin-left: 30px;
 top: 610px;
 
@@ -547,3 +547,148 @@ background: linear-gradient(90deg, #878181 0%, #050404 54%);
   
   
   }
+  .project-section4{
+
+    /* Rectangle 49 */
+  position: absolute;
+  width: 889px;
+  height: 137px;
+  left: 400px;
+  top: 500px;
+  
+  background: linear-gradient(90deg, #878181 0%, #050404 54%);
+  
+  }
+  /*Portfolio Sub section*/
+.project-sub{
+  /* Rectangle 53 */
+position: absolute;
+width: 441px;
+height: 84px;
+left: 174px;
+top: 25px;
+
+background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
+border-radius: 10px;
+
+}
+
+.project-sub2{
+
+/* Rectangle 54 */
+
+position: absolute;
+width: 417px;
+height: 84px;
+left: 280px;
+top: 25px;
+
+background: linear-gradient(90deg, #FCFAFA 46.63%, #827F7F 90.06%);
+border-radius: 10px;
+ /* transform: rotate(-5.61deg);  */
+
+
+}
+.portfolio-title{
+
+/* Project 1 */
+
+position: absolute;
+width: 174px;
+height: 35px;
+left: 68px;
+font-family: 'Sansita';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFFFFF;
+
+}
+
+.portfolio-title2{
+
+  /* Project 1 */
+  
+  position: absolute;
+  width: 174px;
+  height: 35px;
+  right: 15px;
+  font-family: 'Sansita';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  
+  color: #FFFFFF;
+  
+  }
+.project-content{
+/* An admission Module for East Africa V stands for I am not Sure and so does I */
+
+position: absolute;
+font-family: 'Sansita';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+background: linear-gradient(90deg, #000000 0%, #161616 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+}
+/*Project image sections starts here*/
+.project-image{
+ /* Ellipse 1 */
+position: absolute;
+width: 114px;
+height: 116px;
+top: 5px;
+left: 680px;
+background: url("assets/Ellipse\ 1.png");
+background-repeat: no-repeat;
+
+}
+
+/*Project image sections starts here*/
+.project-image2{
+  /* Ellipse 1 */
+ position: absolute;
+ width: 114px;
+ height: 116px;
+ top: 5px;
+ right: 670px;
+ background: url("assets/Ellipse\ 1.png");
+ background-repeat: no-repeat;
+ 
+ }
+
+.project-fork{
+  /* Code Fork */
+
+position: absolute;
+width: 59px;
+height: 59px;
+left: 820px;
+top: 30px;
+background: url("assets/Code Fork (1).png");
+
+}
+
+.project-fork2{
+  /* Code Fork */
+
+position: absolute;
+width: 59px;
+height: 59px;
+right: 820px;
+top: 30px;
+background: url("assets/Code Fork (1).png");
+
+}
