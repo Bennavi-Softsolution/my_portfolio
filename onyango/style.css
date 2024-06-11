@@ -22,9 +22,7 @@
   
   nav {
     width: 95%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     background-color: #B3D8D6;
     z-index: 99;
     border-radius: 20px;
@@ -87,6 +85,7 @@
   
   .section_container {
     min-height: 80vh;
+    min-height: 40vh;
     max-width: var(--max-width);
     margin: auto;
     padding: 1rem;
@@ -121,9 +120,7 @@
   line-height: 40px;
   text-align:justify; 
   color: #FFFFFF;
-  margin-bottom: 100px;
-
-
+  margin-bottom: 0px;
   }
   
   
@@ -156,7 +153,7 @@
   }
   
   .image img {
-    width: min(20rem, 90%);
+    width: min(20rem, 100%);
     border-radius: 100%;
   }
   .logo{
@@ -219,7 +216,7 @@
   }
   
   .skills {
-    position: relative; 
+    position: relative;
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 700;
@@ -229,11 +226,13 @@
     list-style: decimal;
     padding: 0;
     margin: 0;
+    position: relative;
   }
   
   .skill-item {
-    display: flex;
-    align-items:center;
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    align-items: center;
   }
   
   .skill-item a {
@@ -241,16 +240,18 @@
   }
   
   .level {
-    width: 800px; 
+    width: 800px;
     height: 15px;
     background: #EBDBB2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    position: relative;
   }
   
   
   /* RESPONSIVENESS*/
-  @media (width < 360px) {
+
+    @media (max-width: 480px) {
     nav .checkbox {
       display: block;
       background-color: #B3D8D6;
@@ -267,11 +268,9 @@
       justify-content: center;
       gap: 3rem;
     }
-  
     nav #check:checked ~ .menu {
       left: 0;
     }
-  
     .menu li a {
       font-size: 1.25rem;
     }
@@ -284,7 +283,35 @@
       width: 30%;
 
     }
+
+  .section_container {
+    padding: 1rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
   }
+  .image {
+    grid-area: 1/1/2/2;
+  }
+  .action_btn {
+    margin: auto;
+  }
+    .my_skills{
+      width: 50%;
+    }
+    .level {
+      width: 400px;
+    }
+   
+    }
+    .skills{
+      font-size: 20px;
+    }
+  
+   @media (max-width:480px){}
+   @media (max-width:960px){}
+   @media (min-width:1025px){}
+   @media (max-width:1280px){}
+
 
 
 /* PROJECTS SECTION STYLING */
@@ -395,6 +422,11 @@ margin-top: 20px; /* Add margin-top to create space between the project list and
   margin: auto;
   padding: 1rem;
 
+.last-sect{
+position: relative;
+width: 463px;
+height: 131.01px;
+margin-top: 30px;
 }
 
 /* TALK TO ME: text */
@@ -420,8 +452,8 @@ border-radius: 10px;
 .icone {
     width: 50px;
     height: 50px;
-    margin: 20px;
-    transition: transform 0.3s ease;  
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
 
 .icone:hover {
@@ -429,3 +461,4 @@ border-radius: 10px;
   }
   
 
+}
