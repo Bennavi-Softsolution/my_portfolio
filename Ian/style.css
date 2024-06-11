@@ -1,9 +1,9 @@
 /* Designing the body of the portfdolio */
 body{
-    width: 100vw;
     background-color: #000000;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* color: white; */
+    width: 100vw;
     min-height: 100vh;
     display: flex; /*display navbar content in column direction*/
     flex-direction: column;
@@ -16,13 +16,11 @@ body{
     width: 100vw;
     height: 70px;
     padding: 5px;
-    /* font-size: 20px; */
     display: flex; /*arrange containers in row direction*/
     justify-content: space-between;
     position: absolute; /*Positioning navbar*/
     top: 0;
     left: 0;
-    right: 0;
     align-items:center;
 }
 
@@ -62,6 +60,7 @@ a{
 /* Designing the about content */
 .aboutContent{
     margin-top: 110px;
+    width: 100vw;
 }
 
 .mainContainer{
@@ -107,7 +106,6 @@ a{
 .image{
     height: 100%;
     position:relative;
-    top:30px;
     left: 0;
 }
 
@@ -366,12 +364,24 @@ a{
 /* Phone display */
 
 @media only screen and (max-width: 800px) {
-    .mainContainer{
+    .navBar{
         width: 100vw;
     }
 
-    .navBar{
+    .aboutContent{
         width: 100vw;
+    }
+
+    .mainContainer{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content{
+        width: 100%;
+        margin-left: 20px;
+        font-size: 20px;
     }
 
     .Skills{
@@ -383,6 +393,10 @@ a{
     
     .title{
         font-size: 17px;
+    }
+
+    .userImage{
+        border-radius: 50%;
     }
     
     .skillColor{
