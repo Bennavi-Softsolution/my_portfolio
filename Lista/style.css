@@ -1,5 +1,6 @@
 body {
-  background-color: #FFFFFF;
+  /* proposed background colour so that we do not burn bwana */
+  background-color: rgb(247, 227, 201);
   font-family: "Sansita", sans-serif;
   font-weight: 400;
   font-style: normal;
