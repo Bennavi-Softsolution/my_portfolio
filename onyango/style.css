@@ -22,9 +22,7 @@
   
   nav {
     width: 95%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     background-color: #B3D8D6;
     z-index: 99;
     border-radius: 20px;
@@ -86,7 +84,8 @@
   }
   
   .section_container {
-    min-height: 65vh;
+    min-height: 80vh;
+    min-height: 40vh;
     max-width: var(--max-width);
     margin: auto;
     padding: 1rem;
@@ -121,9 +120,7 @@
   line-height: 40px;
   text-align:justify; 
   color: #FFFFFF;
-  margin-bottom: 100px;
-
-
+  margin-bottom: 0px;
   }
   
   
@@ -156,7 +153,7 @@
   }
   
   .image img {
-    width: min(20rem, 90%);
+    width: min(20rem, 100%);
     border-radius: 100%;
   }
   .logo{
@@ -219,7 +216,7 @@
   }
   
   .skills {
-    position: relative; 
+    position: relative;
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-weight: 700;
@@ -229,11 +226,13 @@
     list-style: decimal;
     padding: 0;
     margin: 0;
+    position: relative;
   }
   
   .skill-item {
-    display: flex;
-    align-items:center;
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    align-items: center;
   }
   
   .skill-item a {
@@ -241,16 +240,18 @@
   }
   
   .level {
-    width: 800px; 
+    width: 800px;
     height: 15px;
     background: #EBDBB2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    position: relative;
   }
   
   
   /* RESPONSIVENESS*/
-  @media (width < 750px) {
+
+    @media (max-width: 480px) {
     nav .checkbox {
       display: block;
       background-color: #B3D8D6;
@@ -267,11 +268,9 @@
       justify-content: center;
       gap: 3rem;
     }
-  
     nav #check:checked ~ .menu {
       left: 0;
     }
-  
     .menu li a {
       font-size: 1.25rem;
     }
@@ -284,12 +283,51 @@
       width: 30%;
 
     }
+
+  .section_container {
+    padding: 1rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
   }
+  .image {
+    grid-area: 1/1/2/2;
+  }
+  .action_btn {
+    margin: auto;
+  }
+    .my_skills{
+      width: 50%;
+    }
+    .level {
+      width: 400px;
+    }
+   
+    }
+    .skills{
+      font-size: 20px;
+    }
+  
+   @media (max-width:480px){}
+   @media (max-width:960px){}
+   @media (min-width:1025px){}
+   @media (max-width:1280px){}
+
+
+
+/* PROJECTS SECTION STYLING */
+.projects_section {
+  background-color: #063D47;
+  padding: 3rem 1rem;
+}
+
+  .container-fluid {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
 /* Group 11 */
 .ject {
-  position: relative;
-  width: 688.67px;
-  height: 630px;
+  width: 100%;
   }
 
   /* button for my project */
@@ -300,10 +338,8 @@ background: rgba(179, 216, 214, 0.41);
 border-radius: 20px;
 width: 280px;
 height: 60px;
-margin-bottom: 10px; /* reduce space between the heading and the list*/
+margin: auto;
 }
-
-
 
 /* MY PROJECTS */
 .proj .txt{
@@ -374,8 +410,20 @@ margin-top: 20px; /* Add margin-top to create space between the project list and
   }
 
   /* section for contacts */
+/* CONTACT SECTION */
+.contact_section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
 .last-sect{ 
-position: relative; 
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+
+.last-sect{
+position: relative;
 width: 463px;
 height: 131.01px;
 margin-top: 30px;
@@ -383,34 +431,34 @@ margin-top: 30px;
 
 /* TALK TO ME: text */
 .last_sect .tt {
-width: 262px;
-height: 50px;
 font-family: 'JetBrains Mono';
 font-style: normal;
 font-weight: 700;
 font-size: 30px;
-line-height: 40px;
-text-align: center;
 color: #e2ca8d;
+margin-bottom: 20px;
 }
 
 /* button for the icons */
 .icones-buton{
 display: flex;
 justify-content: center;
-width: 463px;
-height: 66.01px;
+gap: 20px;
+padding: 10px;
 background: rgba(179, 216, 214, 0.41);
+border-radius: 10px;
 }
 
 .icone {
     width: 50px;
     height: 50px;
     margin: 10px;
-    transition: transform 0.3s ease;  
+    transition: transform 0.3s ease;
 }
 
 .icone:hover {
     transform: scale(1.2);
   }
+  
 
+}
