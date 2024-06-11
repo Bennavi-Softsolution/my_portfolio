@@ -118,12 +118,13 @@
     margin-bottom: 2rem;
     color: #ffffff;
   }
-  
+  /*
   . {
     display: flex;
     gap: 1rem;
   }
-  
+  */
+
   .action_btn button {
     transition: 0.3s;
     cursor: pointer;
@@ -211,7 +212,6 @@
     }
   
   }
-=======
     /* Stanley Onyango */
     body {
 position: relative;
