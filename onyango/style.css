@@ -41,6 +41,7 @@
     justify-content: space-between;
     font-family: 'JetBrains Mono', monospace;
     color: #ffffff;
+    font-size: 30px;
   
   }
   nav .checkbox {
@@ -56,7 +57,7 @@
     cursor: pointer;
   }
   
-  ul {
+  .menu {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -64,7 +65,7 @@
     transition: left 0.3s;
   }
   
-  ul li a {
+  .menu li a {
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
     text-decoration: none;
@@ -73,7 +74,7 @@
     transition: 0.3s;
   }
   
-  ul li a:hover {
+  .menu li a:hover {
       background-color: #4c9e9e;
       border-radius: 5px;
       transition: 0.3s ease;
@@ -85,7 +86,7 @@
   }
   
   .section_container {
-    min-height: 100vh;
+    min-height: 130vh;
     max-width: var(--max-width);
     margin: auto;
     padding: 1rem;
@@ -118,11 +119,7 @@
     margin-bottom: 2rem;
     color: #ffffff;
   }
-  
-  . {
-    display: flex;
-    gap: 1rem;
-  }
+
   
   .action_btn button {
     transition: 0.3s;
@@ -158,22 +155,23 @@
   }
   .logo{
       max-width: var(--max-width);
-      height: 13px;
-      width: 12px;
+      height: 50px;
+      width: 50px;
   }
   .skills{
-    width: 100%;
-    max-width: var(--max-width);
+    width: 40%;
     background-color: #B3D8D6;
     border-radius: 12px;
-    height: 90%;
+    height: 7%;
     color: #ffffff;
     font-family: "JetBrains Mono", monospace;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    font-size: 30px;
   }
   .list_skills{
     width: auto;
+    float: left;
     min-height: 50vh;
     max-width: var(--max-width);
     margin: auto;
@@ -190,25 +188,30 @@
       background-color: #B3D8D6;
     }
   
-    ul {
+    .menu {
       position: absolute;
       width: 100%;
       height: calc(100vh - 85px);
       left: -100%;
       top: 85px;
-      background-color: var(--extra-light);
+      background-color: #074C59;
       flex-direction: column;
       justify-content: center;
       gap: 3rem;
     }
   
-    nav #check:checked ~ ul {
+    nav #check:checked ~ .menu {
       left: 0;
     }
   
-    ul li a {
+    .menu li a {
       font-size: 1.25rem;
     }
+
+    .section_container{
+      min-height: 130vh;
+    }
+
   
   }
 =======
