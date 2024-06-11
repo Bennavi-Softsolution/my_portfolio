@@ -24,7 +24,7 @@ body {
   padding: 5px;
   display: flex;
   justify-content: space-evenly;
-  
+  position: relative;
   top: 0;
   left: 0;
 }
