@@ -110,9 +110,9 @@
     <div class="Footer">
         <p>Contact Me:</p>
         <div class="button-container">
-            <button id="footer-email"><i class="bi bi-envelope"></i> iankipyego@outlook.com</button>
+            <button id="footer-email" onclick="openEmailClient()"><i class="bi bi-envelope"></i> iankipyego@outlook.com</button>
             <button id="footer-location"><i class="bi bi-geo-alt"></i> Eldoret, Kenya</button>
-            <button id="footer-phone"><i class="bi bi-telephone"></i> +254714099346</button>
+            <button id="footer-phone" onclick="openPhoneDialer()"><i class="bi bi-telephone"></i> +254714099346</button>
         </div>
         
         <div class="copyright">
@@ -120,11 +120,38 @@
         </div>
 
         <div class="icon-container">
-            <i class="bi bi-github"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-twitter"></i>
+            <a href="https://github.com/IAN-KIPYEGO" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
             
         </div>
     </div>
+
+    <script>
+        // function to open the email client
+        const openEmailClient = () => {
+            var recipient = "iankipyego@outlook.com";
+            var subject = "Work Inquiries"; // subject can be changed here
+
+            // Construct the mailto link
+            var mailtoLink = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject);
+
+            // open the user's email client
+            window.location.href = mailtoLink;
+        }
+        // function to open the dialer on mobile. On desktop this could also open whatsapp
+        const openPhoneDialer = () => {
+            var phoneNumber = "+254714099346";
+
+            // the tel link
+            var telLink = "tel:" + phoneNumber;
+
+            // opening phone dialer window
+            window.location.href = telLink;
+        }
+
+        
+    </script>
+
 </body>
 </html>
