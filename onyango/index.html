@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stanley Onyango</title>
+    <title>Stanley | Portfolio</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    
+<!-- NAVBAR -->
+    <nav>
+      <div class="nav_content">
+      <div><img class="logo" src = "asset/github.svg" alt="github"/></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-2-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#">SKILLS</a></li>
+          <li><a href="#">PROJECT</a></li>
+          <li><a href="#">RESUME</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+<!-- ABOUT SECTION -->
+    <section class="section">
+      <div class="section_container">
+        <div class="content">
+          <h1 class="title">
+            Hey!
+          </h1>
+          <p class="about">
+            I'm Stanley onyango, a software developer. 
+            I build custom website solution 
+            that help your business grow
+
 </head>
 
 <body>
-  <nav class="navbar">
-    <!-- LOGO -->
+  <nav class="nav_content">
     <div>
-    <img class="logo" src = "assets/github.svg" alt="github"/>
-   </div>
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-      <!-- NAVIGATION MENUS -->
-      <div class="menu">
-        <li><a>Skills</a></li>
-        <li><a>Project</a></li>
-        <li><a>Resume</a></li>
-        <li><a>Contact</a></li>
-      </div>
+      <a href="#"><i class="ri-github-fill"></i></a>
+    </div>
+    <label for="check" class="checkbox">
+      <i class="ri-menu-2-line"></i>
+    </label>
+    <ul>
+      <li><a>SKILLS</a></li>
+      <li><a>PROJECT</a></li>
+      <li><a>RESUME</a></li>
+      <li><a>CONTACT</a></li>
     </ul>
   </nav>
+  
   <div class="home">
     <p class="about">
         Hey! I’m <br>
@@ -43,6 +78,134 @@
         <path d="M 0 0 Q 20 10 100 0" fill="none" stroke="white" stroke-width="1" />
     </svg>
 
+<!--container for the project section-->
+    <div class="container-fluid">
+      <div class="ject">
+        <!--button for "my project" heading-->
+         <button class="proj"> <h3 class="txt"> MY PROJECTS </h3> </button>
+<!--List of projects begins here-->
+   <ul style=" list-style-type: none; padding: 0; margin: 0;">  
+
+   <br>
+
+      <li>    
+  <div class="namba" onclick="toggleDescription('desc1')">
+      <span>Project 1</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc1" class="namba-description">
+      This is the description for Project 1. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+      </li>
+  
+      <li>
+  <div class="namba" onclick="toggleDescription('desc2')">
+      <span>Project 2</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc2" class="namba-description">
+      This is the description for Project 2. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+  </li>
+  
+  <li>
+  <div class="namba" onclick="toggleDescription('desc3')">
+      <span>Project 3</span>
+      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+  </div>
+  <div id="desc3" class="namba-description">
+      This is the description for Project 3. It includes details about the project's goals, milestones, and outcomes.
+  </div>
+  </li>
+   </ul>
+   <!--list of projects ends here-->
+
+   <!--Download Resume button-->
+      <button class="cvitae"><p>DOWNLOAD RESUME   <img src="../onyango/asset/download.png"></p></button>
+
+      </div>
+ <!--section for contacts starts-->
+      <div class="last-sect">
+        <p class="tt"> TALK TO ME: </p>
+        <button class="icones-buton">
+         <a href="#">
+           <img src="../onyango/asset/VectorX.png" alt="Twitter" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/mail.png" alt="Mail" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/github.png" alt="Github" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/linkedin.png" alt="Linkedln" class="icone">
+         </a>
+         <a href="#">
+          <img src="../onyango/asset/VectorIG.png" alt="Instagram" class="icone">
+         </a>
+        </button>
+      </div>
+
+      </div>
+  </div>
+
+
+
+
+  <script>
+    function toggleDescription(id) {
+        var description = document.getElementById(id);
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    }
+</script>
+
+  <section class="section">
+    <div class="section_container">
+      <div class="content">
+        <h1 class="title">
+          Hey!
+        </h1>
+        <p class="about">I’m
+          Stanley onyango, a software developer. 
+          I build custom website solution 
+          that help your business grow.       
+
+          </p>
+          <div class="action_btn">
+            <button class="hire_me">Hire Me</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./asset/WongProfile.png" alt="profile" />
+        </div>
+        
+<!-- SKILLS SECTION -->
+        <div class="skills">
+          <a class="my_skills">MY SKILLS</a>
+        </div>
+        <div>
+          <ul class="list_skills">
+            <li><a>HTML/CSS:</a></li>
+            <li><a>JAVASCRIPT:</a></li>
+            <li><a>PYTHON:</a></li>
+            <li><a>C#:</a></li>
+            <li><a>SQL:</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+    </section>
+  </body>
+
+    </div>
+  </section>
+
 </body>
 
 </html>
+
