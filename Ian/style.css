@@ -369,6 +369,11 @@ a{
         width: 100vw;
     }
 
+    .link{
+        font-size: 17px;
+        height: max-content;
+    }
+
     .aboutContent{
         width: 100vw;
     }
