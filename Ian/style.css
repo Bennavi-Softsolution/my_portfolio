@@ -166,32 +166,32 @@ a{
 
 #slider1:target ~ .imgContainer #img1,
 #slider1:target ~.imgContainer #button1 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
 
 #slider2:target ~ .imgContainer #img2,
 #slider2:target ~.imgContainer #button2 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
 
 #slider3:target ~ .imgContainer #img3,
 #slider3:target ~.imgContainer #button3 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
 
 #slider4:target ~ .imgContainer #img4,
 #slider4:target ~.imgContainer #button4 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
@@ -395,6 +395,7 @@ a{
         margin: auto;
         border-radius: 10px;
         padding-left: 30px;
+        margin-top: 30vh;
     }
     
     .title{
@@ -412,4 +413,12 @@ a{
         border-radius: 20px;
         margin-left: 20px;
     }
+    
+    .img {
+        height: 40vh;
+        width: 50vw;
+    }
+
+    
   }
+
