@@ -125,7 +125,7 @@
 
 
   }
-
+  
   
   .action_btn button {
     transition: 0.3s;
@@ -284,12 +284,7 @@
       width: 30%;
 
     }
-
-  
   }
-
-    /* Stanley Onyango */
-
 /* Group 11 */
 .ject {
   position: relative;
@@ -405,7 +400,7 @@ display: flex;
 justify-content: center;
 width: 463px;
 height: 66.01px;
-color: #527d7b
+background: rgba(179, 216, 214, 0.41);
 }
 
 .icone {
