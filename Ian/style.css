@@ -3,6 +3,7 @@ body{
     background-color: #000000;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* color: white; */
+    width: 100vw;
     min-height: 100vh;
     display: flex; /*display navbar content in column direction*/
     flex-direction: column;
@@ -12,37 +13,41 @@ body{
 
 .navBar{
     background-color: #131212;
-    width: 98vw;
+    width: 100vw;
     height: 70px;
     padding: 5px;
-    font-size: 20px;
     display: flex; /*arrange containers in row direction*/
     justify-content: space-between;
     position: absolute; /*Positioning navbar*/
     top: 0;
     left: 0;
-    right: 0;
+    align-items:center;
 }
 
 .navLinks{
     display: flex;
+    height: max-content;
+}
+
+a{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #f7e9e9;;
+    transition: 0.3s;
 }
 
 .Logo{
+    font-weight: 600;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 30px;
-    /* border-radius: 20px; */
-}
-
-h4{
-    position: relative;
-    top: -10px;
 }
 
 .link{
     margin: 10px;
     padding: 10px;
+    text-decoration: none;
 }
 
 .link:hover{
@@ -55,12 +60,13 @@ h4{
 /* Designing the about content */
 .aboutContent{
     margin-top: 110px;
+    width: 100vw;
 }
 
 .mainContainer{
     display: flex;
     position: relative; /*Positioning the content accordingly to the page's width*/
-    width: 70vw;
+    width: 80vw;
     height:100%;
     left: 0;
     justify-content: space-around;
@@ -100,7 +106,6 @@ h4{
 .image{
     height: 100%;
     position:relative;
-    top:30px;
     left: 0;
 }
 
@@ -112,7 +117,7 @@ h4{
 /* Projects section */
 .Projects {
     width: 100%;
-    height: 90vh;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -161,32 +166,32 @@ h4{
 
 #slider1:target ~ .imgContainer #img1,
 #slider1:target ~.imgContainer #button1 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
 
 #slider2:target ~ .imgContainer #img2,
 #slider2:target ~.imgContainer #button2 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
 
 #slider3:target ~ .imgContainer #img3,
 #slider3:target ~.imgContainer #button3 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
 
 #slider4:target ~ .imgContainer #img4,
 #slider4:target ~.imgContainer #button4 {
-    width: 390px;
-    height: 600px;
+    width: 25vw;
+    height: 35vh;
     background-color: transparent;
     
 }
@@ -210,14 +215,15 @@ h4{
 /* Skills Content */
 
 .Skills{
-    width: 95vw;
+    width: 90vw;
+    margin: auto;
     background-color: #131212;
     position: relative;
-    left: 1%;
     /*leaving margin from the left end */
     margin-bottom: 30px;
     border-radius: 20px;
     padding-left: 40px;
+    margin-top: 30vh;
 }
 
 .SkillsContainer{
@@ -285,7 +291,7 @@ h4{
 
 /* Footer content */
 .Footer {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     margin-top: auto;
     background-color: #0f0f0f;
@@ -349,7 +355,70 @@ h4{
 }
 
 .icon-container i {
-    margin-left: 10px;
+    margin-left: 10vw;
     font-size: 24px;
     color: #fff;
 }
+
+
+
+/* Phone display */
+
+@media only screen and (max-width: 800px) {
+    .navBar{
+        width: 100vw;
+    }
+
+    .link{
+        font-size: 17px;
+        height: max-content;
+    }
+
+    .aboutContent{
+        width: 100vw;
+    }
+
+    .mainContainer{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content{
+        width: 100%;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .Skills{
+        width: 90vw;
+        margin: auto;
+        border-radius: 10px;
+        padding-left: 30px;
+        margin-top: 30vh;
+    }
+    
+    .title{
+        font-size: 17px;
+    }
+
+    .userImage{
+        border-radius: 50%;
+    }
+    
+    .skillColor{
+        background-color: #666262;
+        width: 70%;
+        height: 15px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .img {
+        height: 40vh;
+        width: 50vw;
+    }
+
+    
+  }
+

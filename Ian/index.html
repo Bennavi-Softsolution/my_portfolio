@@ -15,13 +15,12 @@
 <body>
     <div class="navBar">
         <div class="Logo">
-            <h4>Ian Kipyego</h4>
+            <h4>IAN KIPYEGO</h4>
         </div>        
         <div class="navLinks">
-            <h5 class="link">Recent Work</h5>
-            <h5 class="link">Skills</h5>
-            <h5 class="link">Resume</h5>
-            <h5 class="link">Contacts</h5>
+            <h4 class="link"><a href="#projects">RECENT WORKS</a></h4>
+            <h4 class="link"><a href="#skills">SKILLS</a></h4>
+            <h4 class="link"><a href="#footer">CONTACTS</a></h4>
         </div>
     </div>
 
@@ -31,14 +30,14 @@
                 <p>Hello, I’m Ian, a <strong class="strongText">Full Stack Developer</strong>,  
                     focused on designing, developing and testing of
                     software applications using modern tools and techniques. </p>
-                <button class="resume"><strong>DOWNLOAD RESUME</strong></button>
+                <button class="resume" id="resume"><strong>DOWNLOAD RESUME</strong></button>
             </div>
             <div class="image">
                 <img src="./assets/userImage.jpg" alt="userImage" class="userImage">
             </div>
         </div>
     </div>
-    <div class="Projects">
+    <div class="Projects" id="projects">
         
         <span class="slider" id="slider1"></span>
         <span class="slider" id="slider2"></span>
@@ -70,7 +69,7 @@
         </div>
 
     </div>
-    <div class="Skills">
+    <div class="Skills" id="skills">
         <h2 class="skillTitle">My Skills</h2>
         <div class="SkillsContainer">
             <div class="skill">
@@ -107,12 +106,12 @@
             </div>
         </div>
     </div>
-    <div class="Footer">
+    <div class="Footer" id="footer">
         <p>Contact Me:</p>
         <div class="button-container">
-            <button id="footer-email"><i class="bi bi-envelope"></i> iankipyego@outlook.com</button>
+            <button id="footer-email" onclick="openEmailClient()"><i class="bi bi-envelope"></i> iankipyego@outlook.com</button>
             <button id="footer-location"><i class="bi bi-geo-alt"></i> Eldoret, Kenya</button>
-            <button id="footer-phone"><i class="bi bi-telephone"></i> +254714099346</button>
+            <button id="footer-phone" onclick="openPhoneDialer()"><i class="bi bi-telephone"></i> +254714099346</button>
         </div>
         
         <div class="copyright">
@@ -120,11 +119,38 @@
         </div>
 
         <div class="icon-container">
-            <i class="bi bi-github"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-twitter"></i>
+            <a href="https://github.com/IAN-KIPYEGO" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
             
         </div>
     </div>
+
+    <script>
+        // function to open the email client
+        const openEmailClient = () => {
+            var recipient = "iankipyego@outlook.com";
+            var subject = "Work Inquiries"; // subject can be changed here
+
+            // Construct the mailto link
+            var mailtoLink = "mailto:" + recipient + "?subject=" + encodeURIComponent(subject);
+
+            // open the user's email client
+            window.location.href = mailtoLink;
+        }
+        // function to open the dialer on mobile. On desktop this could also open whatsapp
+        const openPhoneDialer = () => {
+            var phoneNumber = "+254714099346";
+
+            // the tel link
+            var telLink = "tel:" + phoneNumber;
+
+            // opening phone dialer window
+            window.location.href = telLink;
+        }
+
+        
+    </script>
+
 </body>
 </html>
