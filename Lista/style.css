@@ -8,6 +8,12 @@ body {
   min-height: auto;
   display: grid;
   flex-direction: column;
+}
+
+.contact-me{
+  background-color: rgb(203, 143, 68);
+ width: 300px;
+  margin: auto;
 
 }
 
@@ -31,6 +37,52 @@ body {
   margin: 10px;
   padding: 10px;
 }
+
+.Logo{
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 30px;
+}
+a{
+  text-decoration: none;
+  font-style: sansita;
+  color: black;
+}
+a:hover{
+
+  color: #F8CBA5;
+  background-color: transparent;
+  text-decoration: solid;
+}
+.button {
+  height: 40px;
+  width: 100px;
+  background-color: #F8CBA5; 
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: initial;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 12px;
+  margin: 1px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+.button1 {
+  text-align: bottom;
+  background-color: #F8CBA5; 
+  color: black; 
+  border: 2px solid white;
+}
+
+.button1:hover {
+  background-color:black;
+  color: white;
+}
+
+
 
 /* Beginning of contact me section */
 .contact-me {
@@ -105,3 +157,4 @@ button{
 .message{
   height: 70px;
 }
+
