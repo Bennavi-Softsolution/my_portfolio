@@ -4,11 +4,11 @@ body {
   font-family: "Sansita", sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   color: black;
-  min-height: auto;
-  display: grid;
-  flex-direction: column;
+  height: 100vh;
+  /* min-height: auto; */
+  /* display: grid;
+  flex-direction: column; */
 }
 
 .contact-me{
@@ -48,12 +48,10 @@ body {
 
 }
 
-
-.about-section {
+/* .about-section {
   display: flex;
   flex-direction: row;
-  
-}
+} */
 
 .portfolio-image {
   width: 50vw;
