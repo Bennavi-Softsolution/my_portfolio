@@ -193,6 +193,10 @@ a:hover{
 
 
 /* Beginning of skills section */
+
+.skillTitle{
+  text-align: center;
+}
 .skills{
   
   width:auto;
