@@ -12,7 +12,7 @@
 
   </head>
   <body>
-    
+
 <!-- NAVBAR -->
 <nav>
   <div class="nav_content">
@@ -22,10 +22,10 @@
     </label>
     <input type="checkbox" name="check" id="check" />
     <ul class="menu">
-      <li><a href="#">SKILLS</a></li>
-      <li><a href="#">PROJECT</a></li>
-      <li><a href="#">RESUME</a></li>
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#project">PROJECT</a></li>
+      <li><a href="#resume">RESUME</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
 </nav>
@@ -48,10 +48,11 @@
     </div>
     <div class="image">
       <img src="./asset/WongProfile.png" alt="profile"/>
-    </div>  
-  </div> 
+    </div>
+  </div>
+  
     <!-- SKILLS SECTION --> 
- <div class="skills_container" >
+ <div id="skills" class="skills_container" >
   <div class="my_skills">
     MY SKILLS
   </div>
@@ -93,7 +94,7 @@
  </div> 
 </section>
 <!--container for the project section-->
-    <div class="container-fluid">
+    <div id="project" class="container-fluid">
       <div class="ject">
         <!--button for "my project" heading-->
          <button class="proj"> <h3 class="txt"> MY PROJECTS </h3> </button>
@@ -135,11 +136,11 @@
    <!--list of projects ends here-->
 
    <!--Download Resume button-->
-      <button class="cvitae"><p>DOWNLOAD RESUME   <img src="../onyango/asset/download.png"></p></button>
+      <button id="resume" class="cvitae"><p>DOWNLOAD RESUME   <img src="../onyango/asset/download.png"></p></button>
 
       </div>
  <!--section for contacts starts-->
-      <div class="last-sect">
+      <div id="contact" class="last-sect">
         <p class="tt"> TALK TO ME: </p>
         <button class="icones-buton">
          <a href="#">
@@ -162,10 +163,6 @@
 
       </div>
   </div>
-
-
-
-
   <script>
     function toggleDescription(id) {
         var description = document.getElementById(id);
@@ -175,7 +172,28 @@
             description.style.display = "none";
         }
     }
+    //DISABLE SCROLLING 
+    document.addEventListener('DOMContentLoaded', () => {
+        const checkbox = document.getElementById('check');
+        const body = document.body;
+        const menuLinks = document.querySelectorAll('.menu li a');
+        checkbox.addEventListener('change', (event) => {
+            if (event.target.checked) {
+                body.classList.add('no-scroll');
+            } else {
+                body.classList.remove('no-scroll');
+            }
+        });
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            body.classList.remove('no-scroll');
+            checkbox.checked = false;
+        });
+    });
+});
+
 </script>
+
 
 
 </body>
