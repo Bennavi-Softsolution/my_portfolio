@@ -268,12 +268,13 @@ input{
   height: 70px;
 }
 .skills{
-  width: max-content;
-  background-color: #e6f8a5;
+  
+  width:auto;
+  background-color:#F8CBA5;
 }
 .iconContainer{
   margin-left: 40%;
-  width: 100%;
+  width: auto;;
   height: 400px;
   position:relative;
   display: flex;
@@ -283,9 +284,9 @@ input{
 }
 icon{
   display:flow-root;
-  width: 20px;
-  height: 400px;
-  justify-content:space-evenly;
+  width: auto;
+  height: 40px;
+  justify-content:space-around;
 
 }
 .mainContainer{
