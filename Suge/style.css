@@ -159,9 +159,9 @@ body {
 /* Frame 63 */
 #frame-63 {
   position: absolute;
-  width: 50%;
+  width: 70%;
   height: 207px;
-  left: 25%;
+  left: 15%;
   top: 77%;
   background: linear-gradient(90deg, #D9D9D9 0%, #AEA8A8 26.5%);
 
@@ -437,6 +437,21 @@ height: 128px;
 left: 58px;
 top: 50px;
 background-image: url("assets/Rectangle\ 48.png");
+}
+
+@media screen and (max-width:460px){
+
+  .project-section1{
+
+    /* Group 49 */
+    
+    position: absolute;
+    width: 100%;
+    height: 128px;
+    left: 0px;
+    top: 50px;
+    background-image: url("assets/Rectangle\ 48.png");
+    }
 
 
 }
@@ -473,7 +488,22 @@ top: 200px;
 background: linear-gradient(90deg, #878181 0%, #050404 54%);
 
 }
+@media screen and (max-width:480px){
 
+  .project-section2{
+
+    /* Rectangle 49 */
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 200px;
+  
+  background: linear-gradient(90deg, #878181 0%, #050404 54%);
+  
+  }
+
+}
 /*Project sections under portfolios*/
 .project-section3{
 
@@ -488,6 +518,22 @@ background: linear-gradient(90deg, #878181 0%, #050404 54%);
   
   
   }
+  @media screen and (max-width:460px){
+    .project-section3{
+
+      /* Group 49 */
+      
+      position: absolute;
+      width: 100%;
+      height: 128px;
+      left: 0px;
+      top: 350px;
+      background-image: url("assets/Rectangle\ 48.png");
+      
+      
+      }
+    
+  }
   .project-section4{
 
     /* Rectangle 49 */
@@ -500,6 +546,23 @@ background: linear-gradient(90deg, #878181 0%, #050404 54%);
   background: linear-gradient(90deg, #878181 0%, #050404 54%);
   
   }
+  @media screen and (max-width:460px){
+
+    .project-section4{
+
+      /* Rectangle 49 */
+    position: absolute;
+    width: 100%;
+    height: 137px;
+    left: 0px;
+    top: 500px;
+    
+    background: linear-gradient(90deg, #878181 0%, #050404 54%);
+    
+    }
+
+
+  }
   /*Portfolio Sub section*/
 .project-sub{
   /* Rectangle 53 */
@@ -511,6 +574,21 @@ top: 25px;
 
 background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
 border-radius: 10px;
+
+}
+@media screen and (max-width:480px){
+  .project-sub{
+    /* Rectangle 53 */
+  position: absolute;
+  width: 441px;
+  height: 84px;
+  left: 5px;
+  top: 25px;
+  
+  background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
+  border-radius: 10px;
+  
+  }
 
 }
 
@@ -527,6 +605,28 @@ top: 25px;
 background: linear-gradient(90deg, #FCFAFA 46.63%, #827F7F 90.06%);
 border-radius: 10px;
  /* transform: rotate(-5.61deg);  */
+
+
+}
+@media screen and (max-width:480px){
+
+  .project-sub2{
+
+    /* Rectangle 54 */
+    
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 10px;
+    top: 20px;
+    
+    background: linear-gradient(90deg, #FCFAFA 46.63%, #827F7F 90.06%);
+    border-radius: 10px;
+     /* transform: rotate(-5.61deg);  */
+    
+    
+    }
+
 
 
 }
@@ -584,6 +684,33 @@ text-emphasis-color: transparent;
 
 
 }
+@media screen and (max-width:480px){
+
+
+  .project-content{
+    /* An admission Module for East Africa V stands for I am not Sure and so does I */
+    
+    position: absolute;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    
+    background: linear-gradient(90deg, #000000 0%, #161616 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    
+    
+    
+    }
+
+    
+
+
+}
 /*Project image sections starts here*/
 .project-image{
  /* Ellipse 1 */
@@ -609,7 +736,21 @@ background-repeat: no-repeat;
  background-repeat: no-repeat;
  
  }
+@media screen and (max-width:460px){
 
+  .project-image2{
+    /* Ellipse 1 */
+   position: absolute;
+   width: 100%;
+   height: 116px;
+   top: 5px;
+   left: 10px;
+   background: url("assets/Ellipse\ 1.png");
+   background-repeat: no-repeat;
+   
+   }
+
+}
 .project-fork{
   /* Code Fork */
 
