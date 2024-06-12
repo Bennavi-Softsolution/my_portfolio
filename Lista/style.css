@@ -1,13 +1,14 @@
 body {
-  background-color: #FFFFFF;
+  /* proposed background colour so that we do not burn bwana */
+  background-color: rgb(247, 227, 201);
   font-family: "Sansita", sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   color: black;
-  min-height: auto;
-  display: grid;
-  flex-direction: column;
+  height: 100vh;
+  /* min-height: auto; */
+  /* display: grid;
+  flex-direction: column; */
 }
 
 .contact-me{
@@ -34,15 +35,22 @@ body {
 }
 
 .link {
+  transform: scale(1);
   margin: 10px;
   padding: 10px;
 }
+.link:hover{
+  transform: scale(1.1);
 
+}
+.link:active{
+  transform: scale(1);
+
+}
 
 .about-section {
   display: flex;
   flex-direction: row;
-  
 }
 
 .portfolio-image {
@@ -184,17 +192,52 @@ a:hover{
 }
 
 
+/* Beginning of skills section */
+
+.skillTitle{
+  text-align: center;
+}
+.skills{
+  
+  width:auto;
+  background-color:#F8CBA5;
+}
+.iconContainer{
+  margin-left: 40%;
+  width: auto;;
+  height: 400px;
+  position:relative;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+icon{
+  display:flow-root;
+  width: auto;
+  height: 40px;
+  justify-content:space-around;
+
+}
+.mainContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 /* Beginning of contact me section */
+
 .contact-me {
-  /* background-color: rgba(203, 142, 68, 0.61); */
-  background-color: #e29654c4;
+  background: linear-gradient(60deg, #f8ba84 49.81%, #F8CBA5 69.11%); /* Change background color on hover */
   position: relative;
-  width: 80%;
-  border-radius: 100px 100px 0 0;
+  width: 90%;
+  border-radius: 250px 250px 0 0;
   left: 2%;
-  padding: 0 30px;
-  height: fit-content;
+  padding: 10px 30px;
+  height: min-content;
 }
 
 .contactHead{
@@ -217,7 +260,6 @@ a:hover{
 }
 
 .contacts{
-  height: max-content;
   width: 30%;
 }
 
@@ -246,10 +288,10 @@ input{
   border-radius: 10px;
 }
 
-button{
-  margin: 10px 30px;
-  height: 30px;
-  width: 20vh;
+.sendMessage{
+  margin: 10px 5px;
+  height: 40px;
+  width: 25vh;
   border: none;
   border-radius: 10px;
   font-weight: 700;
@@ -259,4 +301,38 @@ button{
   height: 70px;
 }
 
+.footer{
+  width: 70%;
+  position: relative;
+  left: 20%;
+}
 
+.socials{
+  height: max-content;
+}
+
+ .social{
+  font-size: 35px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  left: 10%;
+  margin-left: 30px;
+}
+
+.tag{
+  padding: 0.5rem 1rem;
+  position: relative;
+  left: 20%;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 500px){
+
+  .contactList{
+    width: 100vh;
+    border-radius: 100px 100px 0 0;
+    padding: 5px 10px;
+    height: max-content;
+  }
+
+}
