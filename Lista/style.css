@@ -48,10 +48,10 @@ body {
 
 }
 
-/* .about-section {
+.about-section {
   display: flex;
   flex-direction: row;
-} */
+}
 
 .portfolio-image {
   width: 50vw;
@@ -192,6 +192,38 @@ a:hover{
 }
 
 
+/* Beginning of skills section */
+.skills{
+  width: 100vh;
+  background-color: #e6f8a5;
+  display: flex;
+}
+
+.iconContainer{
+  margin-left: 40%;
+  width: 100%;
+  height: 400px;
+  position:relative;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+icon{
+  display:flow-root;
+  width: 20px;
+  height: 400px;
+  justify-content:space-evenly;
+
+}
+.mainContainer{
+  position: relative;
+  display: flex;
+}
+
+
+
 
 /* Beginning of contact me section */
 
@@ -265,32 +297,7 @@ input{
 .message{
   height: 70px;
 }
-.skills{
-  width: max-content;
-  background-color: #e6f8a5;
-}
-.iconContainer{
-  margin-left: 40%;
-  width: 100%;
-  height: 400px;
-  position:relative;
-  display: flex;
-  align-items: center;
- justify-content: center;
- flex-direction: column;
-}
-icon{
-  display:flow-root;
-  width: 20px;
-  height: 400px;
-  justify-content:space-evenly;
 
-}
-.mainContainer{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
 
 .footer{
   width: 70%;
@@ -323,6 +330,7 @@ icon{
     width: 100vh;
     border-radius: 100px 100px 0 0;
     padding: 5px 10px;
+    height: max-content;
   }
 
 }
