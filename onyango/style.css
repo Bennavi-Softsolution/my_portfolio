@@ -251,13 +251,14 @@
     .menu {
       position: absolute;
       width: 100%;
-      height: calc(100vh - 85px);
+      height: calc(200vh - 85px);
       left: -100%;
-      top: 75px;
+      top: 50px;
       background-color: #074C59;
       flex-direction: column;
       justify-content: center;
       gap: 3rem;
+      height: 750px;
     }
     nav #check:checked ~ .menu {
       left: 0;
