@@ -4,11 +4,11 @@ body {
   font-family: "Sansita", sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   color: black;
-  min-height: auto;
-  display: grid;
-  flex-direction: column;
+  height: 100vh;
+  /* min-height: auto; */
+  /* display: grid;
+  flex-direction: column; */
 }
 
 .contact-me{
@@ -48,11 +48,9 @@ body {
 
 }
 
-
 .about-section {
   display: flex;
   flex-direction: row;
-  
 }
 
 .portfolio-image {
@@ -194,6 +192,41 @@ a:hover{
 }
 
 
+/* Beginning of skills section */
+
+.skillTitle{
+  text-align: center;
+}
+.skills{
+  
+  width:auto;
+  background-color:#F8CBA5;
+}
+.iconContainer{
+  margin-left: 40%;
+  width: auto;;
+  height: 400px;
+  position:relative;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+icon{
+  display:flow-root;
+  width: auto;
+  height: 40px;
+  justify-content:space-around;
+
+}
+.mainContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 /* Beginning of contact me section */
 
@@ -267,33 +300,6 @@ input{
 .message{
   height: 70px;
 }
-.skills{
-  
-  width:auto;
-  background-color:#F8CBA5;
-}
-.iconContainer{
-  margin-left: 40%;
-  width: auto;;
-  height: 400px;
-  position:relative;
-  display: flex;
-  align-items: center;
- justify-content: center;
- flex-direction: column;
-}
-icon{
-  display:flow-root;
-  width: auto;
-  height: 40px;
-  justify-content:space-around;
-
-}
-.mainContainer{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
 
 .footer{
   width: 70%;
@@ -326,6 +332,7 @@ icon{
     width: 100vh;
     border-radius: 100px 100px 0 0;
     padding: 5px 10px;
+    height: max-content;
   }
 
 }
