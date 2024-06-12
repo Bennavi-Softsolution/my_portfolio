@@ -251,7 +251,7 @@
       width: 100%;
       height: calc(100vh - 85px);
       left: -100%;
-      top: 85px;
+      top: 75px;
       background-color: #074C59;
       flex-direction: column;
       justify-content: center;
@@ -259,6 +259,21 @@
     }
     nav #check:checked ~ .menu {
       left: 0;
+    }
+    nav{
+      max-height: 50px;
+    }
+    .nav_content{
+      margin: 1rem 0.5rem;
+      max-height: 1px;
+    }
+    .logo{
+      max-width: var(--max-width);
+      height: 40px;
+      width: 40px;
+    }
+    .about{
+      font-size: 22px;
     }
     .menu li a {
       font-size: 1.25rem;
