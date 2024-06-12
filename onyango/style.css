@@ -317,11 +317,6 @@
 
 
 /* PROJECTS SECTION STYLING */
-.projects_section {
-  background-color: #063D47;
-  padding: 3rem 1rem;
-}
-
   .container-fluid {
     max-width: var(--max-width);
     margin: auto;
@@ -336,7 +331,7 @@
 .proj {
 padding: 20px;
 text-align: center;
-background: rgba(179, 216, 214, 0.41);
+background-color: #B3D8D6;
 border-radius: 20px;
 width: 280px;
 height: 60px;
@@ -389,7 +384,7 @@ width: 20px;
 .cvitae {
 width: 348.58px;
 height: 77px;
-background: rgba(179, 216, 214, 0.41);
+background-color: #B3D8D6;
 border-radius: 20px;
 display: flex;
 align-items: center;
@@ -411,11 +406,6 @@ margin-top: 20px; /* Add margin-top to create space between the project list and
   }
 
   /* section for contacts */
-/* CONTACT SECTION */
-.contact_section {
-  padding: 3rem 1rem;
-  text-align: center;
-}
 
 .last-sect{ 
   width: 100%;
@@ -423,12 +413,6 @@ margin-top: 20px; /* Add margin-top to create space between the project list and
   margin: auto;
   padding: 1rem;
 
-.last-sect{
-position: relative;
-width: 463px;
-height: 131.01px;
-margin-top: 30px;
-}
 
 /* TALK TO ME: text */
 .last_sect .tt {
@@ -446,7 +430,7 @@ display: flex;
 justify-content: center;
 gap: 20px;
 padding: 10px;
-background: rgba(179, 216, 214, 0.41);
+background-color: #B3D8D6;
 border-radius: 10px;
 }
 
