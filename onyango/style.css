@@ -243,6 +243,11 @@
       display: block;
       background-color: #B3D8D6;
     }
+  /* DISABLE SCROLLING*/
+  body.no-scroll {
+    overflow: hidden;
+    }
+
     .menu {
       position: absolute;
       width: 100%;
