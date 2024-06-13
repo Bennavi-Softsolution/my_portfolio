@@ -244,10 +244,11 @@ a:hover {
 /* Beginning of project section */
 .portfolio {
   background-color: #F8CBA5;
-  width: 60%;
+  width: 80vw;
   padding: 20px;
   margin: 20px auto;
   border-radius: 30px;
+  margin: 20px 50px;
 }
 
 .portfolioTitle {
@@ -264,6 +265,7 @@ a:hover {
   width: 70vw;
   margin: 25px auto;
   align-items: center;
+  font-size: 30px;
 }
 
 .projectname {
@@ -386,7 +388,6 @@ a:hover {
 
 /* Beginning of contact me section */
 .contact-me {
-
   background: linear-gradient(60deg, #f8ba84 49.81%, #F8CBA5 69.11%);
   position: relative;
   width: 80%;
@@ -397,6 +398,7 @@ a:hover {
 }
 
 .contactHead {
+  padding: 20px;
   text-align: center;
   font-weight: 600;
 }
@@ -502,12 +504,8 @@ button{
   }
 
 /* Portfolio section */
-  .portfolio{
-    width: 100vh;
-  }
-
-  .project{
-    width: 90%;
+  .projectname{
+    font-size: 17px;
   }
 
 
@@ -517,18 +515,38 @@ button{
 @media only screen and (max-width: 500px){
 /* Small screen portfolio section */
   .portfolio{
-    font-size: 17px;
-  }
-
-  .project{
-    width: 80%;
-    margin: 15px auto;
+    width: 100vw;
+    margin: 10px 0 10px 5%;
   }
 
   .projectLink{
     height: 30px;
     width: 30px;
     font-size: 17px;
-    margin: 20px 20px;
+    margin: 20px 10px 0 10px;
+  }
+
+  .project{
+    width: 100vw;
+  }
+
+  .more{
+    left: 25px;
+  }
+
+  .contact-me{
+    width: 100vw;
+  }
+
+  .contactdiv {
+     align-items:start;
+  }
+
+  .list{
+    flex-direction: column;
+  }
+
+  .input{
+    margin-top: 20px;
   }
 }
