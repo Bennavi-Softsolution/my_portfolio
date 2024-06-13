@@ -511,6 +511,10 @@ button{
 
 @media only screen and (max-width: 1200px){
 
+  body{
+    width: 100vw;
+  }
+
   .contactList {
     width: 100vh;
     border-radius: 100px 100px 0 0;
@@ -523,6 +527,23 @@ button{
     font-size: 17px;
   }
 
+  .contactsection{
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .contact-me{
+    flex-direction: column;
+  }
+
+  .list{
+    flex-direction: column;
+  }
+
+  .input{
+    margin-top: 30px;
+  }
+
 
 }
 
@@ -531,12 +552,12 @@ button{
 /* Small screen portfolio section */
   .portfolio{
     font-size: 17px;
-    width: 80vw;
+    width: 100vw;
     margin-left: 5vw;
   }
 
   .project{
-    width: 80%;
+    width: 100vw;
     margin: 15px auto;
   }
 
@@ -545,10 +566,6 @@ button{
     width: 30px;
     font-size: 17px;
     margin: 20px 10px 0 10px;
-  }
-
-  .project{
-    width: 100vw;
   }
 
   .more{
@@ -569,5 +586,9 @@ button{
 
   .input{
     margin-top: 20px;
+  }
+
+  .social{
+    font-size: 20px;
   }
 }
