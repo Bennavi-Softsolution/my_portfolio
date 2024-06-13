@@ -11,9 +11,9 @@ body {
   flex-direction: column;
 }
 
-.contact-me{
+.contact-me {
   background-color: rgb(203, 143, 68);
- width: 300px;
+  width: 300px;
   margin: auto;
 
 }
@@ -40,10 +40,25 @@ body {
   padding: 10px;
 }
 
+
+.link:hover {
+  transform: scale(1.1);
+}
+
 .big-box {
   width: 10vw;
   max-width: 100vw;
   
+}
+
+.big-box h6 {
+  margin-top: -30vh;
+  margin-bottom: 2vh;
+  font-size: 3.4vw;
+}
+
+.link:active {
+  transform: scale(1);
 }
 
 .big-box img {
@@ -87,21 +102,28 @@ body {
     flex-direction: column-reverse;
     transition: all 1.5s ease-in-out; /* transition effect. doesnt work as intended*/
   }
+
   .portfolio-image {
     width: 75vw; 
     max-width: 100%;
     margin-left: 10vw;
    /* Center the image */
   }
-  
+
   .portfolio-words {
-    margin: 0 auto; /* Center the text */
-    margin-top: 20px; /* Add some space between image and text */
+    margin: 0 auto;
+    /* Center the text */
+    margin-top: 20px;
+    /* Add some space between image and text */
     margin-bottom: 20px;
-    margin-left: 0; /* Reset the left margin */
-    text-align: center; /* Center the text */
-    flex-direction: column; /* Change to column layout */
-    align-items: center; /* Center items horizontally */
+    margin-left: 0;
+    /* Reset the left margin */
+    text-align: center;
+    /* Center the text */
+    flex-direction: column;
+    /* Change to column layout */
+    align-items: center;
+    /* Center items horizontally */
   }
 }
 
@@ -122,18 +144,24 @@ body {
   font-size: 25px;
   font-weight: bolder;
   font-family: 'JetBrains Mono', monospace;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effect */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  /* Add transition effect */
 }
 
 .hire-me-button:hover {
-  background: linear-gradient(89.94deg, rgba(255, 160, 122, 0.8) 49.81%, rgba(255, 99, 71, 0.8) 69.11%); /* Change background color on hover */
-  transform: scale(1.1); /* Scale up the button slightly on hover */
+  background: linear-gradient(89.94deg, rgba(255, 160, 122, 0.8) 49.81%, rgba(255, 99, 71, 0.8) 69.11%);
+  /* Change background color on hover */
+  transform: scale(1.1);
+  /* Scale up the button slightly on hover */
 }
 
 .hire-me-button:active {
-  background: linear-gradient(89.94deg, rgba(255, 69, 0, 0.8) 49.81%, rgba(255, 20, 147, 0.8) 69.11%); /* Change background color when clicked */
-  transform: scale(1); /* Reset scale when clicked */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow when clicked */
+  background: linear-gradient(89.94deg, rgba(255, 69, 0, 0.8) 49.81%, rgba(255, 20, 147, 0.8) 69.11%);
+  /* Change background color when clicked */
+  transform: scale(1);
+  /* Reset scale when clicked */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Add shadow when clicked */
 }
 
 .resume-button {
@@ -146,155 +174,220 @@ body {
   font-size: 25px;
   font-weight: bolder;
   font-family: 'JetBrains Mono', monospace;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effect */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  /* Add transition effect */
 }
 
 .resume-button:hover {
-  background-color: #FFA07A; /* Change background color on hover */
-  transform: scale(1.1); /* Scale up the button slightly on hover */
+  background-color: #FFA07A;
+  /* Change background color on hover */
+  transform: scale(1.1);
+  /* Scale up the button slightly on hover */
 }
 
 .resume-button:active {
-  background-color: #E9967A; /* Change background color when clicked */
-  transform: scale(1); /* Reset scale when clicked */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow when clicked */
+  background-color: #E9967A;
+  /* Change background color when clicked */
+  transform: scale(1);
+  /* Reset scale when clicked */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Add shadow when clicked */
 }
 
 
 
 
 
-.Logo{
+.Logo {
   font-weight: 600;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: 30px;
 }
-a{
+.h4{
+  margin-right: 40%;
+}
+
+a {
   text-decoration: none;
   font-style: sansita;
   color: black;
 }
-a:hover{
+
+a:hover {
 
   color: #F8CBA5;
   background-color: transparent;
   text-decoration: solid;
 }
+
 .button {
   height: 40px;
   width: 100px;
-  background-color: #F8CBA5; 
+  background-color: #F8CBA5;
   border: none;
   color: white;
   padding: 5px 10px;
   text-align: initial;
   text-decoration: none;
-  display:inline-block;
+  display: inline-block;
   font-size: 12px;
   margin: 1px 2px;
   transition-duration: 0.1s;
   cursor: pointer;
 }
+
 .button1 {
   text-align: bottom;
-  background-color: #F8CBA5; 
-  color: black; 
+  background-color: #F8CBA5;
+  color: black;
   border: 2px solid white;
 }
 
 .button1:hover {
-  background-color:black;
+  background-color: black;
   color: white;
 }
 
 /* Beginning of project section */
-.portfolio{
+.portfolio {
   background-color: #F8CBA5;
-  width:60%;
+  width: 80vw;
   padding: 20px;
   margin: 20px auto;
   border-radius: 30px;
+  margin: 20px 50px;
 }
 
-.portfolioTitle{
+.portfolioTitle {
   text-align: center;
 }
 
-.project{
+.project {
   background-color: #FBDBBF;
   border-radius: 20px;
   position: relative;
   display: flex;
   justify-content: center;
   height: 120px;
-  width: 70%;
+  width: 70vw;
   margin: 25px auto;
   align-items: center;
+  font-size: 30px;
 }
 
-.projectname{
+.projectname {
   background-color: #f7c59a;
   padding: 10px;
   height: max-content;
-  margin:0 30px;
+  margin: 0 30px;
   text-align: center;
   border-radius: 10px;
 }
 
-.images{
+.images {
   display: flex;
+}
+
+
+.imageContainer{
+  display: flex;
+  width: max-content;
+  position: inherit;
 }
 
 .projectLink{
-  font-size: 30px;
-  margin-left: 20px;
+  margin: 0 20px;
   display: flex;
   align-items: center;
   background-color: #f7c59a;
-  height: 35px;
+  width: 45px;
+  height: 45px;
+  border-radius: 30%;
+  font-size: 25px;
+  padding: 0 1rem 0 0;
 }
 
-.image{
+.link{
+  padding: 10px;
+}
+
+.image {
   width: 80px;
   height: 80px;
   border-radius: 5px;
 }
 
+.more{
+  position: relative;
+  left: 40%;
+  height: max-content;
+}
+
+.projectsButton{
+  height: 60px;
+  width: 200px;
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(89.94deg, rgba(235, 157, 93, 0.46) 49.81%, rgba(254, 128, 25, 0.46) 69.11%);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.projectsButton:hover{
+  transform: scale(1.2);
+  background-color: #f3b882;;
+}
+
 /* Beginning of skills section */
 
-.skillTitle{
+.skillTitle {
   text-align: center;
 }
-.skills{
-  background-color:#F8CBA5;
+
+.skills {
+  background-color: #F8CBA5;
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   width: 80%;
   border-radius: 30px;
-  margin:20px 50px;
+  margin: 20px 50px;
 
 }
-.skills-arrange{
+
+.skills-arrange {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
+  width: 40vw;
+  align-items: flex-start;
+
 }
-.iconContainer{
-  margin-left: 40%;
+
+.iconContainer {
+  margin-left: 35%;
   width: auto;
-  height: 400px;
-  position:relative;
+  height: auto;
+  position: relative;
   display: flex;
   align-items: center;
- justify-content: center;
- flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
-.icon{
+
+.icon {
   font-size: 50px;
+  width: 10vw;
 }
-.mainContainer{
+
+.iconContainer p {
+  width: 10vw;
+}
+
+.mainContainer {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -303,8 +396,7 @@ a:hover{
 
 /* Beginning of contact me section */
 .contact-me {
-  /* background-color: rgba(203, 142, 68, 0.61); */
-  background-color: #e29654c4;
+  background: linear-gradient(60deg, #f8ba84 49.81%, #F8CBA5 69.11%);
   position: relative;
   width: 80%;
   border-radius: 100px 100px 0 0;
@@ -313,53 +405,61 @@ a:hover{
   height: fit-content;
 }
 
-.contactHead{
+.contactHead {
+  padding: 20px;
   text-align: center;
   font-weight: 600;
 }
 
-.contactList h4{
+.contactList h4 {
   font-weight: 800;
   margin-left: 10%;
 }
 
-.contactList{
+.contactList {
   margin-left: 100px;
 }
 
-.list{
+.list {
   display: flex;
   justify-content: space-around;
 }
+
 
 .contacts{
   height: max-content;
   width: 30%;
 }
 
-.contactdiv{
+.contactdiv {
   display: flex;
   align-items: center;
 }
 
-.contactdiv p{
+.contactdiv p {
   margin-left: 20px;
 }
 
-.input form{
+.input form {
   display: flex;
   flex-direction: column;
-  position:relative;
+  position: relative;
   right: 100px;
   top: -30px;
 }
 
-input{
+input {
   margin: 10px 0;
   height: 30px;
   width: 40vh;
   border: none;
   border-radius: 10px;
+}
+
+.sendMessage {
+  margin: 10px 5px;
+  height: 40px;
+  width: 25vh;
 }
 
 button{
@@ -371,21 +471,21 @@ button{
   font-weight: 700;
 }
 
-.message{
+.message {
   height: 70px;
 }
 
-.footer{
+.footer {
   width: 70%;
   position: relative;
   left: 20%;
 }
 
-.socials{
+.socials {
   height: max-content;
 }
 
- .social{
+.social {
   font-size: 35px;
   padding: 0.5rem 1rem;
   position: relative;
@@ -393,21 +493,83 @@ button{
   margin-left: 30px;
 }
 
-.tag{
+.tag {
   padding: 0.5rem 1rem;
   position: relative;
   left: 20%;
   margin-left: 30px;
 }
 
-@media only screen and (max-width: 500px){
 
-  .contactList{
+
+@media only screen and (max-width: 1200px){
+
+  .contactList {
     width: 100vh;
     border-radius: 100px 100px 0 0;
     padding: 5px 10px;
     height: max-content;
   }
 
+/* Portfolio section */
+  .projectname{
+    font-size: 17px;
+  }
+
+
 }
 
+
+@media only screen and (max-width: 500px){
+/* Small screen portfolio section */
+  .portfolio{
+    font-size: 17px;
+    width: 80vw;
+    margin-left: 5vw;
+  }
+
+  .project{
+    width: 80%;
+    margin: 15px auto;
+  }
+
+  .projectLink{
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
+    margin: 20px 10px 0 10px;
+  }
+
+  .project{
+    width: 100vw;
+  }
+
+  .more{
+    left: 25px;
+  }
+
+  .contact-me{
+    width: 100vw;
+  }
+
+  .contactdiv {
+     align-items:start;
+  }
+
+  .list{
+    flex-direction: column;
+  }
+
+  .input{
+    margin-top: 20px;
+  }
+  .skills{
+    font-size: 10px;
+    width:80vw;
+  }
+  .navBar{
+    font-size:  12px;
+    text-size-adjust: 5px;
+    width: 200vw;
+  }
+}
