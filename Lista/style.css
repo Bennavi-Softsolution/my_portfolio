@@ -51,6 +51,21 @@ body {
   
 }
 
+.big-box h6 {
+  margin-top: -30vh;
+  margin-bottom: 2vh;
+  font-size: 3.4vw;
+}
+
+.big-box h3 {
+  rotate: -15deg;
+  color: #b6bd9aab;
+  font-size: 5vw;
+  margin-top: 15vh;
+  margin-bottom: -25vh;
+  margin-left: 4vw;
+  transform: scaleX(1.9);
+}
 
 .link:active {
   transform: scale(1);
@@ -518,6 +533,8 @@ button{
 /* Small screen portfolio section */
   .portfolio{
     font-size: 17px;
+    width: 80vw;
+    margin-left: 5vw;
   }
 
   .project{
