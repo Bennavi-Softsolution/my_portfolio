@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
     <!-- embedding the sansita font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- embedd Jetbrains font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- embedd Jetbrains font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <title>Lista's portfolio</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="navBar">
 
         <h4 class="Logo">Lista Mng'ei</h4>
@@ -32,29 +32,36 @@
             <h5 class="link"><a href="#portfolio">Portfolio</a></h5>
             <h5 class="link"><a href="#skills">Skills</a></h5>
             <h5 class="link">Services</h5>
-            <button class="resume-button">CONTACT</button>
+            <button class="button button1">CONTACT</button>
         </div>
     </div>
 
-    
+    <!-- Container for the big box and about me-->
+    <div class="head-section">
 
-    <div class="about-section" id="About">
-
-        <div class="portfolio-image">
-            <img src="./assets/Rectangle 53.png" alt="Lista">
+        <div class="big-box">
+            <img src="./assets/Rectangle 51.png" alt="big curvy box">
         </div>
 
-        <div class="portfolio-words">
-            <h1>ABOUT ME</h1>
+        <div class="about-section" id="About">
 
-            <p>Thanks Guys for Helping</p>
-            <div class="recruiter-buttons">
-                <button class="hire-me-button">HIRE ME</button>
-                <button class="resume-button">RESUME</button>
+            <div class="portfolio-image">
+                <img src="./assets/Rectangle 53.png" alt="Lista">
+            </div>
+
+            <div class="portfolio-words">
+                <h1>ABOUT ME</h1>
+
+                <p>Thanks Guys for Helping</p>
+                <div class="recruiter-buttons">
+                    <button class="hire-me-button">HIRE ME</button>
+                    <button class="resume-button">RESUME</button>
+                </div>
             </div>
         </div>
-     </div>  
+
     </div>
+
 
     <div id="portfolio" class="portfolio">
         <div class="portfolioTitle">
@@ -71,19 +78,20 @@
                         <img src="./assets/project2.jpg" alt="project" class="image">
                     </div>
                     <div class="projectLink">
-                        <i class="fa-solid fa-code-branch"></i>
+                        <i class="fa-solid fa-code-branch link"></i>
                     </div>
                 </div>
             </div>
             <div class="project">
                 <div class="images">
+                    <div class="projectLink">
+                        <i class="fa-solid fa-code-branch link"></i>
+                    </div>
                     <div class="imageContainer">
                         <img src="./assets/project.jpg" alt="project" class="image">
                         <img src="./assets/project2.jpg" alt="project" class="image">
                     </div>
-                    <div class="projectLink">
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
+                    
                 </div>
                 <div class="projectname">
                     PROJECT 2: EAVI Admission Page
@@ -99,23 +107,27 @@
                         <img src="./assets/project2.jpg" alt="project" class="image">
                     </div>
                     <div class="projectLink">
-                        <i class="fa-solid fa-code-branch"></i>
+                        <i class="fa-solid fa-code-branch link"></i>
                     </div>
                 </div>
             </div>
             <div class="project">
                 <div class="images">
+                    <div class="projectLink">
+                        <i class="fa-solid fa-code-branch link"></i>
+                    </div>
                     <div class="imageContainer">
                         <img src="./assets/project.jpg" alt="project" class="image">
                         <img src="./assets/project2.jpg" alt="project" class="image">
-                    </div>
-                    <div class="projectLink">
-                        <i class="fa-solid fa-code-branch"></i>
-                    </div>
+                    </div>                
                 </div>
                 <div class="projectname">
                     PROJECT 4: EAVI Admission Page
                 </div>
+            </div>
+
+            <div class="more">
+                <button class="projectsButton"><i class="fa-solid fa-circle-chevron-down"></i></button>
             </div>
         </div>
     </div>
@@ -156,56 +168,57 @@
         </div>
     </div>
 
-   
-    <!-- investigate this -->
     </div>
+
+
 
     <!--contact me message-->
     <div class="contactsection">
         <div class="contact-me">
             <div class="contactHead">
                 <h3>CONTACT ME</h3>
-              </div>
-          <div class="contactList">
-            <h4>Drop Me a Message</h4>
-            <div class="list">     
-              <div class="contacts">
-                <div class="contactdiv">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+254704575030</p>
-                </div>
-                <div class="contactdiv">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>mngeikerubo@gmail.com</p>
-                </div>
-                <div class="contactdiv">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Eldoret, Kenya</p>
-                </div>
-                
-              </div>
-              <div class="input">
-                <form>
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Message" class="message">
-                    <button class="sendMessage">SEND <i class="fa-regular fa-paper-plane"></i></button>
-                </form>
-              </div>
             </div>
-          </div>
-          <div class="footer">
+            <div class="contactList">
+                <h4>Drop Me a Message</h4>
+                <div class="list">
+                    <div class="contacts">
+                        <div class="contactdiv">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+254704575030</p>
+                        </div>
+                        <div class="contactdiv">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>mngeikerubo@gmail.com</p>
+                        </div>
+                        <div class="contactdiv">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Eldoret, Kenya</p>
+                        </div>
+
+                    </div>
+                    <div class="input">
+                        <form>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Message" class="message">
+                            <button>SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
             <div class="socials">
-                <i class="fa-brands fa-github social"></i>
-                <i class="fa-brands fa-instagram social"></i>
-                <i class="fa-brands fa-square-x-twitter social"></i>
-                <i class="fa-brands fa-linkedin social"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
             <div class="tag">
                 <p>2024@Bennavi-SoftSolution</p>
             </div>
-          </div>
         </div>
     </div>
-  </body>
+</body>
+
 </html>
