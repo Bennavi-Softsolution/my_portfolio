@@ -541,6 +541,9 @@ button{
   .navBar{
     font-size:  12px;
     text-size-adjust: 5px;
-    width: 200vw;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px;
   }
 }
