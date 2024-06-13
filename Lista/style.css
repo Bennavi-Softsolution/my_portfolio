@@ -251,9 +251,19 @@ a:hover{
   text-align: center;
 }
 .skills{
-  
-  width:auto;
   background-color:#F8CBA5;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 80%;
+  border-radius: 30px;
+  margin:20px 50px;
+
+}
+.skills-arrange{
+  display: flex;
+  flex-direction:row;
 }
 .iconContainer{
   margin-left: 40%;
@@ -265,12 +275,8 @@ a:hover{
  justify-content: center;
  flex-direction: column;
 }
-icon{
-  display:flow-root;
-  width: auto;
-  height: 40px;
-  justify-content:space-around;
-
+.icon{
+  font-size: 50px;
 }
 .mainContainer{
   position: relative;
