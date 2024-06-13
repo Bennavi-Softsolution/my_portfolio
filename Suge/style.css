@@ -226,7 +226,20 @@ body {
   top: 0px;
   background-image: url("assets/Javascript logo.png");
 }
+@media screen and (max-width:460px){
+
+  #Javascript-logo {
+    position: absolute;
+    width: 68px;
+    height: 30px;
+    left: 40%;
+    top: 0px;
+    background-image: url("assets/Javascript logo.png");
+  }
+
+}
 /* JavaScript */
+
 
 /* PHP */
 #php-logo {
@@ -258,11 +271,25 @@ body {
   position: absolute;
   width: 48px;
   height: 41px;
-  left: 0px;
+  left: 45%;
   top: 0px;
   background: #000000;
   background-image: url("assets/Group 47.png");
   border-radius: 3px;
+}
+@media screen and (max-width:460px){
+  #Rectangle-57 {
+    position: absolute;
+    width: 48px;
+    height: 41px;
+    left: 80%;
+    top: 0px;
+    background: #000000;
+    background-image: url("assets/Group 47.png");
+    border-radius: 3px;
+  }
+
+
 }
 
 /* php logo */
@@ -274,6 +301,45 @@ body {
   top: 114px;
   background-image: url("assets/php logo.png");
 }
+@media screen and (max-width:460px){
+  #php-logo {
+    position: absolute;
+    width: 62px;
+    height: 48px;
+    left: 73%;
+    top: 114px;
+    background-image: url("assets/php logo.png");
+  }
+
+
+}
+
+#vector2 {
+  position: absolute;
+  width: 62px;
+  height: 48px;
+  left: 201px;
+  top: 114px;
+  background-image: url("assets/Vector\ \(2\).png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:460px){
+  #vector2 {
+    position: absolute;
+    width: 62px;
+    height: 48px;
+    left: 40%;
+    top: 114px;
+    background-image: url("assets/Vector\ \(2\).png");
+    background-repeat: no-repeat;
+  }
+  
+
+
+}
+
+
 
 /* Python */
 #Python {
@@ -289,16 +355,23 @@ body {
   line-height: 19px;
   color: #000000;
 }
+@media screen and (max-width:460px){
 
-/* Vector 2 */
-#vector2 {
-  position: absolute;
-  left: 45.44%;
-  right: 48.34%;
-  top: 60.87%;
-  bottom: 21.74%;
-  
-  background-image: url("assets/Vector (2).png");
+  #Python {
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    left: 40%;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+
 }
 
 /* JavaScript */
@@ -315,6 +388,23 @@ body {
   line-height: 19px;
   color: #000000;
 }
+@media screen and (max-width:460px){
+
+  #JavaScript {
+    position: absolute;
+    width: 74px;
+    height: 19px;
+    left: 40%;
+    top: 58px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+}
 /* PHP */
 #PHP {
   position: absolute;
@@ -329,6 +419,23 @@ body {
   line-height: 19px;
   color: #000000;
 }
+@media screen and (max-width:460px){
+
+  #PHP {
+    position: absolute;
+    width: 26px;
+    height: 19px;
+    left: 80%;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+}
 #MySQL {
   position: absolute;
   width: 42px;
@@ -341,6 +448,23 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+}
+@media screen and (max-width:460px){
+
+  #MySQL {
+    position: absolute;
+    width: 42px;
+    height: 19px;
+    left: 78%;
+    top: 58px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
 }
 /* Skills */
 #Skills {
