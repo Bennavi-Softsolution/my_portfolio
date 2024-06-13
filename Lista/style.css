@@ -4,11 +4,11 @@ body {
   font-family: "Sansita", sans-serif;
   font-weight: 400;
   font-style: normal;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   color: black;
-  height: 100vh;
-  /* min-height: auto; */
-  /* display: grid;
-  flex-direction: column; */
+  min-height: auto;
+  display: grid;
+  flex-direction: column;
 }
 
 .contact-me{
@@ -35,28 +35,42 @@ body {
 }
 
 .link {
-  transform: scale(1);
   margin: 10px;
   padding: 10px;
 }
-.link:hover{
-  transform: scale(1.1);
 
+.big-box {
+  width: 10vw;
+  max-width: 100vw;
+  
 }
-.link:active{
-  transform: scale(1);
 
+.big-box img {
+  width: 100vw;
+  height: 30vh;
 }
 
 .about-section {
   display: flex;
-  flex-direction: row;
+  
+  
 }
 
 .portfolio-image {
-  width: 50vw;
+  width: 15vw; 
   max-width: 100%;
-  height: auto;
+  height: auto; /* Ensures image aspect ratio is maintained */
+  margin-top: 2vh;
+  margin-left: 1vw;
+  
+}
+
+.portfolio-image img {
+    display: block; 
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Ensures image aspect ratio is maintained */
+    border-radius: 36px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 .portfolio-words {
@@ -70,11 +84,13 @@ body {
 @media screen and (max-width: 768px) {
   .about-section {
     flex-direction: column-reverse;
-    transition: all 1.5s ease-in-out; /* transition effect */
+    transition: all 1.5s ease-in-out; /* transition effect. doesnt work as intended*/
   }
   .portfolio-image {
-    width: 100%;
-    margin: 0 auto; /* Center the image */
+    width: 75vw; 
+    max-width: 100%;
+    margin-left: 10vw;
+   /* Center the image */
   }
   
   .portfolio-words {
@@ -100,7 +116,7 @@ body {
   width: 130px;
   height: 50px;
   background: linear-gradient(89.94deg, rgba(248, 203, 165, 0.46) 49.81%, rgba(254, 128, 25, 0.46) 69.11%);
-  border: 1px solid #fff;
+  border: solid #F8CBA5;
   border-radius: 20px;
   font-size: 25px;
   font-weight: bolder;
@@ -192,52 +208,17 @@ a:hover{
 }
 
 
-/* Beginning of skills section */
-
-.skillTitle{
-  text-align: center;
-}
-.skills{
-  
-  width:auto;
-  background-color:#F8CBA5;
-}
-.iconContainer{
-  margin-left: 40%;
-  width: auto;;
-  height: 400px;
-  position:relative;
-  display: flex;
-  align-items: center;
- justify-content: center;
- flex-direction: column;
-}
-icon{
-  display:flow-root;
-  width: auto;
-  height: 40px;
-  justify-content:space-around;
-
-}
-.mainContainer{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
 
 /* Beginning of contact me section */
-
 .contact-me {
-  background: linear-gradient(60deg, #f8ba84 49.81%, #F8CBA5 69.11%); /* Change background color on hover */
+  /* background-color: rgba(203, 142, 68, 0.61); */
+  background-color: #e29654c4;
   position: relative;
-  width: 90%;
-  border-radius: 250px 250px 0 0;
+  width: 80%;
+  border-radius: 100px 100px 0 0;
   left: 2%;
-  padding: 10px 30px;
-  height: min-content;
+  padding: 0 30px;
+  height: fit-content;
 }
 
 .contactHead{
@@ -260,6 +241,7 @@ icon{
 }
 
 .contacts{
+  height: max-content;
   width: 30%;
 }
 
@@ -288,10 +270,10 @@ input{
   border-radius: 10px;
 }
 
-.sendMessage{
-  margin: 10px 5px;
-  height: 40px;
-  width: 25vh;
+button{
+  margin: 10px 30px;
+  height: 30px;
+  width: 20vh;
   border: none;
   border-radius: 10px;
   font-weight: 700;
@@ -299,40 +281,4 @@ input{
 
 .message{
   height: 70px;
-}
-
-.footer{
-  width: 70%;
-  position: relative;
-  left: 20%;
-}
-
-.socials{
-  height: max-content;
-}
-
- .social{
-  font-size: 35px;
-  padding: 0.5rem 1rem;
-  position: relative;
-  left: 10%;
-  margin-left: 30px;
-}
-
-.tag{
-  padding: 0.5rem 1rem;
-  position: relative;
-  left: 20%;
-  margin-left: 30px;
-}
-
-@media only screen and (max-width: 500px){
-
-  .contactList{
-    width: 100vh;
-    border-radius: 100px 100px 0 0;
-    padding: 5px 10px;
-    height: max-content;
-  }
-
 }
