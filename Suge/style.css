@@ -35,42 +35,89 @@ body {
   top: 27px;
 }
 
+
 /* Individual Navigation Link */
 .nav-link {
   font-family: sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
+  font-weight: bolder;
+  font-size: 18px;
   line-height: 28px;
   color: #000000;
   flex: none;
   flex-grow: 0;
 }
+@media screen and (max-width:460px){
+  .nav-link {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    flex: none;
+    flex-grow: 0;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10%; /* Adjusted gap */
+    position: absolute;
+    width: 40%;
+    height: 28px;
+    left: 2%;
+    top: 27px;
+  }
+
+  
+  
+
+}
 
 /* Contact Button */
-.contact-button {
-  position: absolute;
-  width: 10%;
-  height: 26px;
-  left: 80%; /* Adjusted left value */
-  top: 27px;
-  background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
-  border-radius: 10px;
-}
+
 
 /* Contact Text */
 .contact {
   position: absolute;
   width: 9.4%;
   height: 24px;
-  left: 82%; /* Adjusted left value */
   top: 23px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 23px;
+  font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+  background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
+  background-size: cover;
+  border-radius: 10px;
+  left:70%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:460px){
+
+  .contact {
+    position: absolute;
+    width: 9.4%;
+    height: 24px;
+    top: 23px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
+    background-size: cover;
+    border-radius: 10px;
+    left:70%;
+    background-repeat: no-repeat;
+  }
+
+
 }
 body {
   font-family: sans-serif;
@@ -87,6 +134,18 @@ body {
   align-items: center;
   padding: 7rem 1rem;
 }
+@media screen and (max-width:460px){
+
+
+  .container {
+
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 1rem;
+    
+  }
+
+}
 
 .portfolio-section {
   padding: 5%;
@@ -96,6 +155,18 @@ body {
   margin: 0 auto;
   top: 5%;
   position: relative; /* Changed to relative */
+}
+@media screen and (max-width:460px){
+
+  .portfolio-section {
+    padding: 5%;
+    text-align: left;
+    background: white;
+    max-width: 800px;
+    position: relative; /* Changed to relative */
+  }
+
+
 }
 
 .portfolio-text {
@@ -129,7 +200,7 @@ body {
   position: absolute;
   width: 100%;
   height: 40vh;
-  top: 75%;
+  top: 80%;
   background-image: url("assets/Screenshot 2024-06-07 125042.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,6 +596,22 @@ left: 0px;
 top: 800px;
 
 background: #D9D9D9;
+
+}
+@media screen and (max-width:460px){
+
+  .portfolio{
+    /* Rectangle 46 portfolio */
+   
+   position: absolute;
+   width: 100%;
+   height: 650px;
+   left: 0px;
+   top: 800px;
+   
+   background: #D9D9D9;
+   
+   }
 
 }
  /* Portfolio frame ends here*/
@@ -923,6 +1010,21 @@ top: 1800px;
 background-image: url("assets/Rectangle\ 44.png");
 background-repeat: no-repeat;
 background-size: cover;
+}
+@media screen and (max-width:460px){
+  .contact-section{
+    /* Rectangle 43 */
+    
+    position: absolute;
+    width: 100%;
+    height:480px;
+    top: 1450px;
+    background-image: url("assets/Rectangle\ 44.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
 }
 /*contact section starts here*/
 .contact-head{
