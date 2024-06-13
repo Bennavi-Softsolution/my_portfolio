@@ -11,7 +11,7 @@ body {
   position: fixed;
   width: 100%;
   height: 70px;
-  font-size: 14px;
+  font-size: 10px;
   background: #ECF0F1;
 
   justify-content: space-between;
@@ -20,26 +20,6 @@ body {
   
 }
 
-/* Searchbar */
-.searchbar {
-  position: absolute;
-  width: 10%;
-  height: 27px;
-  left: 3%;
-  top: 19px;
-  background: linear-gradient(90deg, #D9D9D9 0%, #737373 100%);
-  border-radius: 10px;
-}
-
-/* Search Icon */
-.search {
-  position: absolute;
-  width: 2%;
-  height: 29px;
-  left: 3%;
-  top: 17px;
-  background: url('assets/Search.png');
-}
 
 /* Navigation Links Container */
 .nav-links {
@@ -55,42 +35,89 @@ body {
   top: 27px;
 }
 
+
 /* Individual Navigation Link */
 .nav-link {
   font-family: sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
+  font-weight: bolder;
+  font-size: 18px;
   line-height: 28px;
   color: #000000;
   flex: none;
   flex-grow: 0;
 }
+@media screen and (max-width:460px){
+  .nav-link {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    flex: none;
+    flex-grow: 0;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10%; /* Adjusted gap */
+    position: absolute;
+    width: 40%;
+    height: 28px;
+    left: 2%;
+    top: 27px;
+  }
+
+  
+  
+
+}
 
 /* Contact Button */
-.contact-button {
-  position: absolute;
-  width: 10%;
-  height: 26px;
-  left: 80%; /* Adjusted left value */
-  top: 27px;
-  background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
-  border-radius: 10px;
-}
+
 
 /* Contact Text */
 .contact {
   position: absolute;
   width: 9.4%;
   height: 24px;
-  left: 82%; /* Adjusted left value */
   top: 23px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 23px;
+  font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+  background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
+  background-size: cover;
+  border-radius: 10px;
+  left:70%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width:460px){
+
+  .contact {
+    position: absolute;
+    width: 9.4%;
+    height: 24px;
+    top: 23px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #000000 0%, #E1DBDB 100%);
+    background-size: cover;
+    border-radius: 10px;
+    left:70%;
+    background-repeat: no-repeat;
+  }
+
+
 }
 body {
   font-family: sans-serif;
@@ -107,6 +134,18 @@ body {
   align-items: center;
   padding: 7rem 1rem;
 }
+@media screen and (max-width:460px){
+
+
+  .container {
+
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 1rem;
+    
+  }
+
+}
 
 .portfolio-section {
   padding: 5%;
@@ -116,6 +155,18 @@ body {
   margin: 0 auto;
   top: 5%;
   position: relative; /* Changed to relative */
+}
+@media screen and (max-width:460px){
+
+  .portfolio-section {
+    padding: 5%;
+    text-align: left;
+    background: white;
+    max-width: 800px;
+    position: relative; /* Changed to relative */
+  }
+
+
 }
 
 .portfolio-text {
@@ -149,11 +200,26 @@ body {
   position: absolute;
   width: 100%;
   height: 40vh;
-  top: 75%;
+  top: 80%;
   background-image: url("assets/Screenshot 2024-06-07 125042.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width:460px){
+  .skills {
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    top: 95%;
+    background-image: url("assets/Screenshot 2024-06-07 125042.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
 }
 
 /* Frame 63 */
@@ -166,6 +232,21 @@ body {
   background: linear-gradient(90deg, #D9D9D9 0%, #AEA8A8 26.5%);
 
 }
+@media screen and (max-width:460px){
+
+  #frame-63 {
+    position: absolute;
+    width: 70%;
+    height: 200px;
+    left: 15%;
+    top: 85%;
+    background: linear-gradient(90deg, #D9D9D9 0%, #AEA8A8 26.5%);
+  
+  }
+
+
+}
+
 
 /* Vector */
 #vector {
@@ -488,17 +569,16 @@ body {
   position: fixed; /* Changed to fixed to keep it at the bottom of the viewport */
   width: 100%; /* Full width of the viewport */
   height: 80px;
-  bottom: 0; /* Positioned at the bottom of the viewport */
+  bottom: 0px; /* Positioned at the bottom of the viewport */
   background: #ECF0F1;
 }
 
 /* GitHub */
 .github {
-  position: absolute;
   width: 64px;
   height: 90px;
   left: 0;
-  top: 5px; /* Adjusted top value */
+   /* Adjusted top value */
   background: url("assets/GitHub.png"); /* Placeholder URLs */
 }
 
@@ -508,7 +588,7 @@ body {
   width: 51px;
   height: 90px;
   left: 87px;
-  top: 5px;; /* Adjusted top value */
+  top: 5px; /* Adjusted top value */
   background: url("assets/Envelope.png"); /* Placeholder URL */
 }
 
@@ -546,6 +626,22 @@ left: 0px;
 top: 800px;
 
 background: #D9D9D9;
+
+}
+@media screen and (max-width:460px){
+
+  .portfolio{
+    /* Rectangle 46 portfolio */
+   
+   position: absolute;
+   width: 100%;
+   height: 650px;
+   left: 0px;
+   top: 800px;
+   
+   background: #D9D9D9;
+   
+   }
 
 }
  /* Portfolio frame ends here*/
@@ -704,11 +800,10 @@ border-radius: 10px;
   .project-sub{
     /* Rectangle 53 */
   position: absolute;
-  width: 200px;
+  width: 80%;
   height: 70px;
   left: 2px;
   top: 35px;
-  
   background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
   border-radius: 10px;
   
@@ -737,9 +832,9 @@ border-radius: 10px;
   .project-sub2{
     /* Rectangle 53 */
   position: absolute;
-  width: 190px;
+  width: 80%;
   height: 80px;
-  left: 165px;
+  left: 18%;
   top: 35px;
   
   background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
@@ -846,15 +941,11 @@ background-repeat: no-repeat;
 @media screen and (max-width:460px){
 
   .project-image{
-    /* Ellipse 1 */
-   position: absolute;
-   width: 95%;
-   height: 116px;
-   top: 5px;
-   left: 57%;
-   background: url("assets/Ellipse\ 1.png");
-   background-repeat: no-repeat;
    
+display: none;
+
+
+
    }
 
 
@@ -864,13 +955,7 @@ background-repeat: no-repeat;
 /*Project image sections starts here*/
 .project-image2{
   /* Ellipse 1 */
- position: absolute;
- width: 114px;
- height: 116px;
- top: 5px;
- right: 670px;
- background: url("assets/Ellipse\ 1.png");
- background-repeat: no-repeat;
+ display: none;
  
  }
 @media screen and (max-width:460px){
@@ -907,9 +992,9 @@ background: url("assets/Code Fork (1).png");
   position: absolute;
   width: 59px;
   height: 59px;
-  left: 87%;
+  left: 85%;
   top: 30px;
-  background: url("assets/Code Fork (1).png");
+  background: url("assets/Code\ Fork\ \(1\).png");
   
   }
 
@@ -955,6 +1040,21 @@ top: 1800px;
 background-image: url("assets/Rectangle\ 44.png");
 background-repeat: no-repeat;
 background-size: cover;
+}
+@media screen and (max-width:460px){
+  .contact-section{
+    /* Rectangle 43 */
+    
+    position: absolute;
+    width: 100%;
+    height:480px;
+    top: 1450px;
+    background-image: url("assets/Rectangle\ 44.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
 }
 /*contact section starts here*/
 .contact-head{
@@ -1053,6 +1153,7 @@ background: url("assets/Place\ Marker.png");
 
 
 }
+
 .location-content{
   /* Eldoret, Kenya */
 

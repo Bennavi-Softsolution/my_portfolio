@@ -212,6 +212,7 @@ body {
 }
 .h4{
   margin-right: 0;
+
 }
 
 a {
@@ -295,6 +296,12 @@ a:hover {
   display: flex;
 }
 
+.imageContainer{
+  display: flex;
+  width: max-content;
+  position: inherit;
+}
+
 
 .imageContainer{
   display: flex;
@@ -312,6 +319,7 @@ a:hover {
   border-radius: 30%;
   font-size: 25px;
   padding: 0 1rem 0 0;
+
 }
 
 .link{
@@ -387,11 +395,14 @@ a:hover {
 .icon {
   font-size: 50px;
   width: 10vw;
+
 }
+
 
 .iconContainer p {
   width: 10vw;
 }
+
 
 .mainContainer {
   position: relative;
@@ -579,6 +590,7 @@ button{
     left: 25px;
   }
 
+
   .image{
     width: 50px;
     height: 50px;
@@ -603,6 +615,7 @@ button{
     margin-top: 20px;
   }
 
+
   .footer{
     left: 0;
   }
@@ -618,6 +631,7 @@ button{
     width:80vw;
   }
 
+
   /* navbar section */
   .navBar{
     font-size:  12px;
@@ -627,6 +641,7 @@ button{
     justify-content: center;
     padding: 20px 0px;
   }
+
 
   .contactList {
     width: 5vw;
