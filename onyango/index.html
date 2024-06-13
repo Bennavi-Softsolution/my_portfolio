@@ -12,7 +12,7 @@
 
   </head>
   <body>
-    
+
 <!-- NAVBAR -->
 <nav>
   <div class="nav_content">
@@ -21,11 +21,12 @@
       <i class="ri-menu-2-line"></i>
     </label>
     <input type="checkbox" name="check" id="check" />
+
     <ul class="menu">
-      <li><a href="#">SKILLS</a></li>
-      <li><a href="#">PROJECT</a></li>
-      <li><a href="#">RESUME</a></li>
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#project">PROJECT</a></li>
+      <li><a href="#resume">RESUME</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
 </nav>
@@ -48,10 +49,11 @@
     </div>
     <div class="image">
       <img src="./asset/WongProfile.png" alt="profile"/>
-    </div>  
-  </div> 
+    </div>
+  </div>
+  
     <!-- SKILLS SECTION --> 
- <div class="skills_container" >
+ <div id="skills" class="skills_container" >
   <div class="my_skills">
     MY SKILLS
   </div>
@@ -92,8 +94,9 @@
   
  </div> 
 </section>
+
 <!--container for the project section-->
-    <div class="container-fluid">
+    <div id="project" class="container-fluid">
       <div class="ject">
         <!--button for "my project" heading-->
          <button class="proj"> <h3 class="txt"> MY PROJECTS </h3> </button>
@@ -105,7 +108,7 @@
       <li>    
   <div class="namba" onclick="toggleDescription('desc1')">
       <span>Project 1</span>
-      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+      <span class="namba-icone"><img src="./asset/updrop.png"></span>
   </div>
   <div id="desc1" class="namba-description">
       This is the description for Project 1. It includes details about the project's goals, milestones, and outcomes.
@@ -115,7 +118,7 @@
       <li>
   <div class="namba" onclick="toggleDescription('desc2')">
       <span>Project 2</span>
-      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+      <span class="namba-icone"><img src="./asset/updrop.png"></span>
   </div>
   <div id="desc2" class="namba-description">
       This is the description for Project 2. It includes details about the project's goals, milestones, and outcomes.
@@ -125,7 +128,7 @@
   <li>
   <div class="namba" onclick="toggleDescription('desc3')">
       <span>Project 3</span>
-      <span class="namba-icone"><img src="../onyango/asset/updrop.png"></span>
+      <span class="namba-icone"><img src="./asset/updrop.png"></span>
   </div>
   <div id="desc3" class="namba-description">
       This is the description for Project 3. It includes details about the project's goals, milestones, and outcomes.
@@ -135,36 +138,37 @@
    <!--list of projects ends here-->
 
    <!--Download Resume button-->
-      <button class="cvitae"><p>DOWNLOAD RESUME   <img src="../onyango/asset/download.png"></p></button>
+      <button id="resume" class="cvitae"><p class="cvitae">DOWNLOAD RESUME   <img src="./asset/download.png"></p></button>
 
       </div>
  <!--section for contacts starts-->
-      <div class="last-sect">
+      <div id="contact" class="last-sect">
         <p class="tt"> TALK TO ME: </p>
+
+        <br>
+
         <button class="icones-buton">
-         <a href="#">
-           <img src="../onyango/asset/VectorX.png" alt="Twitter" class="icone">
+         <a href="https://x.com/Snow_MrStark">
+           <img src="./asset/VectorX.png" alt="Twitter" class="icone">
          </a>
-         <a href="#">
-          <img src="../onyango/asset/mail.png" alt="Mail" class="icone">
+         <a href="stanleyonyango84@gmail.com">
+          <img src="./asset/mail.png" alt="Mail" class="icone">
          </a>
-         <a href="#">
-          <img src="../onyango/asset/github.png" alt="Github" class="icone">
+         <a href="https://github.com/starkMrSnow">
+          <img src="./asset/github.png" alt="Github" class="icone">
          </a>
-         <a href="#">
-          <img src="../onyango/asset/linkedin.png" alt="Linkedln" class="icone">
+         <a href="https://www.linkedin.com/in/stanley-otieno-4b312830b/">
+          <img src="./asset/linkedin.png" alt="Linkedln" class="icone">
          </a>
-         <a href="#">
-          <img src="../onyango/asset/VectorIG.png" alt="Instagram" class="icone">
+         <a href="https://www.instagram.com/stark_mr.snow/">
+          <img src="./asset/VectorIG.png" alt="Instagram" class="icone">
          </a>
         </button>
       </div>
-
-      </div>
-  </div>
-
-
-
+    </div>
+<!--Section for contacts ends here--> 
+</div> 
+   
 
   <script>
     function toggleDescription(id) {
@@ -175,8 +179,27 @@
             description.style.display = "none";
         }
     }
-</script>
+    //DISABLE SCROLLING 
+    document.addEventListener('DOMContentLoaded', () => {
+        const checkbox = document.getElementById('check');
+        const body = document.body;
+        const menuLinks = document.querySelectorAll('.menu li a');
+        checkbox.addEventListener('change', (event) => {
+            if (event.target.checked) {
+                body.classList.add('no-scroll');
+            } else {
+                body.classList.remove('no-scroll');
+            }
+        });
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            body.classList.remove('no-scroll');
+            checkbox.checked = false;
+        });
+    });
+});
 
+</script>
 
 </body>
 
