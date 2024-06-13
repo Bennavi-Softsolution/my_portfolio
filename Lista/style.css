@@ -66,8 +66,14 @@ body {
   height: 30vh;
 }
 
+.head-section {
+  display: flex;
+  width: 100vw;
+}
+
 .about-section {
   display: flex;
+  width: 100vw;
   
   
 }
