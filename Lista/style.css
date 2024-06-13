@@ -228,7 +228,7 @@ a:hover{
   display: flex;
   justify-content: center;
   height: 120px;
-  width: 70%;
+  width: 70vw;
   margin: 25px auto;
   align-items: center;
 }
@@ -436,7 +436,9 @@ button{
   margin-left: 30px;
 }
 
-@media only screen and (max-width: 500px){
+/* phone responsiveness */
+
+@media only screen and (max-width: 1200px){
 
   .contactList{
     width: 100vh;
@@ -445,5 +447,34 @@ button{
     height: max-content;
   }
 
+/* Portfolio section */
+  .portfolio{
+    width: 100vh;
+  }
+
+  .project{
+    width: 90%;
+  }
+
+
 }
 
+
+@media only screen and (max-width: 500px){
+/* Small screen portfolio section */
+  .portfolio{
+    font-size: 17px;
+  }
+
+  .project{
+    width: 80%;
+    margin: 15px auto;
+  }
+
+  .projectLink{
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
+    margin: 20px 20px;
+  }
+}
