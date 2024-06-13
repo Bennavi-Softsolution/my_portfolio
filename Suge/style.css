@@ -1,27 +1,24 @@
 body {
   font-family: sans-serif;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+ 
   
 }
+
+
+
 /* Navbar */
 .navbar {
   position: fixed;
   width: 100%;
   height: 70px;
-  padding: 5px;
-  font-size: 20px;
+  font-size: 14px;
   background: #ECF0F1;
-  display: flex;
+
   justify-content: space-between;
-  padding: 0.5rem 1rem;
   top: 0;
   left: 0;
+  
 }
-
 
 /* Searchbar */
 .searchbar {
@@ -152,30 +149,22 @@ body {
   position: absolute;
   width: 100%;
   height: 40vh;
-  top: 70%;
+  top: 75%;
   background-image: url("assets/Screenshot 2024-06-07 125042.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.rectangle-61 {
-  position: absolute;
-  width: 50%;
-  height: 30vh;
-  left: 25%;
-  top: 77%;
-  background: linear-gradient(90deg, #D9D9D9 0%, #AEA8A8 26.5%);
-  border-radius: 15px;
-}
-
 /* Frame 63 */
 #frame-63 {
   position: absolute;
-  width: 482px;
+  width: 70%;
   height: 207px;
-  left: 550px;
-  top: 600px;
+  left: 15%;
+  top: 77%;
+  background: linear-gradient(90deg, #D9D9D9 0%, #AEA8A8 26.5%);
+
 }
 
 /* Vector */
@@ -237,7 +226,20 @@ body {
   top: 0px;
   background-image: url("assets/Javascript logo.png");
 }
+@media screen and (max-width:460px){
+
+  #Javascript-logo {
+    position: absolute;
+    width: 68px;
+    height: 30px;
+    left: 40%;
+    top: 0px;
+    background-image: url("assets/Javascript logo.png");
+  }
+
+}
 /* JavaScript */
+
 
 /* PHP */
 #php-logo {
@@ -269,11 +271,25 @@ body {
   position: absolute;
   width: 48px;
   height: 41px;
-  left: 0px;
+  left: 45%;
   top: 0px;
   background: #000000;
   background-image: url("assets/Group 47.png");
   border-radius: 3px;
+}
+@media screen and (max-width:460px){
+  #Rectangle-57 {
+    position: absolute;
+    width: 48px;
+    height: 41px;
+    left: 80%;
+    top: 0px;
+    background: #000000;
+    background-image: url("assets/Group 47.png");
+    border-radius: 3px;
+  }
+
+
 }
 
 /* php logo */
@@ -285,6 +301,45 @@ body {
   top: 114px;
   background-image: url("assets/php logo.png");
 }
+@media screen and (max-width:460px){
+  #php-logo {
+    position: absolute;
+    width: 62px;
+    height: 48px;
+    left: 73%;
+    top: 114px;
+    background-image: url("assets/php logo.png");
+  }
+
+
+}
+
+#vector2 {
+  position: absolute;
+  width: 62px;
+  height: 48px;
+  left: 201px;
+  top: 114px;
+  background-image: url("assets/Vector\ \(2\).png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width:460px){
+  #vector2 {
+    position: absolute;
+    width: 62px;
+    height: 48px;
+    left: 40%;
+    top: 114px;
+    background-image: url("assets/Vector\ \(2\).png");
+    background-repeat: no-repeat;
+  }
+  
+
+
+}
+
+
 
 /* Python */
 #Python {
@@ -300,16 +355,23 @@ body {
   line-height: 19px;
   color: #000000;
 }
+@media screen and (max-width:460px){
 
-/* Vector 2 */
-#vector2 {
-  position: absolute;
-  left: 45.44%;
-  right: 48.34%;
-  top: 60.87%;
-  bottom: 21.74%;
-  
-  background-image: url("assets/Vector (2).png");
+  #Python {
+    position: absolute;
+    width: 45px;
+    height: 19px;
+    left: 40%;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+
 }
 
 /* JavaScript */
@@ -326,6 +388,23 @@ body {
   line-height: 19px;
   color: #000000;
 }
+@media screen and (max-width:460px){
+
+  #JavaScript {
+    position: absolute;
+    width: 74px;
+    height: 19px;
+    left: 40%;
+    top: 58px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+}
 /* PHP */
 #PHP {
   position: absolute;
@@ -340,6 +419,23 @@ body {
   line-height: 19px;
   color: #000000;
 }
+@media screen and (max-width:460px){
+
+  #PHP {
+    position: absolute;
+    width: 26px;
+    height: 19px;
+    left: 80%;
+    top: 188px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+}
 #MySQL {
   position: absolute;
   width: 42px;
@@ -352,6 +448,23 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+}
+@media screen and (max-width:460px){
+
+  #MySQL {
+    position: absolute;
+    width: 42px;
+    height: 19px;
+    left: 78%;
+    top: 58px;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
 }
 /* Skills */
 #Skills {
@@ -419,160 +532,6 @@ body {
   background: url("assets/TwitterX.png"); /* Placeholder URL */
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  /* Navbar */
-  .navbar {
-    height: 50px;
-    width: 100%;
-
-  }
-
-  /* Searchbar */
-  .searchbar {
-    max-width: 100%;
-    left: 0%;
-    top: 40px;
-  }
-  .search {
-    position: absolute;
-    width: 2%;
-    height: 29px;
-    left: 0%;
-    top:40px;
-    background: url('assets/Search.png');
-  }
-
-  /* Navigation Links Container */
-  .nav-links {
-    width: auto;
-    position: unset;
-  }
-
-  /* Contact Button */
-  .contact-button {
-    max-width: 100%;
-    left: 18%;
-    top: 40px;
-  }
-
-  /* Contact Text */
-  .contact {
-    max-width: 100%;
-    left: 20%;
-    top: 38px;
-    font-size: medium;
-    
-  }
-
-  .portfolio-section {
-    padding: 10%;
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-    top: 5%;
-}
-.portfolio-text {
-max-width: 90%;
-font-size: x-small;
-padding: 10%;
-top: 5%;
-left: 0%;
-text-align: left;
-}
-/* Resume Button */
-.resume-button {
-margin-top: 1rem;
-max-width: 100%;
-left: 18%;
-}
-
-/* Profile Picture */
-.profile-picture {
-width: 20%;
-}
-  }
-  
-
-
-  @media screen and (max-width: 600px) {
-    .portfolio-section {
-        padding: 0%;
-        max-width: 100%;
-        top: 50%; /* Adjust top positioning for smaller screens */
-        margin-left: -15%;
-    }
-    .container {  /* Assuming a container exists */
-      width: 70%;  /* Adjust container width as needed */
-      top: 0;
-      left: 0%;
-    }
-
-    .portfolio-text {
-        font-size: x-small;
-        line-height: 22px;
-        padding: 20%;
-        top: 30px;
-        margin-left: -9%;
-    }
-
-    .resume-button {
-      width: 50%; 
-      left: 0; 
-      margin-left: -15%;
-      text-align: center;
-      top: -30px;
-      padding: 2%;
-    }
-
-    .profile-picture {
-        width: 50%;
-        margin: 0 auto; /* Center the profile picture */
-        margin-top: 1rem; /* Add some margin to the top */
-        background-color: #737373;
-    }
-}
-
-@media screen and (max-width: 768px) {
-  #Skills {
-    left: -565px; /* Problematic value */
-    top: 47px; /* Problematic value */
-    padding: 20px;
-    font-size: large;
-}
-}
-
-@media (max-width: 768px) {
-.skills {
-    background-size: 110%;
-    width: 80%; /* Adjusted background size for smaller screens */
-    height: 30vh;
-}
-.rectangle-61 {
-  width: 50%; /* Adjusted width for smaller screens */
-  height: 10vh; /* Adjusted height for smaller screens */
-  left: 15%; /* Adjusted left position for smaller screens */
-  top: 80%; /* Adjusted top position for smaller screens */
-}
-#frame-63 {
-width: -10%; /* Adjusted width for smaller screens */
-height: 20vh;
-left: 15%; /* Adjusted left position for smaller screens */
-top: 70%; /* Adjusted top position for smaller screens */
-
-}
-
-#vector {
-  left: 0%; /* Adjusted left position for smaller screens */
-  right: auto; /* Reset right position */
-  top: 5%; /* Adjusted top position for smaller screens */
-  bottom: auto; /* Reset bottom position */
-  width: 20%; /* Adjusted width for smaller screens */
-  height: auto; /* Let the height adjust automatically for smaller screens */
-  background-size: contain; /* Adjust background size for smaller screens */
-  background-image: url("assets/Vector (1).png");
-}
-}
 
 
   
@@ -602,6 +561,21 @@ height: 128px;
 left: 58px;
 top: 50px;
 background-image: url("assets/Rectangle\ 48.png");
+}
+
+@media screen and (max-width:460px){
+
+  .project-section1{
+
+    /* Group 49 */
+    
+    position: absolute;
+    width: 100%;
+    height: 128px;
+    left: 0px;
+    top: 50px;
+    background-image: url("assets/Rectangle\ 48.png");
+    }
 
 
 }
@@ -638,7 +612,22 @@ top: 200px;
 background: linear-gradient(90deg, #878181 0%, #050404 54%);
 
 }
+@media screen and (max-width:480px){
 
+  .project-section2{
+
+    /* Rectangle 49 */
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 200px;
+  
+  background: linear-gradient(90deg, #878181 0%, #050404 54%);
+  
+  }
+
+}
 /*Project sections under portfolios*/
 .project-section3{
 
@@ -653,6 +642,22 @@ background: linear-gradient(90deg, #878181 0%, #050404 54%);
   
   
   }
+  @media screen and (max-width:460px){
+    .project-section3{
+
+      /* Group 49 */
+      
+      position: absolute;
+      width: 100%;
+      height: 128px;
+      left: 0px;
+      top: 350px;
+      background-image: url("assets/Rectangle\ 48.png");
+      
+      
+      }
+    
+  }
   .project-section4{
 
     /* Rectangle 49 */
@@ -665,6 +670,23 @@ background: linear-gradient(90deg, #878181 0%, #050404 54%);
   background: linear-gradient(90deg, #878181 0%, #050404 54%);
   
   }
+  @media screen and (max-width:460px){
+
+    .project-section4{
+
+      /* Rectangle 49 */
+    position: absolute;
+    width: 100%;
+    height: 137px;
+    left: 0px;
+    top: 500px;
+    
+    background: linear-gradient(90deg, #878181 0%, #050404 54%);
+    
+    }
+
+
+  }
   /*Portfolio Sub section*/
 .project-sub{
   /* Rectangle 53 */
@@ -676,6 +698,21 @@ top: 25px;
 
 background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
 border-radius: 10px;
+
+}
+@media screen and (max-width:480px){
+  .project-sub{
+    /* Rectangle 53 */
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  left: 2px;
+  top: 35px;
+  
+  background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
+  border-radius: 10px;
+  
+  }
 
 }
 
@@ -692,6 +729,24 @@ top: 25px;
 background: linear-gradient(90deg, #FCFAFA 46.63%, #827F7F 90.06%);
 border-radius: 10px;
  /* transform: rotate(-5.61deg);  */
+
+
+}
+@media screen and (max-width:480px){
+
+  .project-sub2{
+    /* Rectangle 53 */
+  position: absolute;
+  width: 190px;
+  height: 80px;
+  left: 165px;
+  top: 35px;
+  
+  background: linear-gradient(90deg, #FCFAFA 46.5%, #827F7F 86.83%);
+  border-radius: 10px;
+  
+  }
+
 
 
 }
@@ -744,8 +799,35 @@ background: linear-gradient(90deg, #000000 0%, #161616 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
-text-fill-color: transparent;
+text-emphasis-color: transparent;
 
+
+
+}
+@media screen and (max-width:480px){
+
+
+  .project-content{
+    /* An admission Module for East Africa V stands for I am not Sure and so does I */
+    
+    position: absolute;
+    font-family: 'Sansita';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    
+    background: linear-gradient(90deg, #000000 0%, #161616 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    
+    
+    
+    }
+
+    
 
 
 }
@@ -761,6 +843,23 @@ background: url("assets/Ellipse\ 1.png");
 background-repeat: no-repeat;
 
 }
+@media screen and (max-width:460px){
+
+  .project-image{
+    /* Ellipse 1 */
+   position: absolute;
+   width: 95%;
+   height: 116px;
+   top: 5px;
+   left: 57%;
+   background: url("assets/Ellipse\ 1.png");
+   background-repeat: no-repeat;
+   
+   }
+
+
+
+}
 
 /*Project image sections starts here*/
 .project-image2{
@@ -774,7 +873,21 @@ background-repeat: no-repeat;
  background-repeat: no-repeat;
  
  }
+@media screen and (max-width:460px){
 
+  .project-image2{
+    /* Ellipse 1 */
+   position: absolute;
+   width: 100%;
+   height: 116px;
+   top: 5px;
+   left: 49px;
+   background: url("assets/Ellipse\ 1.png");
+   background-repeat: no-repeat;
+   
+   }
+
+}
 .project-fork{
   /* Code Fork */
 
@@ -784,6 +897,22 @@ height: 59px;
 left: 820px;
 top: 30px;
 background: url("assets/Code Fork (1).png");
+
+}
+@media screen and (max-width:460px){
+
+  .project-fork{
+    /* Code Fork */
+  
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  left: 87%;
+  top: 30px;
+  background: url("assets/Code Fork (1).png");
+  
+  }
+
 
 }
 
@@ -799,6 +928,22 @@ background: url("assets/Code Fork (1).png");
 
 }
 
+@media screen and (max-width:460px){
+
+  .project-fork2{
+    /* Code Fork */
+  
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  left: 0px;
+  top: 30px;
+  background: url("assets/Code Fork (1).png");
+  
+  }
+
+
+}
 /*contact section starts here*/
 .contact-section{
 /* Rectangle 43 */
