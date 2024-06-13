@@ -350,18 +350,17 @@
 
   /* button for my project */
 .proj {
-padding: 20px;
 text-align: center;
 background-color: #B3D8D6;
 border-radius: 20px;
 width: 200px;
 height: 50px;
-margin: auto;
+margin: 20px;
 }
 
 /* MY PROJECTS */
 .proj .txt{
-margin: 0;
+margin: auto;
 font-family: 'JetBrains Mono';
 font-style: normal;
 font-weight: 700;
@@ -382,7 +381,7 @@ color: #FFFFFF;
   border-radius: 5px;
   cursor: pointer;
   color: #FFFFFF;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 
@@ -410,14 +409,14 @@ border-radius: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 20px; /* Add margin-top to create space between the project list and the button */
+margin: 20px; /* Add margin to center and create space */
 }
 
 
 
 /* Text and icon within the resume button */
 .cvitae p {
-    margin: 0;
+    margin: auto;
     display: flex;
     align-items: center;
   }
