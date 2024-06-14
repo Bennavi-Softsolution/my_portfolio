@@ -1,0 +1,73 @@
+/* Global CSS variables */
+:root {
+    --main-color: #1D1B1A; /* Main background color */
+    --main-text-color: #F8CBA5; /* Main text color */
+    --secondary-color: #FE8019; /* Secondary color */
+    
+}
+
+/* Styling for the body */
+body {
+    background-color: var(--main-color); /* Set background color */
+    color: var(--main-text-color); /* Set text color */
+
+}
+
+/* Styling for the navigation bar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Inika';
+
+}
+
+/* Styling for the menu list */
+.menuBar ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: item; /* Reset the counter for numbering */
+
+}
+
+/* Styling for each menu item */
+.menuBar ol li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 20px;
+    color: var(--secondary-color); /* Set text color */
+    cursor: pointer;
+    position: relative; /* Set position to relative for dot */
+
+}
+
+/* Styling for the dot before each menu item */
+.menuBar ol li:before {
+    content: counter(item) ". "; /* Use the counter for numbering and add a dot */
+    counter-increment: item;
+    margin-right: 5px;
+    position: absolute; /* Position the dot absolutely */
+    left: -15px; /* Adjust the position of the dot */
+
+  }
+
+  /* Styling for the resume button */
+.resumeContainer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color); /* Set background color */
+    color: var(--secondary-color); /* Set text color */
+    cursor: pointer;
+    outline: 2px solid ; /* Add outline */
+    font-family: 'Inika';
+    
+}
+
+/* Styling for the resume button on hover */
+.resumeContainer button:hover {
+    background-color: var(--secondary-color); /* Change background color on hover */
+    color: var(--main-color); /* Change text color on hover */
+
+}
