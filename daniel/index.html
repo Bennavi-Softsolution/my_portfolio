@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Portfolio</title>
     <link rel="stylesheet" href="./style.css">
-
+  
+<!--   Embedding Remixi icons -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
     <!-- google fonts linking -->
                 <!-- FIRA CODE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,24 +29,34 @@
 
 </head>
 <body>
+    <!--Navbar-->
     <div class="Navbar">
 
-        <div class="Nav_Content">
-            <div class="Logo">
-                <div class="G_Than">></div>
-                <div class="Cursor">|</div>
-                <div class="L_Text">daniel.me</div>
-            </div>
-            <div class="Search">
-                <div class="S_Text">Search ...</div>
-            </div>
-            <div class="menu">
-                <ul class="Menu_Content">
-                    <li class="menu_item">Projects</li>
-                    <li class="menu_item">Resume</li>
-                    <li class="menu_item">About</li>
-                </ul>
-            </div>
+        <div class="Nav_Content">     
+                <div class="Logo">
+                    <div class="G_Than">></div>
+                    <div class="Cursor">|</div>
+                    <div class="L_Text">daniel.me</div>
+                </div>
+                <div>
+                    <div class="S_Text">
+                        <input class="Search" type="search" placeholder="Search ..." aria-label="Search">
+                    </div>
+                </div>
+                <div class="Menu">
+                    <ul class="Menu_Content">
+                        <li class="menu_item">Projects</li>
+                        <li class="menu_item">Resume</li>
+                        <li class="menu_item">About</li>
+                    </ul>
+                </div>
+                <button class="Theme">
+                    <img class="T_Img" src="./assets/sun.png" alt="Theme">
+                </button>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+
         </div>
     </div>
 
