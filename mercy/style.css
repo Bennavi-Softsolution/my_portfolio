@@ -3,7 +3,7 @@
     --main-color: #1D1B1A; /* Main background color */
     --main-text-color: #F8CBA5; /* Main text color */
     --secondary-color: #FE8019; /* Secondary color */
-    
+
 }
 
 /* Styling for the body */
@@ -20,6 +20,12 @@ body {
     align-items: center;
     padding: 20px;
     font-family: 'Inika';
+
+}
+
+/* Styling for the logo at the top */
+.mwLogo {
+    cursor: pointer;
 
 }
 
@@ -70,4 +76,43 @@ body {
     background-color: var(--secondary-color); /* Change background color on hover */
     color: var(--main-color); /* Change text color on hover */
 
+}
+
+/* Sidebar Toggle styles */
+.sidebarToggle {
+    display: none;
+    padding: 10px;
+}
+
+.sidebarToggle span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: row;
+    }
+
+    .mwLogo {
+        margin-left: -10vw;
+    }
+
+    .menuBar {
+        display: none;
+    }
+
+    .resumeContainer {
+        display: none;
+    }
+
+    .sidebarToggle {
+        display: block;
+        cursor: pointer;
+    }
 }
