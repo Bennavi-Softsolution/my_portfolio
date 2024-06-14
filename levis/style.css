@@ -12,7 +12,7 @@
   }
  
   /* LEVIS' PORTFOLIO */
-.body{
+body {
     background: #085E72;
     font-family: 'JetBrains Mono', monospace;
     }
@@ -23,7 +23,7 @@
   nav {
     width: 100%;
     position: relative;
-    background: #085E72;
+    background: #063643;
     z-index: 99;
   }
 
@@ -143,5 +143,69 @@ color: #FFFFFF;
 @media (min-width: 769px) {
     .nav_contents > label {
         display: none;
+    }
+}
+
+
+.abt{
+width: 100%;
+margin: 20px auto;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.abt .text-container {
+    width: 70%;
+}
+
+.abt .text, .abt .txt {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.abt .text {
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.abt .txt {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.abt .imag {
+    width: 30%;
+    max-width: 200px;
+    height: 150px;
+    border-radius: 50% / 40%; /* Makes the image elliptical */
+    background: #171E33;
+    margin-right: 100px; /* Adjust margin to keep the image from the edge */
+}
+
+/* Responsive Styles for abt Section */
+@media (max-width: 768px) {
+    .abt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abt .text-container, .abt .imag {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abt .text, .abt .txt {
+        width: 100%;
+    }
+
+    .abt .imag {
+        max-width: 200px;
+        height: 150px;
+        margin-right: 0; /* Remove right margin on mobile */
+        margin-bottom: 20px; /* Add margin-bottom for spacing */
     }
 }
