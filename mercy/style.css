@@ -118,12 +118,14 @@ body {
     display: none;
 }
 
-.menuBar.show .closeButton {
-    display: block;
-}
+
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+
+    .menuBar.show .closeButton {
+        display: block;
+    }
     .navBar {
         flex-direction: row;
     }
@@ -187,8 +189,8 @@ body {
     .closeButton {
         position: absolute;
         top: 1%;
-        right: 45%;
-        padding: 10px; /* Add padding for better appearance */
+        right: 55%;
+        padding: 30px; /* Add padding for better appearance */
         background-color: var(--sidebar-color); /* Set background color */
         border: 2px solid var(--sidebar-color); /* Set border */
         color: var(--secondary-color); /* Set text color */
