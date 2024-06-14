@@ -48,7 +48,7 @@ body {
 .big-box {
   width: 10vw;
   max-width: 100vw;
-
+  
 }
 
 .big-box h6 {
@@ -74,29 +74,25 @@ body {
 .about-section {
   display: flex;
   width: 100vw;
-
-
+  
+  
 }
 
 .portfolio-image {
-  width: 15vw;
+  width: 15vw; 
   max-width: 100%;
-  height: auto;
-  /* Ensures image aspect ratio is maintained */
+  height: auto; /* Ensures image aspect ratio is maintained */
   margin-top: 2vh;
   margin-left: 1vw;
-
+  
 }
 
 .portfolio-image img {
-  display: block;
-  width: 100%;
-  /* Makes the image fill the container */
-  height: auto;
-  /* Ensures image aspect ratio is maintained */
-  border-radius: 36px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  /* Adds a subtle shadow */
+    display: block; 
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Ensures image aspect ratio is maintained */
+    border-radius: 36px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 .portfolio-words {
@@ -110,15 +106,14 @@ body {
 @media screen and (max-width: 768px) {
   .about-section {
     flex-direction: column-reverse;
-    transition: all 1.5s ease-in-out;
-    /* transition effect. doesnt work as intended*/
+    transition: all 1.5s ease-in-out; /* transition effect. doesnt work as intended*/
   }
 
   .portfolio-image {
-    width: 75vw;
+    width: 75vw; 
     max-width: 100%;
     margin-left: 10vw;
-    /* Center the image */
+   /* Center the image */
   }
 
   .portfolio-words {
@@ -215,9 +210,9 @@ body {
   padding-right: 10px;
   margin-left: 30px;
 }
-
-.h4 {
+.h4{
   margin-right: 0;
+
 }
 
 a {
@@ -301,14 +296,20 @@ a:hover {
   display: flex;
 }
 
-
-.imageContainer {
+.imageContainer{
   display: flex;
   width: max-content;
   position: inherit;
 }
 
-.projectLink {
+
+.imageContainer{
+  display: flex;
+  width: max-content;
+  position: inherit;
+}
+
+.projectLink{
   margin: 0 20px;
   display: flex;
   align-items: center;
@@ -318,9 +319,10 @@ a:hover {
   border-radius: 30%;
   font-size: 25px;
   padding: 0 1rem 0 0;
+
 }
 
-.link {
+.link{
   padding: 10px;
 }
 
@@ -330,13 +332,13 @@ a:hover {
   border-radius: 5px;
 }
 
-.more {
+.more{
   position: relative;
   left: 40%;
   height: max-content;
 }
 
-.projectsButton {
+.projectsButton{
   height: 60px;
   width: 200px;
   font-size: 30px;
@@ -348,10 +350,9 @@ a:hover {
 
 }
 
-.projectsButton:hover {
+.projectsButton:hover{
   transform: scale(1.2);
-  background-color: #f3b882;
-  ;
+  background-color: #f3b882;;
 }
 
 /* Beginning of skills section */
@@ -394,11 +395,14 @@ a:hover {
 .icon {
   font-size: 50px;
   width: 10vw;
+
 }
+
 
 .iconContainer p {
   width: 10vw;
 }
+
 
 .mainContainer {
   position: relative;
@@ -432,7 +436,7 @@ a:hover {
 
 .contactList {
   margin-left: 100px;
-
+  
 }
 
 .list {
@@ -442,7 +446,7 @@ a:hover {
 }
 
 
-.contacts {
+.contacts{
   height: max-content;
   width: 30%;
 }
@@ -467,7 +471,7 @@ a:hover {
 input {
   margin: 10px 0;
   height: 30px;
-  width: 40vh;
+  width: 60vw;
   border: none;
   border-radius: 10px;
 }
@@ -478,7 +482,7 @@ input {
   width: 25vh;
 }
 
-button {
+button{
   margin: 10px 30px;
   height: 30px;
   width: 20vh;
@@ -518,9 +522,9 @@ button {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px){
 
-  body {
+  body{
     width: 100vw;
   }
 
@@ -531,25 +535,25 @@ button {
     height: max-content;
   }
 
-  /* Portfolio section */
-  .projectname {
+/* Portfolio section */
+  .projectname{
     font-size: 17px;
   }
 
-  .contactsection {
+  .contactsection{
     width: 100vw;
     flex-direction: column;
   }
 
-  .contact-me {
+  .contact-me{
     flex-direction: column;
   }
 
-  .list {
+  .list{
     flex-direction: column;
   }
 
-  .input {
+  .input{
     margin-top: 30px;
   }
 
@@ -557,72 +561,80 @@ button {
 }
 
 
-@media only screen and (max-width: 500px) {
-
-  /* Small screen portfolio section */
-  .portfolio {
+@media only screen and (max-width: 500px){
+/* Small screen portfolio section */
+  .portfolio{
     font-size: 17px;
     width: 80vw;
     margin-left: 5vw;
   }
 
-  .project {
+  .project{
     margin: 10px auto;
     width: 80vw;
   }
 
-  .projectLink {
+  .projectLink{
     height: 16px;
     width: 16px;
     font-size: 15px;
     margin: 5px 5px 0 5px;
   }
 
-  .projectname {
+  .projectname{
     font-size: 16px;
     margin: 0 15px;
   }
 
-  .more {
+  .more{
     left: 25px;
   }
 
-  .image {
+
+  .image{
     width: 50px;
     height: 50px;
   }
 
   /* contact section */
 
-  .contact-me {
-    width: 100vw;
+  .contact-me{
+    width: 80vw;
+    border-radius: 50px 50px 0 0;
   }
 
-  .contactdiv {
-    align-items: start;
+  .contactdiv p{
+    margin-left: 10px;
   }
 
-  .list {
+  .list{
     flex-direction: column;
   }
 
-  .input {
+  .input{
     margin-top: 20px;
   }
 
-  .social {
-    font-size: 20px;
+
+  .footer{
+    left: 0;
+  }
+
+  .social{
+    font-size: 17px;
+    padding: 0.5rem 0.5rem;
   }
 
   /* skills section */
-  .skills {
+  .skills{
     font-size: 10px;
-    width: 80vw;
+    width:80vw;
   }
 
+
   /* navbar section */
-  .navBar {
-    font-size: 12px;
+  .navBar{
+    font-size:  12px;
     text-size-adjust: 5px;
     width: 100vw;
     flex-direction: column;
@@ -630,10 +642,8 @@ button {
     padding: 20px 0px;
   }
 
+
   .contactList {
     width: 5vw;
-    border-radius: 100px 100px 0 0;
-    padding: 5px 10px;
-    height: max-content;
   }
 }
