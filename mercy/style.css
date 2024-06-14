@@ -78,6 +78,11 @@ body {
 
 }
 
+/* Styling for the resume button in mobile */
+.resumeContainerMobile {
+    display: none; /* Initially hide the resume button in desktop */
+}
+
 /* Sidebar Toggle styles */
 .sidebarToggle {
     display: none;
@@ -136,6 +141,8 @@ body {
         counter-reset: item;
         display: flex;
         flex-direction: column;
+        margin-bottom: 5vh;
+        margin-top: 15vh;
     }
 
     /* Styling for each menu item */
@@ -145,6 +152,7 @@ body {
         position: relative;
         margin: 25px 0;
         padding: 10px;
+        margin-bottom: 5vh;
     }
 
     /* Styling for the dot before each menu item*/
@@ -180,6 +188,36 @@ body {
     .sidebarToggle {
         display: block;
         cursor: pointer;
+    }
+
+    /* hide the resume button in desktop */
+    .resumeContainer {
+        display: none;
+    }
+
+    /* show the resume button in mobile */
+    .resumeContainerMobile {
+        display: block;
+        
+    }
+
+    .resumeContainerMobile button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--sidebar-color); /* Set background color */
+        color: var(--secondary-color); /* Set text color */
+        cursor: pointer;
+        outline: 2px solid ; /* Add outline */
+        font-family: 'Inika';
+        margin-left: 27vw;
+        
+    }
+
+    .resumeContainerMobile button:hover {
+        background-color: var(--secondary-color); /* Set background color */
+        color: var(--sidebar-color); /* Set text color */
+                
     }
 
 }
