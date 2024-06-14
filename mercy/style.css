@@ -657,12 +657,17 @@ top: 1450px;
 .project-subsection{
     /* Group 47 */
 
-position: absolute;
-width: 899px;
-height: 348px;
-left: 105px;
+/* Rectangle 56 */
 
-background-color: #F28A2A;
+position: absolute;
+width: 80%;
+height: 348px;
+left: 10%;
+top: 70px;
+
+background: rgba(242, 138, 42, 0.74);
+box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
 
 }
 .project-title{
@@ -682,6 +687,40 @@ align-items: center;
 text-transform: capitalize;
 
 color: #F8CBA5;
+
+
+}
+.project-line{
+    /* Line 1 */
+
+position: absolute;
+width: 350.36px;
+height: 1px;
+left: 712px;
+top: 22px;
+
+}
+.first-angle-bracket{
+
+/* Group 8 */
+
+position: absolute;
+width: 51px;
+height: 47px;
+left: 8%;
+top:200px;
+
+}
+.second-angle-bracket{
+/* Vector */
+
+position: absolute;
+left: 90.36%;
+right: 2.45%;
+top:200px;
+bottom: 29.79%;
+
+background: #F8CBA5;
 
 
 }
