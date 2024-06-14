@@ -29,6 +29,8 @@ body{
 
 /* beginning of the body section */
 .body-container{
+    position: relative;
+    top: 20vh;
     display: flex;
     justify-content: space-between;
 }
