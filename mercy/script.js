@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 
-    // Show sidebar initially on larger screens
-    if (window.innerWidth > 768) {
-        menuBar.classList.add('show');
-    }
+    // Show sidebar initially on larger screens. uncomment if needed
+   // if (window.innerWidth > 768) {
+    //    menuBar.classList.add('show');
+   // }
 });

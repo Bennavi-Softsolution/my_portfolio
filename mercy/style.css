@@ -10,7 +10,7 @@
 body {
     background-color: var(--main-color); /* Set background color */
     color: var(--main-text-color); /* Set text color */
-
+    font-family: 'Inika';
 }
 
 /* Styling for the navigation bar */
@@ -243,6 +243,63 @@ body {
                 
     }
 
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about h5 {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+}
+
+.about h3 {
+    color: var(--main-text-color);
+    font-size: 1.8em;
+}
+
+.about h4 {
+    width: 68vw;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 46px;
+    background: linear-gradient(270deg, #837A72 22.62%, #E9D9CB 38.62%, #E3D3C5 68.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+}
+.aboutInformation {
+    width: 100vw;
+}
+.aboutInformation p {
+    font-size: 1.3em;
+    width: 14vw;
+}
+
+.aboutInformation hr {
+    width: 40vw;
+    margin-top: -3.5vh;
+    margin-bottom: 2vh;
+    margin-left: 15vw;
+    color: #D65D0E;
+}
+
+.paragraph {
+    margin-top: 3vh;
+    width: 50vw;
+    font-family: 'JetBrains Mono';
+    font-size: 0.9em;
 }
 
 /*footer section styling starts here*/
