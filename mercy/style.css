@@ -140,11 +140,11 @@ color: rgba(248, 203, 165, 0.5);
 
 }
 
-/*footer section styling ends here*/
 
-/*contact me section starts here*/
 
-.contact-section{
+
+
+.social-section{
 
 /* Frame 10 */
 /* Auto layout */
@@ -162,8 +162,6 @@ top: 2596px;
 
 
 }
-
-
 
 
 @media screen and (max-width:768px){
@@ -212,9 +210,9 @@ top: 2596px;
 
 
 
-/*contact me section ends here*/
+/*footer section styling ends here*/
 
-/*media section under the contact me section starts here*/
+/*media section under the footer section starts here*/
 
 .linkedin{
     /* Vector */
@@ -333,4 +331,4 @@ flex-grow: 0;
 
 }
 
-/*media section under the contact me section ends here*/
+/*media section under the footer section ends here*/
