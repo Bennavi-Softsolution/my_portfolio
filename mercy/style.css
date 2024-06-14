@@ -257,5 +257,80 @@ flex-grow: 0;
 
 
 }
+.twitter{
+
+/* Vector */
+
+width: 50px;
+height: 50px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+
+}
+@media screen and (max-width:768px){
+    .linkedin{
+        /* Vector */
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    }
+    .github{
+    
+    /* Vector */
+    
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    
+    }
+    
+    .instagram{
+    
+    /* Vector */
+    
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    
+    
+    
+    }
+    .twitter{
+    
+    /* Vector */
+    
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    
+    
+    
+    }
+
+
+}
 
 /*media section under the contact me section ends here*/
