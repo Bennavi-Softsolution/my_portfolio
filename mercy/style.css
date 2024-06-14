@@ -344,8 +344,20 @@ flex-grow: 0;
 position: absolute;
 width: 610.44px;
 height: 230px;
-left: 105px;
+left: 95px;
 top: 2321px;
+}
+@media screen and (max-width:768px){
+    .contact-section{
+
+        /* Group 43 */
+        
+        position: absolute;
+        width: 610.44px;
+        height: 230px;
+        left: 1%;
+        top: 2321px;
+        }
 }
 .contact-subsection{
 /* Group 42 */
@@ -355,18 +367,29 @@ height: 155px;
 left: 150px;
 top: 30%;
 }
+@media screen and (max-width:768px){
+    .contact-subsection{
+        /* Group 42 */
+        position: absolute;
+        width: 398px;
+        height: 155px;
+        left: 10%;
+        top: 30%;
+        }
+
+}
 .contact-head{
     /* 5. CONTACT ME */
 
 position: absolute;
 width: 230px;
 height: 39px;
-left: 105px;
+left: 20%;
 
 font-family: 'Inika';
 font-style: normal;
 font-weight: 700;
-font-size: 24px;
+font-size: 20px;
 line-height: 39px;
 /* identical to box height */
 display: flex;
