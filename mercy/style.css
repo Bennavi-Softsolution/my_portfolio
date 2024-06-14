@@ -346,10 +346,37 @@ width: 610.44px;
 height: 230px;
 left: 105px;
 top: 2321px;
+}
+.conct-subsection{
+/* Group 42 */
+position: absolute;
+width: 398px;
+height: 155px;
+left: 206px;
+top: 2396px;
+}
+.contact-head{
+    /* 5. CONTACT ME */
+
+position: absolute;
+width: 230px;
+height: 39px;
+left: 105px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
 
 
 }
-
 
 
 
