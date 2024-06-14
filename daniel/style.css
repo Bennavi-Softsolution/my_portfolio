@@ -1,0 +1,25 @@
+body{
+    background-color: #282828;
+    color: #EBDBB2;
+}
+
+.body-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section{
+    height: 100vh;
+    box-shadow: 1px #EBDBB2;
+    width: 20vw;
+}
+
+.profile{
+    height: 300px;
+    width: 300px;
+}
+
+.profileImage{
+    width: 280px;
+    height: 280px;
+}
