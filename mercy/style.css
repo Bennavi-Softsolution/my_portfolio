@@ -650,6 +650,38 @@ color: #F8CBA5;
 position: relative;
 background: #1D1B1A;
 
+top: 1450px;
+
+}
+
+.project-subsection{
+    /* Group 47 */
+
+position: absolute;
+width: 899px;
+height: 348px;
+left: 105px;
+
+background-color: #F28A2A;
+
+}
+.project-title{
+ /* 4. PERSONAL PROJECTS */
+
+position: absolute;
+width: 408px;
+height: 77px;
+left: 272px;
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
 
 
 }
