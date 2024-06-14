@@ -29,13 +29,24 @@ body {
 
 }
 
+.menuBar a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.menuBar a:hover {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
 /* Styling for the menu list */
 .menuBar ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
     counter-reset: item; /* Reset the counter for numbering */
-
+    
 }
 
 /* Styling for each menu item */
@@ -45,7 +56,12 @@ body {
     color: var(--secondary-color); /* Set text color */
     cursor: pointer;
     position: relative; /* Set position to relative for dot */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
 
+/* Change color on hover */
+.menuBar ol li:hover {
+    color: var(--main-text-color); /* Change text color on hover */
 }
 
 /* Styling for the dot before each menu item */
@@ -126,6 +142,11 @@ body {
         background-color: var(--sidebar-color);
         transition: left 0.3 ease; /* Add a transition effect for smooth movement */
         z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .menuBar a {
+        text-decoration: none;
+        color: var(--secondary-color);
     }
 
     .menuBar.show {
