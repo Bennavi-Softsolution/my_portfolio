@@ -525,16 +525,488 @@ flex-grow: 0;
 position: absolute;
 width: 610.44px;
 height: 230px;
-left: 105px;
+left: 95px;
 top: 2321px;
+}
+@media screen and (max-width:768px){
+    .contact-section{
+
+        /* Group 43 */
+        
+        position: absolute;
+        width: 610.44px;
+        height: 230px;
+        left: 1%;
+        top: 2321px;
+        }
+}
+.contact-subsection{
+/* Group 42 */
+position: absolute;
+width: 398px;
+height: 155px;
+left: 150px;
+top: 30%;
+}
+@media screen and (max-width:768px){
+    .contact-subsection{
+        /* Group 42 */
+        position: absolute;
+        width: 398px;
+        height: 155px;
+        left: 10%;
+        top: 30%;
+        }
+
+}
+.contact-head{
+    /* 5. CONTACT ME */
+
+position: absolute;
+width: 230px;
+height: 39px;
+left: 20%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 39px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+@media screen and (max-width:460px){
+    .contact-head{
+        /* 5. CONTACT ME */
+    
+    position: absolute;
+    width: 230px;
+    height: 39px;
+    left: 7%;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 39px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    }
+
+}
+
+.contact-line{
+
+    /* Line 1 */
+
+position: absolute;
+width: 353.44px;
+height: 0px;
+left: 50%;
+}
+@media screen and (max-width:768px){
+    .contact-line{
+
+        /* Line 1 */
+    
+    position: absolute;
+   
+    height: 0px;
+    left: 30%;
+    top: 9px;
+    }
+    .width-section{
+        width: 220.44px;
+    }
+    
+}
+.call-icon{
+
+    /* Vector */
+position: absolute;
+left: 18.73%;
+right: 78.55%;
 
 
 }
 
+.call-title{
+    /* +254114097019 */
+
+position: absolute;
+width: 187px;
+height: 41px;
+left: 35%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
 
 
+}
+
+.mail-icon{
+
+    /* Vector */
+position: absolute;
+left: 18.73%;
+right: 78.55%;
+bottom: 45.69%;
+
+}
+.mail-title{
+ /* wairimugitungu@gmail.com */
+
+position: absolute;
+width: 346px;
+height: 41px;
+left: 35%;
+bottom: 45.69%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
 
 
+}
+.location-icon{
+    /* Vector */
 
+position: absolute;
+left: 18.73%;
+right: 78.55%;
+bottom: 12.9%;
+
+}
+.location-title{
+    /* Nairobi */
+
+position: absolute;
+width: 231px;
+height: 41px;
+left: 35%;
+bottom: 12.9%;
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+@media screen and (max-width:768px){
+
+
+    .call-icon{
+
+        /* Vector */
+    position: absolute;
+    left: 3.73%;
+    right: 78.55%;
+    
+    
+    }
+    
+    .call-title{
+        /* +254114097019 */
+    
+    position: absolute;
+    width: 187px;
+    height: 41px;
+    left: 14%;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+    
+    .mail-icon{
+    
+        /* Vector */
+    position: absolute;
+    left: 18.73%;
+    left: 3.73%;
+    bottom: 45.69%;
+    
+    }
+    .mail-title{
+     /* wairimugitungu@gmail.com */
+    
+    position: absolute;
+    width: 346px;
+    height: 41px;
+    left: 14%;
+    bottom: 45.69%;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+    .location-icon{
+        /* Vector */
+    
+    position: absolute;
+    left: 3.73%;
+    right: 78.55%;
+    bottom: 12.9%;
+    
+    }
+    .location-title{
+        /* Nairobi */
+    
+    position: absolute;
+    width: 231px;
+    height: 41px;
+    left: 14%;
+    bottom: 12.9%;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+
+}
 
 /*contact section ends here*/
+/*Project section starts here*/
+.project-section{
+
+/* MERCY_1 */
+position: relative;
+background: #1D1B1A;
+
+top: 1450px;
+
+}
+
+.project-subsection{
+    /* Group 47 */
+
+/* Rectangle 56 */
+
+position: absolute;
+width: 80%;
+height: 348px;
+left: 10%;
+top: 70px;
+
+background: rgba(242, 138, 42, 0.74);
+box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+
+}
+.project-title{
+ /* 4. PERSONAL PROJECTS */
+
+position: absolute;
+width: 408px;
+height: 77px;
+left: 272px;
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+.project-line{
+    /* Line 1 */
+
+position: absolute;
+width: 350.36px;
+height: 1px;
+left: 712px;
+top: 22px;
+
+}
+.first-angle-bracket{
+
+/* Group 8 */
+
+position: absolute;
+width: 51px;
+height: 47px;
+left: 6%;
+top:200px;
+
+}
+.second-angle-bracket{
+/* Vector */
+
+position: absolute;
+left: 91.36%;
+
+top:200px;
+bottom: 29.79%;
+
+background: #F8CBA5;
+
+
+}
+.title-sub{
+
+/* Project 2 */
+position: absolute;
+width: 200.92px;
+height: 43.26px;
+left: 234.4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+
+
+}
+.title2-sub{
+
+/* Developer’s App */
+
+position: absolute;
+width: 362.85px;
+height: 46.44px;
+left: 158.1px;
+top: 10%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+
+color: #000000;
+
+
+}
+.content-sub{
+
+/* A communication app for developerssss */
+
+position: absolute;
+width: 442px;
+height: 87px;
+left: 158px;
+top: 30%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+
+
+}
+.image-sub{
+
+/* Rectangle 65 */
+
+position: absolute;
+width: 250px;
+height: 237.06px;
+left: 643px;
+top: 10%;
+
+background: url(image.png);
+
+}
+.icon-sub{
+/* linkace logo */
+
+position: absolute;
+width: 60px;
+height: 57.26px;
+left: 158.1px;
+top: 60%;
+
+
+}
+.link-sub{
+/* https://github.com/name/repo */
+
+position: absolute;
+width: 354.37px;
+height: 24.81px;
+left: 252px;
+top: 65%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 33px;
+
+color: #000000;
+
+
+}
+a{
+    text-decoration: none;
+    color:#000000;
+}
+/*Project section ends here*/
