@@ -707,7 +707,7 @@ top: 22px;
 position: absolute;
 width: 51px;
 height: 47px;
-left: 8%;
+left: 6%;
 top:200px;
 
 }
@@ -715,8 +715,8 @@ top:200px;
 /* Vector */
 
 position: absolute;
-left: 90.36%;
-right: 2.45%;
+left: 91.36%;
+
 top:200px;
 bottom: 29.79%;
 
@@ -724,7 +724,108 @@ background: #F8CBA5;
 
 
 }
+.title-sub{
+
+/* Project 2 */
+position: absolute;
+width: 200.92px;
+height: 43.26px;
+left: 234.4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
 
 
+}
+.title2-sub{
 
+/* Developer’s App */
+
+position: absolute;
+width: 362.85px;
+height: 46.44px;
+left: 158.1px;
+top: 10%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+
+color: #000000;
+
+
+}
+.content-sub{
+
+/* A communication app for developerssss */
+
+position: absolute;
+width: 442px;
+height: 87px;
+left: 158px;
+top: 30%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+color: #000000;
+
+
+}
+.image-sub{
+
+/* Rectangle 65 */
+
+position: absolute;
+width: 250px;
+height: 237.06px;
+left: 643px;
+top: 10%;
+
+background: url(image.png);
+
+}
+.icon-sub{
+/* linkace logo */
+
+position: absolute;
+width: 60px;
+height: 57.26px;
+left: 158.1px;
+top: 60%;
+
+
+}
+.link-sub{
+/* https://github.com/name/repo */
+
+position: absolute;
+width: 354.37px;
+height: 24.81px;
+left: 252px;
+top: 65%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 33px;
+
+color: #000000;
+
+
+}
+a{
+    text-decoration: none;
+    color:#000000;
+}
 /*Project section ends here*/
