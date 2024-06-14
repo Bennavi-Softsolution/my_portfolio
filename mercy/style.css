@@ -115,6 +115,10 @@ body {
         display: block;
         cursor: pointer;
     }
+
+    .menuBar.show {
+        display: block;
+    }
 }
 
 /*footer section styling starts here*/
