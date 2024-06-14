@@ -1,7 +1,14 @@
+/* Body Section */
 :root{
     --max-width: 1400px;
 }
 
+body{
+    background-color: #282828;
+    color: #EBDBB2;
+}
+
+/* beginning Navbar Section */
 .Navbar{
     background-color: #1D2021;
     position: absolute;
@@ -19,16 +26,14 @@
     color: #EBDBB2;
     font-size: 20px;
 }
-body{
-    background-color: #282828;
-    color: #EBDBB2;
-}
 
+/* beginning of the body section */
 .body-container{
     display: flex;
     justify-content: space-between;
 }
 
+/* beginning of the about me sections */
 .left-section{
     height: 100vh;
     box-shadow: 1px #EBDBB2;
