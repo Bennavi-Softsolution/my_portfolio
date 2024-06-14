@@ -272,7 +272,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    text-emphasis-color: transparent;
 }
 
 .aboutMe {
@@ -311,7 +311,7 @@ position: absolute;
 width: 529px;
 height: 30px;
 left: 35%;
-top: 2874px;
+top: 3000px;
 
 font-family: 'Inria Sans';
 font-style: normal;
@@ -343,8 +343,7 @@ position: absolute;
 width: 50px;
 height: 278px;
 left: 42px;
-top: 2596px;
-
+top: 2700px;
 
 }
 
@@ -376,9 +375,7 @@ top: 2596px;
             position: absolute;
             width: 100%;
             height: 30px;
-            left: 20%;
-            top: 2874px;
-            
+            left: 20%;           
             font-family: 'Inria Sans';
             font-style: normal;
             font-weight: 700;
@@ -526,7 +523,7 @@ position: absolute;
 width: 610.44px;
 height: 230px;
 left: 95px;
-top: 2321px;
+top: 2950px;
 }
 @media screen and (max-width:768px){
     .contact-section{
@@ -971,8 +968,6 @@ width: 250px;
 height: 237.06px;
 left: 643px;
 top: 10%;
-
-background: url(image.png);
 
 }
 .icon-sub{
