@@ -3,14 +3,14 @@
     --main-color: #1D1B1A; /* Main background color */
     --main-text-color: #F8CBA5; /* Main text color */
     --secondary-color: #FE8019; /* Secondary color */
-
+    --sidebar-color: #252221;
 }
 
 /* Styling for the body */
 body {
     background-color: var(--main-color); /* Set background color */
     color: var(--main-text-color); /* Set text color */
-
+    font-family: 'Inika';
 }
 
 /* Styling for the navigation bar */
@@ -29,13 +29,24 @@ body {
 
 }
 
+.menuBar a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.menuBar a:hover {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
 /* Styling for the menu list */
 .menuBar ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
     counter-reset: item; /* Reset the counter for numbering */
-
+    
 }
 
 /* Styling for each menu item */
@@ -45,7 +56,12 @@ body {
     color: var(--secondary-color); /* Set text color */
     cursor: pointer;
     position: relative; /* Set position to relative for dot */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
 
+/* Change color on hover */
+.menuBar ol li:hover {
+    color: var(--main-text-color); /* Change text color on hover */
 }
 
 /* Styling for the dot before each menu item */
@@ -78,6 +94,11 @@ body {
 
 }
 
+/* Styling for the resume button in mobile */
+.resumeContainerMobile {
+    display: none; /* Initially hide the resume button in desktop */
+}
+
 /* Sidebar Toggle styles */
 .sidebarToggle {
     display: none;
@@ -93,8 +114,18 @@ body {
     border-radius: 3px;
 }
 
+.closeButton {
+    display: none;
+}
+
+
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+
+    .menuBar.show .closeButton {
+        display: block;
+    }
     .navBar {
         flex-direction: row;
     }
@@ -102,9 +133,75 @@ body {
     .mwLogo {
         margin-left: -10vw;
     }
-
+    /* styling for the sidebar menu */
     .menuBar {
-        display: none;
+        display: none; /* initially hide */
+        position: fixed; /* Fix the position of the sidebar */
+        top: 0;
+        right: -300px; /* Initially hide it off the right side */
+        width: 140vw; /* Set the width of the sidebar */
+        height: 100%; /* Set the height to cover the entire viewport */
+        background-color: var(--sidebar-color);
+        transition: left 0.3 ease; /* Add a transition effect for smooth movement */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .menuBar a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    .menuBar.show {
+        display: block;
+        right: 0;
+    }
+
+    /* Styling for the menu list*/
+    .menuBar ol {
+        list-style-type: none;
+        margin: 30vh 0;
+        padding: 0 30vw;
+        counter-reset: item;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        margin-top: 15vh;
+    }
+
+    /* Styling for each menu item */
+    .menuBar ol li {
+        color: var(--secondary-color);
+        cursor: pointer;
+        position: relative;
+        margin: 25px 0;
+        padding: 10px;
+        margin-bottom: 5vh;
+    }
+
+    /* Styling for the dot before each menu item*/
+    .menubar ol li:before {
+        content: counter(item) ". ";
+        counter-increment: item;
+        margin-right: 5px;
+    }
+
+    /* Styling for the close button */
+    .closeButton {
+        position: absolute;
+        top: 1%;
+        right: 55%;
+        padding: 30px; /* Add padding for better appearance */
+        background-color: var(--sidebar-color); /* Set background color */
+        border: 2px solid var(--sidebar-color); /* Set border */
+        color: var(--secondary-color); /* Set text color */
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s; /* Add transition effect */
+    }
+
+    /* Hover effect */
+    .closeButton:hover {
+        color: var(--main-text-color); /* Change text color on hover */
     }
 
     .resumeContainer {
@@ -116,9 +213,93 @@ body {
         cursor: pointer;
     }
 
-    .menuBar.show {
-        display: block;
+    /* hide the resume button in desktop */
+    .resumeContainer {
+        display: none;
     }
+
+    /* show the resume button in mobile */
+    .resumeContainerMobile {
+        display: block;
+        
+    }
+
+    .resumeContainerMobile button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--sidebar-color); /* Set background color */
+        color: var(--secondary-color); /* Set text color */
+        cursor: pointer;
+        outline: 2px solid ; /* Add outline */
+        font-family: 'Inika';
+        margin-left: 27vw;
+        
+    }
+
+    .resumeContainerMobile button:hover {
+        background-color: var(--secondary-color); /* Set background color */
+        color: var(--sidebar-color); /* Set text color */
+                
+    }
+
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about h5 {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+}
+
+.about h3 {
+    color: var(--main-text-color);
+    font-size: 1.8em;
+}
+
+.about h4 {
+    width: 68vw;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 46px;
+    background: linear-gradient(270deg, #837A72 22.62%, #E9D9CB 38.62%, #E3D3C5 68.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+}
+.aboutInformation {
+    width: 100vw;
+}
+.aboutInformation p {
+    font-size: 1.3em;
+    width: 14vw;
+}
+
+.aboutInformation hr {
+    width: 40vw;
+    margin-top: -3.5vh;
+    margin-bottom: 2vh;
+    margin-left: 15vw;
+    color: #D65D0E;
+}
+
+.paragraph {
+    margin-top: 3vh;
+    width: 50vw;
+    font-family: 'JetBrains Mono';
+    font-size: 0.9em;
 }
 
 /*footer section styling starts here*/

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercy Wairimu</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <div class="navBar">
@@ -25,26 +29,61 @@
 
         <!--Container for the menu items-->
         <div class="menuBar" id="mySidebar">
+
             <ol>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Projects</li>
-                <li>Contacts</li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
             </ol>
+
+            <button class="closeButton">&times;</button>
+
+            <!-- Container for the resume button (visible on mobile)-->
+            <div class="resumeContainerMobile">
+                <button class="resumeButton">RESUME</button>
+
+            </div>
         </div>
 
         <!-- Container for the resume button-->
         <div class="resumeContainer">
-            <button>RESUME</button>
+            <button class="resumeButton">RESUME</button>
         </div>
+
+
+
+    </div>
+
+    <div class="about" id="about">
+
+        <div class="profileInformation">
+            <h5>Hello, my name is</h5>
+            <h3>Mercy Wairimu Gitingu</h3>
+            <h4>Unlocking Possibilities, One Line of Code at a Time</h4>
+        </div>
+
+        <div class="aboutMe">
+
+            <div class="aboutInformation">
+                <p>1. ABOUT ME<p> 
+                <hr>
+                <div class="paragraph">
+                    Hello!I am a driven software engineer with a solid foundation in software development and a proven track record of creating efficient, scalable applications. 
+                </div>
+            </div>
+
+            <div class="profilePicture">
+                <img src="./assets/Frame 50.png" alt="Mercy Wairimu Gitingu">
+            </div>
+
+        </div>
+
+       
         
     </div>
 
-    <div>
-        <h1>About Me</h1>
-    </div>
-
-    <div>
+    <div id="experience">
         <h1>Experience</h1>
     </div>
 
@@ -69,6 +108,10 @@
     
 
 
+    <div class="contact-section" id="contact">
+
+
+
 </div>   
 
 <!--contact section ends here-->
@@ -85,12 +128,15 @@
   </div>
     <div class="footer-section">
 
+
     <p>Developed by Bennavi Softsolution @2024</p>
 
 
     </div>
     <!--Footer section ends here-->
     
+
     <script src="script.js"></script>
 </body>
+
 </html>
