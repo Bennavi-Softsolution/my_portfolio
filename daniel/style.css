@@ -70,7 +70,7 @@ border-radius: 8px;
 
 /* beginning of the about me sections */
 .left-section{
-    height: 80vh;
+    height: 70vh;
     box-shadow: 1px #EBDBB2;
     width: 20vw;
     margin-right: 60px;
@@ -103,6 +103,7 @@ border-radius: 8px;
     font-size: large;
     margin-top: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .hireButton:hover{
@@ -118,6 +119,7 @@ border-radius: 8px;
 .social{
     padding: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .social:hover{
