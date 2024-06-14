@@ -92,12 +92,13 @@
 
   }
   table{
-
-align-items: center;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    height: 20px;
   }
   table, tr, td{
     align-items: center;
-    width: 20vw;
   }
    td {
     color: white;
@@ -105,6 +106,9 @@ align-items: center;
     border: 1px solid white;
     border-radius: 10px;
     border-collapse: collapse;
+    padding: 10px;
+    vertical-align: middle; /* Vertically center the content */
+    margin-right: 10px;
    
   }
   td, table{
