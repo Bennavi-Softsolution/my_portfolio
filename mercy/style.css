@@ -131,7 +131,7 @@ top: 2874px;
 font-family: 'Inria Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 22px;
+font-size: 20px;
 line-height: 30px;
 /* identical to box height */
 
@@ -166,4 +166,69 @@ top: 2596px;
 
 
 
+@media screen and (max-width:768px){
+
+    .contact-section{
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 26px;
+
+        position: absolute;
+        width: 50px;
+        height: 278px;
+        left: 42px;
+        top: 2596px;
+        
+        
+        }
+
+
+        .footer-section{
+
+            /* Developed and Built by Bennavi Softsolution */
+            
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            left: 20%;
+            top: 2874px;
+            
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 30px;
+            /* identical to box height */
+            
+            color: rgba(248, 203, 165, 0.5);
+            
+            
+            }
+
+}
+
+
+
 /*contact me section ends here*/
+
+/*media section under the contact me section starts here*/
+
+.linkedin{
+    /* Vector */
+width: 50px;
+height: 50px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+
+
+/*media section under the contact me section ends here*/
