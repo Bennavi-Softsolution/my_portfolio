@@ -352,7 +352,7 @@ top: 2321px;
 position: absolute;
 width: 398px;
 height: 155px;
-left: 206px;
+left: 150px;
 top: 30%;
 }
 .contact-head{
@@ -366,7 +366,7 @@ left: 105px;
 font-family: 'Inika';
 font-style: normal;
 font-weight: 700;
-font-size: 30px;
+font-size: 24px;
 line-height: 39px;
 /* identical to box height */
 display: flex;
@@ -384,7 +384,7 @@ color: #F8CBA5;
 position: absolute;
 width: 353.44px;
 height: 0px;
-left: 362px;
+left: 50%;
 }
 .call-icon{
 
@@ -417,7 +417,66 @@ color: #F8CBA5;
 
 }
 
+.mail-icon{
+
+    /* Vector */
+position: absolute;
+left: 18.73%;
+right: 78.55%;
+bottom: 45.69%;
+
+}
+.mail-title{
+ /* wairimugitungu@gmail.com */
+
+position: absolute;
+width: 346px;
+height: 41px;
+left: 35%;
+bottom: 45.69%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
 
 
+}
+.location-icon{
+    /* Vector */
+
+position: absolute;
+left: 18.73%;
+right: 78.55%;
+bottom: 12.9%;
+
+}
+.location-title{
+    /* Nairobi */
+
+position: absolute;
+width: 231px;
+height: 41px;
+left: 35%;
+bottom: 12.9%;
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
 
 /*contact section ends here*/
