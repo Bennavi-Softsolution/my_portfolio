@@ -347,13 +347,13 @@ height: 230px;
 left: 105px;
 top: 2321px;
 }
-.conct-subsection{
+.contact-subsection{
 /* Group 42 */
 position: absolute;
 width: 398px;
 height: 155px;
 left: 206px;
-top: 2396px;
+top: 30%;
 }
 .contact-head{
     /* 5. CONTACT ME */
@@ -377,8 +377,45 @@ color: #F8CBA5;
 
 
 }
+.contact-line{
+
+    /* Line 1 */
+
+position: absolute;
+width: 353.44px;
+height: 0px;
+left: 362px;
+}
+.call-icon{
+
+    /* Vector */
+position: absolute;
+left: 18.73%;
+right: 78.55%;
 
 
+}
+.call-title{
+    /* +254114097019 */
+
+position: absolute;
+width: 187px;
+height: 41px;
+left: 35%;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
 
 
 
