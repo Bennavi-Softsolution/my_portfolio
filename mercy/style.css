@@ -400,6 +400,31 @@ color: #F8CBA5;
 
 
 }
+@media screen and (max-width:460px){
+    .contact-head{
+        /* 5. CONTACT ME */
+    
+    position: absolute;
+    width: 230px;
+    height: 39px;
+    left: 7%;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 39px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    }
+
+}
+
 .contact-line{
 
     /* Line 1 */
@@ -408,6 +433,22 @@ position: absolute;
 width: 353.44px;
 height: 0px;
 left: 50%;
+}
+@media screen and (max-width:768px){
+    .contact-line{
+
+        /* Line 1 */
+    
+    position: absolute;
+   
+    height: 0px;
+    left: 30%;
+    top: 9px;
+    }
+    .width-section{
+        width: 220.44px;
+    }
+    
 }
 .call-icon{
 
@@ -418,6 +459,7 @@ right: 78.55%;
 
 
 }
+
 .call-title{
     /* +254114097019 */
 
@@ -499,6 +541,104 @@ text-transform: capitalize;
 
 color: #F8CBA5;
 
+
+}
+@media screen and (max-width:768px){
+
+
+    .call-icon{
+
+        /* Vector */
+    position: absolute;
+    left: 3.73%;
+    right: 78.55%;
+    
+    
+    }
+    
+    .call-title{
+        /* +254114097019 */
+    
+    position: absolute;
+    width: 187px;
+    height: 41px;
+    left: 14%;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+    
+    .mail-icon{
+    
+        /* Vector */
+    position: absolute;
+    left: 18.73%;
+    left: 3.73%;
+    bottom: 45.69%;
+    
+    }
+    .mail-title{
+     /* wairimugitungu@gmail.com */
+    
+    position: absolute;
+    width: 346px;
+    height: 41px;
+    left: 14%;
+    bottom: 45.69%;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+    .location-icon{
+        /* Vector */
+    
+    position: absolute;
+    left: 3.73%;
+    right: 78.55%;
+    bottom: 12.9%;
+    
+    }
+    .location-title{
+        /* Nairobi */
+    
+    position: absolute;
+    width: 231px;
+    height: 41px;
+    left: 14%;
+    bottom: 12.9%;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
 
 }
 
