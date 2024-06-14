@@ -1,0 +1,343 @@
+
+/* start of project section */
+.pro {
+    font-family: "JetBrains Mono", monospace;
+    color:white;
+    margin-top: 0;
+}
+.project {
+    text-align: center;
+    background-color: #085E72;
+    position: absolute;
+    display:grid;
+    justify-content: center;
+    height: 1250px;
+    width: 100vw;
+    align-items: center;
+    font-size: 30px;
+  }
+  .projectbackground {
+  background-image: url('./Assets/background.png' );
+  width:80vw;
+  background-repeat: no-repeat;
+  height:800px;
+  margin: 10;
+  }
+  
+  .projectname {
+    padding: 10px;
+    height: max-content;
+    margin: 0 30px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .images {
+    display: flex;
+  }
+  
+  .imageContainer{
+    display: flex;
+    width: max-content;
+    position: inherit;
+  }
+  
+  .projectLink{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: #085E72;
+    width: 45px;
+    height: 45px;
+    border-radius: 30%;
+    font-size: 25px;
+    padding: 0 1rem 0 0;
+  
+  }
+  
+  .link{
+    padding: 10px;
+  }
+  
+  .more{
+    position: relative;
+    left: 40%;
+    height: max-content;
+  }
+  
+  .projectsButton{
+    height: 60px;
+    width: 200px;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(89.94deg, rgba(112, 93, 235, 0.46) 49.81%, rgba(25, 185, 254, 0.46) 69.11%);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  
+  }
+  
+  .projectsButton:hover{
+    transform: scale(1.2);
+    background-color: #cf82f3;;
+  }
+  /* begining of contact me part */
+  .image{
+   size: auto;
+   width: inherit;
+
+  }
+  .rectangle {
+    background-color: #085E72;
+
+  }
+  table{
+
+align-items: center;
+  }
+  table, tr, td{
+    align-items: center;
+    width: 20vw;
+  }
+   td {
+    color: white;
+    background-color: #0DB5BA;
+    border: 1px solid white;
+    border-radius: 10px;
+    border-collapse: collapse;
+   
+  }
+  td, table{
+    font-size: smaller;
+    border-spacing: 50px;
+    align-items: center;
+    
+  }
+  .Tablehover{
+    transform: scale(1.2);
+    background-color: #82e0f3;
+  }
+  .vector{
+    background-color: #085E72;
+    color: white;
+    border-radius: 40%;
+  }
+  .align-horizontal 
+  { display: flex;   align-items: center; /* Align items vertically in the middle */
+}
+   .align-horizontal img
+    {   margin-right: 10px; /* Space between the image and the text */
+     }
+
+/* DEFAULT SPECIFICATION */
+:root {
+    --max-width: 1200px;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+ 
+  /* LEVIS' PORTFOLIO */
+body {
+    background: #085E72;
+    font-family: 'JetBrains Mono', monospace;
+    }
+    
+  
+  /*NAVBAR STYLING */
+  
+  nav {
+    width: 100%;
+    position: relative;
+    background: #063643;
+    z-index: 99;
+  }
+
+  .nav_contents {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+/* Levis Chisira */
+.levis{
+width: 234px;
+height: 38px;
+font-family: 'Source Code Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+color: #FFFFFF;
+}
+
+.itame {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+  }
+  .itame li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+  }
+  .itame li a:hover {
+      background-color: #4c9e9e;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .icone:hover {
+        transform: scale(1.2);
+      }
+
+  nav .checkbox {
+    display: none;
+  }
+  nav input {
+    display: none;
+  }
+  nav .checkbox i {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav_contents {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .itame {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    nav input:checked ~ .itame {
+        display: flex;
+    }
+
+    .itame li {
+        width: 100%;
+    }
+
+    .itame li a {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #ffffff;
+    }
+
+    .nav_contents > div {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav_contents > label {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav_contents > label {
+        display: none;
+    }
+}
+
+
+.abt{
+width: 100%;
+margin: 20px auto;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.abt .text-container {
+    width: 70%;
+}
+
+.abt .text, .abt .txt {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.abt .text {
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.abt .txt {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.abt .imag {
+    width: 30%;
+    max-width: 200px;
+    height: 150px;
+    border-radius: 50% / 40%; /* Makes the image elliptical */
+    background: #171E33;
+    margin-right: 100px; /* Adjust margin to keep the image from the edge */
+}
+
+/* Responsive Styles for abt Section */
+@media (max-width: 768px) {
+    .abt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abt .text-container, .abt .imag {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abt .text, .abt .txt {
+        width: 100%;
+    }
+
+    .abt .imag {
+        max-width: 200px;
+        height: 150px;
+        margin-right: 0; /* Remove right margin on mobile */
+        margin-bottom: 20px; /* Add margin-bottom for spacing */
+    }
+}
+
