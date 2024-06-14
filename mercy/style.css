@@ -135,7 +135,7 @@ top: 2874px;
 font-family: 'Inria Sans';
 font-style: normal;
 font-weight: 700;
-font-size: 22px;
+font-size: 20px;
 line-height: 30px;
 /* identical to box height */
 
@@ -144,11 +144,11 @@ color: rgba(248, 203, 165, 0.5);
 
 }
 
-/*footer section styling ends here*/
 
-/*contact me section starts here*/
 
-.contact-section{
+
+
+.social-section{
 
 /* Frame 10 */
 /* Auto layout */
@@ -168,6 +168,192 @@ top: 2596px;
 }
 
 
+@media screen and (max-width:768px){
+
+    .contact-section{
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 26px;
+
+        position: absolute;
+        width: 50px;
+        height: 278px;
+        left: 42px;
+        top: 2596px;
+        
+        
+        }
 
 
-/*contact me section ends here*/
+        .footer-section{
+
+            /* Developed and Built by Bennavi Softsolution */
+            
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            left: 20%;
+            top: 2874px;
+            
+            font-family: 'Inria Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 30px;
+            /* identical to box height */
+            
+            color: rgba(248, 203, 165, 0.5);
+            
+            
+            }
+
+}
+
+
+
+/*footer section styling ends here*/
+
+/*media section under the footer section starts here*/
+
+.linkedin{
+    /* Vector */
+width: 50px;
+height: 50px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.github{
+
+/* Vector */
+
+width: 50px;
+height: 50px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+.instagram{
+
+/* Vector */
+
+width: 50px;
+height: 50px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+
+}
+.twitter{
+
+/* Vector */
+
+width: 50px;
+height: 50px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+
+}
+@media screen and (max-width:768px){
+    .linkedin{
+        /* Vector */
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    }
+    .github{
+    
+    /* Vector */
+    
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    
+    }
+    
+    .instagram{
+    
+    /* Vector */
+    
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    
+    
+    
+    }
+    .twitter{
+    
+    /* Vector */
+    
+    width: 50px;
+    height: 50px;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    
+    
+    
+    }
+
+
+}
+
+/*media section under the footer section ends here*/
+/*contact section starts here*/
+.contact-section{
+
+/* Group 43 */
+
+position: absolute;
+width: 610.44px;
+height: 230px;
+left: 105px;
+top: 2321px;
+
+
+}
+
+
+
+
+
+
+
+/*contact section ends here*/
