@@ -115,4 +115,59 @@ body {
         display: block;
         cursor: pointer;
     }
+
+    .menuBar.show {
+        display: block;
+    }
 }
+
+/*footer section styling starts here*/
+.footer-section{
+
+/* Developed and Built by Bennavi Softsolution */
+
+position: absolute;
+width: 529px;
+height: 30px;
+left: 35%;
+top: 2874px;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 30px;
+/* identical to box height */
+
+color: rgba(248, 203, 165, 0.5);
+
+
+}
+
+/*footer section styling ends here*/
+
+/*contact me section starts here*/
+
+.contact-section{
+
+/* Frame 10 */
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 26px;
+
+position: absolute;
+width: 50px;
+height: 278px;
+left: 42px;
+top: 2596px;
+
+
+}
+
+
+
+
+/*contact me section ends here*/
