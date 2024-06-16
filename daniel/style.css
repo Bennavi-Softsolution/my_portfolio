@@ -13,52 +13,68 @@ body{
 }
 
 /* beginning Navbar Section */
-.Navbar{
+.Navbar {
     background-color: #1D2021;
-    position: absolute;
-    width: 100%;
+    position: 100%;
+    width: auto;
     height: 53px;
     left: 0px;
     top: 0px;
 }
-.Nav_Content{
-    margin: auto;
+
+.Nav_Content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'JetBrains Mono', monospace;
     color: #EBDBB2;
     font-size: 20px;
+    padding: 0 5%;
 }
-.Logo{
+
+.Left_Section, .Right_Section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Left_Section {
+    margin-right: auto;
+}
+
+.Logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-    transition: left 0.3s;
-    margin-left: 5%;
 }
-.Search{
-width: auto;
-height: auto;
-background: #282828;
-border-radius: 8px;
+
+.Search {
+    width: auto;
+    height: auto;
+    background: #282828;
+    border-radius: 8px;
 }
-.Menu_Content{
+
+.Menu_Content {
     display: flex;
-    align-items:end;
-    gap: 3rem;
+    align-items: center;
+    gap: 2rem; 
     list-style: none;
-    transition: left 0.3s;
 }
-.Theme{
+
+.Theme {
     background-color: transparent;
-    margin-right: 2%;
     border: none;
 }
-.T_Img{
+
+.T_Img {
     height: 20px;
     width: 20px;
 }
+.Menu_Icon{
+    display: none;
+}
+
 
 /* beginning of the body section */
 .body-container{
