@@ -22,6 +22,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
+                <!-- INRIA SANS FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <!-- embedding font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -63,59 +68,119 @@
     </div>
     
     <!-- The main body container -->
-    <div class="body-container">
+        <div class="body-container">
         
-        <!-- main body section that has every other portfolio detail including projects, work experience and education -->
-        <div class="right-section">
-            <div class="projects-Section">
-                MY PROJECTS
+            <!-- main body section that has every other portfolio detail including projects, work experience and education -->
+            <div class="right-section">
+                <div class="projects-Section">
+                    <h1 class="heading">My Projects</h1>
+                    <div class="project1">
+                        <div class="projectTitle">
+                            <h3>Offline Music Player for Android</h3>
+                        </div>
+                        <span>2022-04-26</span>
+                        <p>Latest <a href="#" class="coloured">build <i class="ri-arrow-right-up-line"></i></a> 
+                            currently in alpha state. Sourcecode is in my <a href="#" class="coloured">Github</a> 
+                            and <a href="#" class="coloured">Gitlab</a> page
+                        </p>
+                        <div class="projectImage">
+                            <img src="./assets/project.jpg" alt="projectImage" class="pImage">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="projectTitle">
+                            <h3>Serenity Discord Bot</h3>
+                        </div>
+                        <span>2020-06-30</span>
+                        <p>
+                            Discord bot built using Rustfor my personal server to handle tasks
+                        </p>
+                        <div class="projectImage">
+                            <img src="./assets/project.jpg" alt="projectImage" class="pImage">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-Section">
+                    <h1 class="heading">Work</h1>
+                    <div class="area">
+                        <div class="workSection">
+                            <p>Intern</p>
+                            <p>Bennavi SoftSolution</p>
+                        </div>
+                        <div class="workSection">
+                            <p>2024 - Present</p>
+                            <p>Eldoret</p>
+                        </div>
+                    </div>
+                    <div class="workContent">
+                        <p> Working on innovative and responsive websites and systems</p>
+                    </div>
+                </div>
+
+                <div class="education-section">
+                    <h1 class="heading">Education</h1>
+                    <div class="location">
+                        <div class="workSection">
+                            <p>Coputer Science</p>
+                            <p>Catholic University of Eastern Africa</p>
+                        </div>
+                        <div class="workSection">
+                            <p>2021 - Present</p>
+                            <p>Eldoret</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h1 class="heading">Skills</h1>
+                    <p>Profecient in:</p>
+                    <ul>
+                        <li>Android App Development</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>Web Programming</li>
+                    </ul>
+                </div>
             </div>
-            <div class="experience-Section">
-                WORK
-            </div>
-            <div class="education-section">
-                EDUCATION
+    
+    
+             <!-- Beginning of the about section. Should be static, i.e. should be fixed in it's assigned position to avoid scrolling -->
+                 <!-- Alligned in the left side of the page -->
+            <div class="left-section">
+                    <div class="about-section">
+                        <div class="profile">
+                            <img src="./assets/image.png" alt="daniel" class="profileImage">
+                        </div>
+    
+                        <div class="about-content">
+                            <div>
+                                <h4>Daniel Kosgei</h4>
+                                <p>Software Engineer</p>
+                                <p>danielkosgei@gmail.com</p>
+                                <p>+254 705 481 371</p>
+                            </div>
+                            <div>
+                                <p>Passionate Software Engineer crafting inovative solutions</p>
+                            </div>
+                            <button class="hireButton">HIRE ME</button>
+                        </div>
+    
+                        <div class="socials">
+                            <i class="fa-brands fa-instagram social"></i>
+                            <i class="fa-brands fa-github social"></i>
+                            <i class="fa-brands fa-x-twitter social"></i>
+                            <i class="fa-brands fa-linkedin social"></i>
+                        </div>
+    
+                    </div>
             </div>
         </div>
 
-
-         <!-- Beginning of the about section. Should be static, i.e. should be fixed in it's assigned position to avoid scrolling -->
-             <!-- Alligned in the left side of the page -->
-             <div class="left-section">
-                <div class="about-section">
-                    <div class="profile">
-                        <img src="./assets/image.png" alt="daniel" class="profileImage">
-                    </div>
-
-                    <div class="about-content">
-                        <div>
-                            <h3>Daniel Kosgei</h3>
-                            <h4>Software Engineer</h4>
-                            <h4>danielkosgei@gmail.com</h4>
-                            <h4>+254 705 481 371</h4>
-                        </div>
-                        <div>
-                            <p>Passionate Software Engineer crafting inovative solutions</p>
-                        </div>
-                        <button class="hireButton">HIRE ME</button>
-                    </div>
-
-                    <div class="socials">
-                        <i class="fa-brands fa-instagram social"></i>
-                        <i class="fa-brands fa-github social"></i>
-                        <i class="fa-brands fa-x-twitter social"></i>
-                        <i class="fa-brands fa-linkedin social"></i>
-                    </div>
-
-                </div>
-            </div>
-
-    </div>
-
     <!-- beginning of the footer section -->
     <div class="footer">
-        <p>Copyright &copy; 2024 Bennavi Softsolution</p>
-        <p>Do not share personal information</p>
+        <span>Copyright &copy; 2024 Bennavi Softsolution</span>
     </div>
+     
 </body>
 </html>
