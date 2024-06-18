@@ -10,12 +10,14 @@
     background-color: #085E72;
     position:relative;
     display:flex;
-    flex-direction:row ;
+    flex-direction: column ;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
     align-items: center;
     font-size: 30px;
+    padding: 2rem; /* Adjust padding as necessary */
+    margin: 0 auto; /* Center horizontally */
+
   }
   .projectbackground {
   background-image: url('./Assets/background.png' );
@@ -104,7 +106,7 @@
     justify-content: center;
     height: 120vh; /* Maintain aspect ratio */
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-color: #085E72;
    
     
@@ -134,8 +136,8 @@
 
 
   table{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     align-items: center;
     height: 20px;
   }
@@ -166,7 +168,11 @@
   .vector{
     background-color: #085E72;
     color: white;
-    border-radius: 40%;
+    border-radius: 50%;
+    margin-bottom: 1rem; /* Add spacing between images */
+    max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+
   }
   .align-horizontal 
   { display: flex;  
@@ -194,6 +200,8 @@ body {
     background: #085E72;
     font-family: 'JetBrains Mono', monospace;
     overflow-x: hidden; /* Hide horizontal overflow */
+    margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
     }
     
   
@@ -208,6 +216,7 @@ body {
 
   .nav_contents {
     max-width: var(--max-width);
+    width: 100%; /* ensure full width */
     margin: auto;
     padding: 1.5rem 1rem;
     display: flex;
@@ -283,15 +292,26 @@ color: #FFFFFF;
     .nav_contents {
         flex-direction: column;
         align-items: flex-start;
+       
     }
 
+
+
+
     .itame {
+     
         flex-direction: column;
         width: 100%;
         display: none;
+        position: absolute;
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        background: #063643;
+        z-index: 100; /* Ensure it's above the content */
+        border-top: 1px solid #ffffff; /* Separate from the navbar */
     }
 
-    nav input:checked ~ .itame {
+    nav input:checked ~ .nav_contents .itame {
         display: flex;
     }
 
@@ -316,6 +336,7 @@ color: #FFFFFF;
 
     .nav_contents > label {
         display: block;
+        padding: 1rem; /* Ensure the label is clickable */
     }
 }
 
@@ -428,17 +449,19 @@ align-items: center;
   width: 100%;
   background: #062C2E;
   box-sizing: border-box;
-  text-align: center;
+
 }
 
 .my_skills{
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: #ffffff;
   font-family: "JetBrains Mono", monospace;
-  padding: 10px;
+  text-align: left; /* Align text to the left */
+  padding: 15px;
   font-size: 20px;
   font-weight: 800;
   line-height: 40px;
+
 }
 
 
@@ -451,7 +474,7 @@ align-items: center;
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   color: #FFFFFF;
 }
 
@@ -465,19 +488,19 @@ align-items: center;
 .skillsbutton{
 width:90%;
 background: rgba(36, 200, 240, 0.8);
-padding: 15px;
+padding: 25px;
 font-family: 'JetBrains Mono';
 font-weight: 700;
 font-size: 20px;
-color: #062C2E;
+color: white;
 border: none;
 border-radius: 5px;
 cursor: pointer;
-text-align: center;
+text-align: left;
 }
 
 .skillsbutton:hover {
-  background: rgb(204, 209, 209);
+    background: #171E33;
 }
 
       /* Responsive Design */
