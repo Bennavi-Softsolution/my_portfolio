@@ -1338,7 +1338,60 @@ border: 1px solid rgba(214, 93, 14, 0.8);
 
 
 }
+.css-title{
+    /* CSS */
 
+position: absolute;
+width: 138px;
+height: 33px;
+left: 530px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+.php-icon{
+    /* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 79.73%;
+right: 32.82%;
+top: 1279px;
+bottom: 54.08%;
+}
+.php-title{
+    /* phP */
+position: absolute;
+width: 138px;
+height: 33px;
+left: 79.73%;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
 
 
 
