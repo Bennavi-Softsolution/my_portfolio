@@ -1221,6 +1221,21 @@ left: 81px;
 top: 600px;
 
 }
+@media screen and (max-width:768px){
+    .skill-section{
+
+        /* Group 56 */
+        
+        position: absolute;
+        width: 777px;
+        height: 436px;
+        left: 10px;
+        top: 600px;
+        
+        }
+
+
+}
 .skill-title{
 
 /* 3. SKILLS */
@@ -1244,6 +1259,32 @@ color: #F8CBA5;
 
 
 }
+@media screen and (max-width:768px){
+
+    .skill-title{
+
+        /* 3. SKILLS */
+        position: absolute;
+        width: 405px;
+        height: 102px;
+        left: 7%;
+        top: 1193px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F8CBA5;
+        
+        
+        }
+
+
+}
 .skill-line{
 /* Line 1 */
 
@@ -1253,6 +1294,22 @@ height: 0px;
 left: 283px;
 top: 1244px;
 }
+@media screen and (max-width:760px){
+
+    .skill-line{
+        /* Line 1 */
+        
+        position: absolute;
+        height: 0px;
+        left: 20%;
+        top: 1230px;
+        }
+.line-width{
+
+    width: 250px;
+}
+
+}
 .python-icon{
 
     /* Frame 68 */
@@ -1261,6 +1318,19 @@ width: 63px;
 height: 80px;
 left: 290px;
 top: 1279px;
+
+}
+@media screen and (max-width:768px){
+    .python-icon{
+
+        /* Frame 68 */
+    position: absolute;
+    width: 63px;
+    height: 80px;
+    left: 80px;
+    top: 1279px;
+    
+    }
 
 }
 .python-title{
@@ -1286,6 +1356,38 @@ color: #F8CBA5;
 
 
 }
+@media screen and (max-width:768px){
+
+    .python-title{
+
+        /* python */
+    
+    position: absolute;
+    width: 138px;
+    height: 33px;
+    left: 80px;
+    top: 1330px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+.mobile-width{
+
+    width: 40px;
+}
+}
+
+
 .html-icon{
 
 /* Vector */
@@ -1297,8 +1399,16 @@ right: 55.09%;
 top: 1279px;
 bottom: 54.08%;
 
-background: #D65D0E;
-border: 1px solid rgba(214, 93, 14, 0.8);
+}
+@media screen and (max-width:768px){
+    .html-icon{
+        /* Vector */
+        
+        position: absolute;
+        left: 160px;
+        top: 1279px;
+        
+        }
 
 }
 .html-title{
@@ -1321,6 +1431,29 @@ text-transform: capitalize;
 
 color: #F8CBA5;
 }
+@media screen and (max-width:768px){
+    .html-title{
+        /* HTML */
+        
+        position: absolute;
+        width: 138px;
+        height: 33px;
+        left: 160px;
+        top: 1330px;
+
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F8CBA5;
+        }
+
+}
 
 .css-icon{
 /* Vector */
@@ -1332,8 +1465,21 @@ left: 515px;
 top: 1279px;
 bottom: 53.8%;
 
-background: #D65D0E;
-border: 1px solid rgba(214, 93, 14, 0.8);
+
+}
+@media screen and (max-width:768px){
+    .css-icon{
+        /* Vector */
+        
+        box-sizing: border-box;
+        
+        position: absolute;
+        left: 240px;
+        top: 1279px;
+        bottom: 53.8%;
+        
+
+        }
 
 
 }
@@ -1359,6 +1505,32 @@ color: #F8CBA5;
 
 
 }
+@media screen and (max-width:768px){
+
+    .css-title{
+        /* CSS */
+    
+    position: absolute;
+    width: 138px;
+    height: 33px;
+    left: 240px;
+    top: 1330px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+
+}
 .php-icon{
     /* Vector */
 
@@ -1369,6 +1541,17 @@ left: 79.73%;
 right: 32.82%;
 top: 1279px;
 bottom: 54.08%;
+}
+@media screen and (max-width:768px){
+    .php-icon{
+        /* Vector */
+    
+    box-sizing: border-box;
+    
+    position: absolute;
+    left: 320px;
+    top: 1279px;
+    }
 }
 .php-title{
     /* phP */
@@ -1391,15 +1574,54 @@ color: #F8CBA5;
 
 
 }
+@media screen and (max-width:768px){
+
+    .php-title{
+        /* phP */
+    position: absolute;
+    width: 138px;
+    height: 33px;
+    left: 320px;
+    top: 1330px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+
+}
 .javascript-icon{
 /* Vector */
 
 box-sizing: border-box;
-left: 300px;
+left: 320px;
 position: absolute;
 right: 66.91%;
 top: 1480px;
 bottom: 46.97%;
+
+}
+@media screen and (max-width:768px){
+    .javascript-icon{
+        /* Vector */
+        
+        box-sizing: border-box;
+        left: 80px;
+        position: absolute;
+        right: 66.91%;
+        top: 1390px;
+        bottom: 46.97%;
+        
+        }
 
 }
 .javascript-title{
@@ -1424,6 +1646,31 @@ color: #F8CBA5;
 
 
 }
+@media screen and (max-width:768px){
+    .javascript-title{
+        /* JAVASCRIPT */
+    
+    position: absolute;
+    width: 203px;
+    height: 38px;
+    left: 80px;
+    top: 1440px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+
+}
 .react-icon{
     /* Vector */
 
@@ -1434,6 +1681,21 @@ left: 408px;
 right: 51.18%;
 top: 1480px;
 bottom: 46.84%;
+
+}
+@media screen and (max-width:768px){
+    .react-icon{
+        /* Vector */
+    
+    box-sizing: border-box;
+    
+    position: absolute;
+    left: 200px;
+    right: 51.18%;
+    top: 1390px;
+    bottom: 46.84%;
+    
+    }
 
 }
 .react-title{
@@ -1458,6 +1720,29 @@ color: #F8CBA5;
 
 
 }
+@media screen and (max-width:678px){
+    .react-title{
+        /* REACT */
+    
+    position: absolute;
+    width: 147px;
+    height: 38px;
+    left: 200px;
+    top: 1440px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    }
+
+}
 .sql-icon{
     /* Vector */
 box-sizing: border-box;
@@ -1465,6 +1750,19 @@ position: absolute;
 left: 535px;
 right: 38.18%;
 top: 1480px;
+
+}
+@media screen and (max-width:768px){
+    
+    .sql-icon{
+        /* Vector */
+    box-sizing: border-box;
+    position: absolute;
+    left: 320px;
+    right: 38.18%;
+    top: 1390px;
+    
+    }
 
 }
 .sql-title{
@@ -1488,6 +1786,31 @@ color: #F8CBA5;
 
 
 
+}
+@media screen and (max-width:768px){
+
+    .sql-title{
+        /* SQL */
+        position: absolute;
+        width: 203px;
+        height: 38px;
+        left: 320px;
+        top: 1440px;
+        
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F8CBA5;
+        
+        
+        
+        }
 }
 
 
