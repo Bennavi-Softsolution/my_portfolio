@@ -279,6 +279,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .aboutInformation {
@@ -315,6 +316,7 @@ body {
     .aboutMe {
         display: flex;
         flex-direction: column;
+        margin-bottom: 5vh;
         
     }
 
@@ -361,12 +363,30 @@ body {
     
 }
 
+.experience h5 {
+    margin-left: 65vw;
+    font-size: 1.0em;
+    color: #ebdbb2;
+}
+
 .experience hr {
-    width: 20vw;
+    width: 15vw;
     margin-top: -3.5vh;
     margin-bottom: 2vh;
-    margin-left: 75vw;
+    margin-left: 80vw;
     color: #D65D0E;
+}
+
+.experienceContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 63vw;
+}
+
+.experienceContainer p {
+    margin: 5vw;
+    margin-top: 1vh;
+    
 }
 
 @media (max-width: 768px) {
@@ -383,6 +403,25 @@ body {
         margin-left: 60vw;
         color: #D65D0E;
     }
+
+    .experienceContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 15vw;
+    }
+    
+    .experienceContainer p {
+        margin: 5vw;
+        margin-top: 1vh;
+        
+    }
+
+    .experience h5 {
+        margin-left: 15vw;
+        font-size: 1.0em;
+        color: #ebdbb2;
+    }
+    
     
 }
 
