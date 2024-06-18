@@ -89,7 +89,7 @@
   /* begining of contact me part */
   .imagebackground{
     background-image: url('./Assets/rectangle.png' );
-    width: 120%; /* Make the image responsive */
+    padding:0%;
     height: 60vw; /* Maintain aspect ratio */
     background-repeat: no-repeat;
     background-size: auto;
@@ -98,7 +98,8 @@
   }
   .rectangle {
     background-color: #afc5ca;
-    width: 80vw; /* Adjusted to vw for consistency */
+    max-width: var(--max-width);
+    height: 100%;
     text-align: center; /* Center the content */
 
   }
