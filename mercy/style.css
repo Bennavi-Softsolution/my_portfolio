@@ -1517,3 +1517,299 @@ a{
     color:#000000;
 }
 /*Project section ends here*/
+/*Skill section starts here*/
+.skill-section{
+
+/* Group 56 */
+
+position: absolute;
+width: 777px;
+height: 436px;
+left: 81px;
+top: 600px;
+
+}
+.skill-title{
+
+/* 3. SKILLS */
+position: absolute;
+width: 405px;
+height: 102px;
+left: 81px;
+top: 1193px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+
+}
+.skill-line{
+/* Line 1 */
+
+position: absolute;
+width: 575px;
+height: 0px;
+left: 283px;
+top: 1244px;
+}
+.python-icon{
+
+    /* Frame 68 */
+position: absolute;
+width: 63px;
+height: 80px;
+left: 290px;
+top: 1279px;
+
+}
+.python-title{
+
+    /* python */
+
+position: absolute;
+width: 138px;
+height: 33px;
+left: 278px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+.html-icon{
+
+/* Vector */
+box-sizing: border-box;
+
+position: absolute;
+left: 408px;
+right: 55.09%;
+top: 1279px;
+bottom: 54.08%;
+
+background: #D65D0E;
+border: 1px solid rgba(214, 93, 14, 0.8);
+
+}
+.html-title{
+/* HTML */
+
+position: absolute;
+width: 138px;
+height: 33px;
+left: 408px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+}
+
+.css-icon{
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 515px;
+top: 1279px;
+bottom: 53.8%;
+
+background: #D65D0E;
+border: 1px solid rgba(214, 93, 14, 0.8);
+
+
+}
+.css-title{
+    /* CSS */
+
+position: absolute;
+width: 138px;
+height: 33px;
+left: 530px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+.php-icon{
+    /* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 79.73%;
+right: 32.82%;
+top: 1279px;
+bottom: 54.08%;
+}
+.php-title{
+    /* phP */
+position: absolute;
+width: 138px;
+height: 33px;
+left: 79.73%;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+.javascript-icon{
+/* Vector */
+
+box-sizing: border-box;
+left: 300px;
+position: absolute;
+right: 66.91%;
+top: 1480px;
+bottom: 46.97%;
+
+}
+.javascript-title{
+    /* JAVASCRIPT */
+
+position: absolute;
+width: 203px;
+height: 38px;
+left: 258px;
+top: 1591px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+.react-icon{
+    /* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 408px;
+right: 51.18%;
+top: 1480px;
+bottom: 46.84%;
+
+}
+.react-title{
+    /* REACT */
+
+position: absolute;
+width: 147px;
+height: 38px;
+left: 408px;
+top: 1591px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+.sql-icon{
+    /* Vector */
+box-sizing: border-box;
+position: absolute;
+left: 535px;
+right: 38.18%;
+top: 1480px;
+
+}
+.sql-title{
+/* SQL */
+position: absolute;
+width: 203px;
+height: 38px;
+left: 530px;
+top: 1583px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*skill section ends here*/
