@@ -1,39 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercy Wairimu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inika' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <div>
-        <h1>Navbar</h1>
+    <div class="navBar">
+
+        <!-- Container for the Logo-->
+        <div class="mwLogo">
+            <img src="./assets/MW Logo.png" alt="Mercy Wairimu Logo">
+        </div>
+
+        <!-- Container for the menu sidebar toggle-->
+        <div class="sidebarToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!--Container for the menu items-->
+        <div class="menuBar" id="mySidebar">
+
+            <ol>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ol>
+
+            <button class="closeButton">&times;</button>
+
+            <!-- Container for the resume button (visible on mobile)-->
+            <div class="resumeContainerMobile">
+                <button class="resumeButton">RESUME</button>
+
+            </div>
+        </div>
+
+        <!-- Container for the resume button-->
+        <div class="resumeContainer">
+            <button class="resumeButton">RESUME</button>
+        </div>
+
+
+
     </div>
 
-    <div>
-        <h1>About Me</h1>
+    <div class="about" id="about">
+
+        <div class="profileInformation">
+            <h5>Hello, my name is</h5>
+            <h3>Mercy Wairimu Gitingu</h3>
+            <h4>Unlocking Possibilities, One Line of Code at a Time</h4>
+        </div>
+
+        <div class="aboutMe">
+
+            <div class="aboutInformation">
+                <p>1. ABOUT ME<p> 
+                <hr>
+                <div class="paragraph">
+                    Hello!I am a driven software engineer with a solid foundation in software development and a proven track record of creating efficient, scalable applications. 
+                </div>
+            </div>
+
+            <div class="profilePicture">
+                <img src="./assets/Frame 50.png" alt="Mercy Wairimu Gitingu">
+            </div>
+
+        </div>
+
+       
+        
     </div>
 
-    <div>
+    <div id="experience">
         <h1>Experience</h1>
     </div>
 
     <div>
         <h1>Skills</h1>
     </div>
-
-    <div>
-        <h1>Pesonal Projects</h1>
+<!--Project sections starts here-->
+    <div class="project-section">
+      <div class="project-title">4. PERSONAL PROJECTS</div>
+      <diV class="project-line"><img src="assets/Line 1 (1).png"></diV>
+      <div class="first-angle-bracket"><img src="assets/Group 8.png"></div>
+      <div class="project-subsection">
+        <div class="title-sub">Project 2</div>
+        <div class="title2-sub">Developer’s  App</div>
+        <div class="content-sub">A communication app
+            for developerssss</div>
+        <div class="image-sub"><img src="assets/Rectangle 65.png"></div>
+        <div class="icon-sub"><img src="assets/Group.png"></div>
+        <div class="link-sub"><a href="#">https://github.com/name/repo</a></div>
+      </div>
+      <div class="second-angle-bracket"><img src="assets/Vector (7).png"></div>
     </div>
-
-    <div>
-        <h1>Contact Me</h1>
-    </div>
-
-    <div>
-        <h1>Footer</h1>
-    </div>
+    <!--Project section ends here-->
+<!--contact Section starts here-->
+<div class="contact-section">
+    <div class="contact-head"> 5. CONTACT ME</div>
+    <div class="contact-line"><img src="assets/Line 1 (1).png" class="width-section"></div>
+    <div class="contact-subsection">
+    <div class="call-icon"><img src="assets/Vector (4).png"></div>
+    <div class="call-title"> +254114097019</div>
+    <div class="mail-icon"><img src="assets/Vector (5).png"></div>
+    <div class="mail-title">wairimugitungu@gmail.com</div>
+    <div class="location-icon"><img src="assets/Vector (6).png"></div>
+    <div class="location-title">Nairobi</div></div>
     
+
+
+    <div class="contact-section" id="contact">
+
+
+
+</div>   
+
+<!--contact section ends here-->
+<!--Footer section starts here-->
+<div class="social-section">
+
+    <div class="linkedin"><a href="#"><img src="assets/Vector.png"></a></div>
+    <div class="github"><a href="#"><img src="assets/Vector (1).png"></a></div>
+    <div class="instagram"><a href="#"><img src="assets/Vector (2).png"></a></div>
+    <div class="twitter"><a href="#"><img src="assets/Vector (3).png"></a></div>
+
+
+
+  </div>
+    <div class="footer-section">
+
+
+    <p>Developed by Bennavi Softsolution @2024</p>
+
+
+    </div>
+    <!--Footer section ends here-->
+    
+
+    <script src="script.js"></script>
 </body>
+
 </html>
