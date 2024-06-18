@@ -36,8 +36,8 @@
 <body>
     <!--Navbar-->
     <div class="Navbar">
-
-        <div class="Nav_Content">     
+        <div class="Nav_Content">
+            <div class="Left_Nav">
                 <div class="Logo">
                     <div class="G_Than">></div>
                     <div class="Cursor">|</div>
@@ -48,30 +48,33 @@
                         <input class="Search" type="search" placeholder="Search ..." aria-label="Search">
                     </div>
                 </div>
+            </div>
+            <div class="Right_Nav">
                 <div class="Menu">
                     <ul class="Menu_Content">
-                        <li class="menu_item">Projects</li>
-                        <li class="menu_item">Resume</li>
-                        <li class="menu_item">About</li>
+                        <li> <a href="#Projects" class="menu_item"> Projects </a> </li>
+                        <li> <a href="#Resume" class="menu_item"> Resume </a> </li>
+                        <li> <a href="#About" class="menu_item"> About </a> </li>
                     </ul>
                 </div>
                 <button class="Theme">
                     <img class="T_Img" src="./assets/sun.png" alt="Theme">
                 </button>
-                <label for="check" class="checkbox">
-                    <i class="ri-menu-line"></i>
-                </label>
-
+            </div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input class="Check_Box" type="checkbox" name="check" id="check" />
         </div>
     </div>
-
+    
     <!-- The main body container -->
         <div class="body-container">
         
             <!-- main body section that has every other portfolio detail including projects, work experience and education -->
             <div class="right-section">
                 <div class="projects-Section">
-                    <h1 class="heading">My Projects</h1>
+                    <h1 class="heading" id="Projects">My Projects</h1>
                     <div class="project1">
                         <div class="projectTitle">
                             <h3>Offline Music Player for Android</h3>
@@ -99,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="experience-Section">
+                <div class="experience-Section" id="Resume">
                     <h1 class="heading">Work</h1>
                     <div class="area">
                         <div class="workSection">

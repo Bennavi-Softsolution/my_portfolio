@@ -1,6 +1,6 @@
 /* Body Section */
 :root{
-    --max-width: 1400px;
+    --max-width: 1000px;
 }
 
 body{
@@ -14,52 +14,78 @@ body{
 }
 
 /* beginning Navbar Section */
-.Navbar{
+.Navbar {
     background-color: #1D2021;
-    position: absolute;
+    position: 100%;
     width: 100%;
     height: 53px;
     left: 0px;
     top: 0px;
 }
-.Nav_Content{
-    margin: auto;
+
+.Nav_Content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'JetBrains Mono', monospace;
     color: #EBDBB2;
     font-size: 20px;
+    padding: 0 5%;
 }
-.Logo{
+
+.Left_Nav, .Right_Nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Left_Nav {
+    margin-right: auto;
+}
+
+.Logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-    transition: left 0.3s;
-    margin-left: 5%;
 }
-.Search{
-width: auto;
-height: auto;
-background: #282828;
-border-radius: 8px;
+
+.Search {
+    width: auto;
+    height: auto;
+    background: #282828;
+    border-radius: 8px;
+    border-style: none;
 }
-.Menu_Content{
+
+
+.Menu_Content {
     display: flex;
-    align-items:end;
-    gap: 3rem;
+    align-items: center;
+    gap: 2rem;
     list-style: none;
-    transition: left 0.3s;
 }
-.Theme{
+
+.Theme {
     background-color: transparent;
-    margin-right: 2%;
     border: none;
 }
-.T_Img{
+
+.T_Img {
     height: 20px;
     width: 20px;
 }
+.Nav_Content .checkbox {
+    display: none;
+}
+.Nav_Content .Check_Box {
+    display: none;
+}
+.Nav_Content .checkbox i {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 
 /* beginning of the body section */
 .body-container{
@@ -77,6 +103,7 @@ border-radius: 8px;
     margin-right: 60px;
     position: sticky;
     top: 2vh;
+    max-width: var(--max-width);
 }
 
 .about-section{
@@ -138,6 +165,7 @@ border-radius: 8px;
     font-weight: 300;
     font-style: normal;
     font-size: 22px;
+    max-width: var(--max-width);
 }
 
 .heading{
@@ -186,16 +214,24 @@ a{
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
-    font-size: 12px;
-    position: relative;
-    bottom: -10vh;
+    font-size: 13px;
 }
-
-
-
 /* Phone Responsiveness */
 
 @media only screen and (max-width: 768px) {
+    .Navbar .checkbox{
+        display: block;
+    }
+    .L_Text{
+        display: none;
+    }
+    }
+    .Menu_Content{
+        display: none;
+    }
+    .Navbar #check:checked ~ .Nav_Content .Menu_Content{
+        left: 0;
+    }
     body{
         font-weight: 300;
         font-size: 17px;
