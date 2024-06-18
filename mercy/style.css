@@ -312,6 +312,29 @@ body {
     margin-right: 5vw;
 }
 
+.getintouchButton {
+    margin-top: 3vh;
+    margin-left: 0.3vw;
+
+}
+
+.getintouchButton button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color); /* Set background color */
+    color: var(--secondary-color); /* Set text color */
+    cursor: pointer;
+    outline: 2px solid;
+    font-family: 'Inika';
+}
+
+.getintouchButton button:hover {
+    background-color: var(--secondary-color); /* Change background color on hover */
+    color: var(--main-color); /* Change text color on hover */
+
+}
+
 @media (max-width: 768px) {
     .aboutMe {
         display: flex;
@@ -349,6 +372,12 @@ body {
         margin-right: 5vw;
     }
 
+    .getintouchButton {
+        margin-top: 3vh;
+        margin-left: 33vw;
+        margin-bottom: 3vh;
+    
+    }
     
 
 }
