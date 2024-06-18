@@ -74,7 +74,6 @@ body {
 
   }
 
-  /* Styling for the resume button */
 .resumeContainer button {
     padding: 10px 20px;
     border: none;
@@ -82,17 +81,18 @@ body {
     background-color: var(--main-color); /* Set background color */
     color: var(--secondary-color); /* Set text color */
     cursor: pointer;
-    outline: 2px solid ; /* Add outline */
+    outline: 2px solid; /* Ensure the outline is initially transparent */
     font-family: 'Inika';
-    
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Add transitions for smooth animation */
 }
 
-/* Styling for the resume button on hover */
 .resumeContainer button:hover {
     background-color: var(--secondary-color); /* Change background color on hover */
     color: var(--main-color); /* Change text color on hover */
-
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+    outline-color: var(--secondary-color); /* Change outline color on hover */
 }
+
 
 /* Styling for the resume button in mobile */
 .resumeContainerMobile {
@@ -125,6 +125,7 @@ body {
 
     .menuBar.show .closeButton {
         display: block;
+        
     }
     .navBar {
         flex-direction: row;
@@ -237,7 +238,7 @@ body {
         
     }
 
-    .resumeContainerMobile button:hover {
+    .resumeContainerMobile button:active {
         background-color: var(--secondary-color); /* Set background color */
         color: var(--sidebar-color); /* Set text color */
                 
@@ -247,19 +248,61 @@ body {
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+    
+    border-radius: 10px;
+
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.about:hover {
+    box-shadow: 0 8px 16px var(--secondary-color);
+}
+
 
 .about h5 {
     color: var(--secondary-color);
     font-size: 1.3em;
+    animation: fadeInDown 1s ease-out forwards;
 }
+
+.about h5:hover {
+    color: var(--main-text-color);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .about h3 {
     color: var(--main-text-color);
     font-size: 1.8em;
+    animation: slideInLeft 1s ease-out forwards;
 }
+
+.about h3:hover {
+    color: var(--secondary-color);
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 .about h4 {
     width: 68vw;
@@ -273,18 +316,41 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-emphasis-color: transparent;
+    animation: gradientMove 5s ease-in-out infinite;
 }
+
+.about h4:hover {
+    background-position: 100% 0;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 
 .aboutMe {
     display: flex;
     flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
+
 .aboutInformation {
     width: 100vw;
 }
+
 .aboutInformation p {
     font-size: 1.3em;
     width: 14vw;
+    
 }
 
 .aboutInformation hr {
@@ -301,6 +367,248 @@ body {
     font-family: 'JetBrains Mono';
     font-size: 0.9em;
 }
+
+.profilePicture {
+    margin-top: -8vh;
+    margin-right: 5vw;
+}
+
+.profilepictureResponsive {
+    display: none; /* hides image in desktop view */
+}
+
+.getintouchbuttonResponsive {
+    display: none;/* hides this in mobile view */
+    
+}
+
+.getintouchButton {
+    margin-top: 3vh;
+    margin-left: 0.3vw;
+
+}
+
+.getintouchButton button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color); /* Set background color */
+    color: var(--secondary-color); /* Set text color */
+    cursor: pointer;
+    outline: 2px solid ; /* Ensure the outline is initially transparent */
+    font-family: 'Inika';
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Add transitions for smooth animation */
+}
+
+.getintouchButton button:hover {
+    background-color: var(--secondary-color); /* Change background color on hover */
+    color: var(--main-color); /* Change text color on hover */
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+    outline-color: var(--secondary-color); /* Change outline color on hover */
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        padding: 10px;
+    }
+
+    .about h5 {
+        animation: fadeInDownMobile 0.8s ease-out forwards;
+    }
+    
+    .about h3 {
+        animation: slideInLeftMobile 0.8s ease-out forwards;
+    }
+    
+    .about h4 {
+        animation: gradientMoveMobile 3s ease-in-out infinite;
+    }
+    
+    /* Define mobile-specific keyframes */
+    @keyframes fadeInDownMobile {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideInLeftMobile {
+        from {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes gradientMoveMobile {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+    
+
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        
+    }
+
+    .aboutInformation {
+        width: 98vw;
+        margin-right: 5vw;
+    }
+    
+    .aboutInformation p {
+        font-size: 1.3em;
+        width:40vw;
+        margin-bottom: 3vh;
+        text-align: center;
+        
+    }
+
+    .paragraph {
+        margin-left: 7vw;
+        margin-bottom: 3vh;
+        text-align: center;
+        width: 80vw;
+    }
+
+    .aboutInformation hr {
+        margin-top: -2.0vh;
+        margin-left: 5vw;
+        color: #D65D0E;
+    }
+
+    .profilePicture {
+        display: none;
+        
+    }
+
+    .profilepictureResponsive {
+        display: block; /* hides image in desktop view */
+        margin-right: 5vw;
+        
+    }
+
+    .getintouchButton {
+        display: none;/* hides this in mobile view */
+        
+    }
+
+    .getintouchbuttonResponsive {
+        display: block;
+        margin-top: -11vh;
+        margin-left: 33vw;
+        
+    }
+
+    .getintouchbuttonResponsive button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--main-color); /* Set background color */
+        color: var(--secondary-color); /* Set text color */
+        cursor: pointer;
+        outline: 2px solid;
+        font-family: 'Inika';
+    }
+    
+    .getintouchbuttonResponsive button:active {
+        background-color: var(--secondary-color); /* Change background color on hover */
+        color: var(--main-color); /* Change text color on hover */
+    
+    }
+
+
+}
+
+/* Experience styles start here */
+
+
+.experience p {
+    margin-left: 65vw;
+    font-size: 1.3em;
+    
+}
+
+.experience h5 {
+    margin-left: 65vw;
+    font-size: 1.0em;
+    color: #ebdbb2;
+}
+
+.experience hr {
+    width: 15vw;
+    margin-top: -3.5vh;
+    margin-bottom: 2vh;
+    margin-left: 80vw;
+    color: #D65D0E;
+}
+
+.experienceContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 63vw;
+}
+
+.experienceContainer p {
+    margin: 5vw;
+    margin-top: 1vh;
+    
+}
+
+@media (max-width: 768px) {
+    .experience p {
+        margin-left: 60vw;
+        font-size: 1.3em;
+        
+    }
+
+    .experience hr {
+        width: 35vw;
+        margin-top: -1.0vh;
+        margin-bottom: 2vh;
+        margin-left: 60vw;
+        color: #D65D0E;
+    }
+
+    .experienceContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 15vw;
+    }
+    
+    .experienceContainer p {
+        margin: 5vw;
+        margin-top: 1vh;
+        
+    }
+
+    .experience h5 {
+        margin-left: 15vw;
+        font-size: 1.0em;
+        color: #ebdbb2;
+    }
+    
+    
+}
+
+
 
 /*footer section styling starts here*/
 .footer-section{
