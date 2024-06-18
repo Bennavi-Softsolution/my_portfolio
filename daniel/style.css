@@ -51,10 +51,17 @@ body{
 
 .Search {
     width: auto;
-    height: auto;
+    height: 30px;
     background: #282828;
     border-radius: 8px;
     border-style: none;
+    color:#ebd7a7;
+}
+
+.Cursor{
+    background-color: #EBDBB2;
+    width: 16px;
+    height: 20px;
 }
 
 
@@ -63,6 +70,20 @@ body{
     align-items: center;
     gap: 2rem;
     list-style: none;
+}
+
+.menu_item{
+    text-decoration: none;
+    color: #EBDBB2;
+}
+
+.menu-item-link:hover{
+    background-color: #2b2727;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+
 }
 
 .Theme {
@@ -219,15 +240,20 @@ a{
 /* Phone Responsiveness */
 
 @media only screen and (max-width: 768px) {
+    /* Beginning of Navbar */
     .Navbar .checkbox{
         display: block;
     }
     .L_Text{
         display: none;
     }
+
     .Menu_Content{
         display: none;
     }
+
+    /* body section */
+
     body{
         font-weight: 300;
         font-size: 17px;
@@ -288,7 +314,6 @@ a{
 
             /* right-section styling */
     .right-section{
-        /* display: none; */
         width: 100vw;
         font-size: 17px;
     }
