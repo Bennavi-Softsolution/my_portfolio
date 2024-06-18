@@ -279,12 +279,15 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .aboutInformation {
     width: 100vw;
 }
+
 .aboutInformation p {
     font-size: 1.3em;
     width: 14vw;
+    
 }
 
 .aboutInformation hr {
@@ -301,6 +304,43 @@ body {
     font-family: 'JetBrains Mono';
     font-size: 0.9em;
 }
+
+@media (max-width: 768px) {
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .aboutInformation {
+        width: 100vw;
+    }
+    
+    .aboutInformation p {
+        font-size: 1.3em;
+        width:40vw;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+
+    .paragraph {
+        margin-left: 7vw;
+        margin-bottom: 3vh;
+        text-align: center;
+        width: 80vw;
+    }
+
+    .aboutInformation hr {
+        margin-top: -2.0vh;
+        margin-left: 5vw;
+        color: #D65D0E;
+    }
+
+    
+
+}
+
+
 
 /*footer section styling starts here*/
 .footer-section{
