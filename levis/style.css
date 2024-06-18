@@ -90,7 +90,6 @@
   
   /* begining of contact me part */
   .imagebackground{
-   
     position: absolute;
     bottom: 40%;
   
@@ -112,11 +111,12 @@
     
   } 
   .contactme{
+    font-size: xx-large;
     color: white;
     position:static;
     display: flex;
     margin:auto;
-    padding:5%;
+    padding:3%;
   }
   .contactmebuton{
     border: 1px solid #0DB5BA;
@@ -127,11 +127,20 @@
    
 
   }
-  .profilephoto{
-    background-image: url('./Asset/Levis.png' );
-    position: 50px 40px;
 
-  }
+.profilephoto{
+  top: -80px;
+  position:relative;
+  left: 500px;
+  flex-direction:grid;
+}
+.contactmeicons{
+  font-size:larger;
+  display: flex;
+  flex-direction: row;
+  height: 2vw;
+  color: #ffffff;
+}
 
 
 
