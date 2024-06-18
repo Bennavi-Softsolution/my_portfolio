@@ -62,8 +62,10 @@
                 </button>
             </div>
             <!-- Menu Icon -->
-            <label for="check" class="checkbox" onclick="toggleLeftSection()">
-                <i class="ri-menu-line"></i>
+            <label for="check" class="checkbox" onclick="toggleLeftSection(); Change(this);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </label>
             <input class="Check_Box" type="checkbox" name="check" id="check" />
         </div>
@@ -189,6 +191,9 @@
             const leftSection = document.querySelector('.left-section');
             leftSection.classList.toggle('active');
         }
+        //Script to change hamburger icon to x(close) icon //
+        function Change(x){
+		x.classList.toggle("change");}
         //Script to disable Scrolling When menu icon is clicked //
         document.addEventListener('DOMContentLoaded', () => {
         const checkbox = document.getElementById('check');
@@ -207,6 +212,6 @@
         });
     });
 });
-    </script> 
+    </script>
 </body>
 </html>
