@@ -1218,7 +1218,7 @@ position: absolute;
 width: 777px;
 height: 436px;
 left: 81px;
-top: 1100px;
+top: 600px;
 
 }
 .skill-title{
@@ -1244,8 +1244,25 @@ color: #F8CBA5;
 
 
 }
+.skill-line{
+/* Line 1 */
 
+position: absolute;
+width: 575px;
+height: 0px;
+left: 283px;
+top: 1244px;
+}
+.python-icon{
 
+    /* Frame 68 */
+position: absolute;
+width: 63px;
+height: 80px;
+left: 314px;
+top: 1279px;
+
+}
 
 
 
