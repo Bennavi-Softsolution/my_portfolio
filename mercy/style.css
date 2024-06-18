@@ -278,13 +278,18 @@ body {
 .aboutMe {
     display: flex;
     flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
+
 .aboutInformation {
     width: 100vw;
 }
+
 .aboutInformation p {
     font-size: 1.3em;
     width: 14vw;
+    
 }
 
 .aboutInformation hr {
@@ -301,6 +306,155 @@ body {
     font-family: 'JetBrains Mono';
     font-size: 0.9em;
 }
+
+.profilePicture {
+    margin-top: -8vh;
+    margin-right: 5vw;
+}
+
+.getintouchButton {
+    margin-top: 3vh;
+    margin-left: 0.3vw;
+
+}
+
+.getintouchButton button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color); /* Set background color */
+    color: var(--secondary-color); /* Set text color */
+    cursor: pointer;
+    outline: 2px solid;
+    font-family: 'Inika';
+}
+
+.getintouchButton button:hover {
+    background-color: var(--secondary-color); /* Change background color on hover */
+    color: var(--main-color); /* Change text color on hover */
+
+}
+
+@media (max-width: 768px) {
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        
+    }
+
+    .aboutInformation {
+        width: 100vw;
+    }
+    
+    .aboutInformation p {
+        font-size: 1.3em;
+        width:40vw;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+
+    .paragraph {
+        margin-left: 7vw;
+        margin-bottom: 3vh;
+        text-align: center;
+        width: 80vw;
+    }
+
+    .aboutInformation hr {
+        margin-top: -2.0vh;
+        margin-left: 5vw;
+        color: #D65D0E;
+    }
+
+    .profilePicture {
+        margin-top: auto;
+        margin-right: 5vw;
+    }
+
+    .getintouchButton {
+        margin-top: 3vh;
+        margin-left: 33vw;
+        margin-bottom: 3vh;
+    
+    }
+    
+
+}
+
+
+/* Experience styles start here */
+
+
+.experience p {
+    margin-left: 65vw;
+    font-size: 1.3em;
+    
+}
+
+.experience h5 {
+    margin-left: 65vw;
+    font-size: 1.0em;
+    color: #ebdbb2;
+}
+
+.experience hr {
+    width: 15vw;
+    margin-top: -3.5vh;
+    margin-bottom: 2vh;
+    margin-left: 80vw;
+    color: #D65D0E;
+}
+
+.experienceContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 63vw;
+}
+
+.experienceContainer p {
+    margin: 5vw;
+    margin-top: 1vh;
+    
+}
+
+@media (max-width: 768px) {
+    .experience p {
+        margin-left: 60vw;
+        font-size: 1.3em;
+        
+    }
+
+    .experience hr {
+        width: 35vw;
+        margin-top: -1.0vh;
+        margin-bottom: 2vh;
+        margin-left: 60vw;
+        color: #D65D0E;
+    }
+
+    .experienceContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 15vw;
+    }
+    
+    .experienceContainer p {
+        margin: 5vw;
+        margin-top: 1vh;
+        
+    }
+
+    .experience h5 {
+        margin-left: 15vw;
+        font-size: 1.0em;
+        color: #ebdbb2;
+    }
+    
+    
+}
+
+
 
 /*footer section styling starts here*/
 .footer-section{
