@@ -226,7 +226,8 @@ transition: 0.4s;
 }
 
 .project{
-    border-top: 0.05px solid #EBDBB2;
+    border-top: 0.05px dashed #EBDBB2;
+    width: 60%;
 }
 
 a{
