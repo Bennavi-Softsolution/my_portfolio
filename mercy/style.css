@@ -1286,6 +1286,21 @@ color: #F8CBA5;
 
 
 }
+.html-icon{
+
+/* Vector */
+box-sizing: border-box;
+
+position: absolute;
+left: 450px;
+right: 55.09%;
+top: 1279px;
+bottom: 54.08%;
+
+background: #D65D0E;
+border: 1px solid rgba(214, 93, 14, 0.8);
+
+}
 
 
 
