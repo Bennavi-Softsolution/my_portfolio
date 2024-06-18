@@ -225,16 +225,15 @@ a{
     .L_Text{
         display: none;
     }
-    }
     .Menu_Content{
         display: none;
-    }
-    .Navbar #check:checked ~ .Nav_Content .Menu_Content{
-        left: 0;
     }
     body{
         font-weight: 300;
         font-size: 17px;
+    }
+    body.no-scroll {
+        overflow: hidden;
     }
     .body-container{
         width: 100vw;
@@ -243,16 +242,25 @@ a{
     }
 
             /* left-section css */
-
+  
     .left-section{
         display: none;
-        position: relative;
+        position: fixed;
         background-color: #1D2021;
         width: max-content;
         padding: 20px;
         height: 90vh;
-        top: 0;
-        right: 0;
+        margin-top: 5.6%;
+        margin-left: 20.7%;
+        left: 0;
+        z-index: 1000;
+        transition: transform 0.3s ease, left 0.3s ease-in-out;
+    }
+    /* css styling when menu Icon is clicked */
+    .left-section.active {
+        display: block;
+        left: 0;
+        transform: translateX(0);
     }
 
     .about-content{
@@ -261,12 +269,12 @@ a{
     .profile{
         height: 120px;
         width: 120px;
-        margin: 0 35%;
+        margin: 20% 30%;
     }
 
     .profileImage{
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
     }
 
     .socials{
