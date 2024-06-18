@@ -74,7 +74,6 @@ body {
 
   }
 
-  /* Styling for the resume button */
 .resumeContainer button {
     padding: 10px 20px;
     border: none;
@@ -82,17 +81,18 @@ body {
     background-color: var(--main-color); /* Set background color */
     color: var(--secondary-color); /* Set text color */
     cursor: pointer;
-    outline: 2px solid ; /* Add outline */
+    outline: 2px solid; /* Ensure the outline is initially transparent */
     font-family: 'Inika';
-    
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Add transitions for smooth animation */
 }
 
-/* Styling for the resume button on hover */
 .resumeContainer button:hover {
     background-color: var(--secondary-color); /* Change background color on hover */
     color: var(--main-color); /* Change text color on hover */
-
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+    outline-color: var(--secondary-color); /* Change outline color on hover */
 }
+
 
 /* Styling for the resume button in mobile */
 .resumeContainerMobile {
@@ -248,19 +248,61 @@ body {
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+    
+    border-radius: 10px;
+
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.about:hover {
+    box-shadow: 0 8px 16px var(--secondary-color);
+}
+
 
 .about h5 {
     color: var(--secondary-color);
     font-size: 1.3em;
+    animation: fadeInDown 1s ease-out forwards;
 }
+
+.about h5:hover {
+    color: var(--main-text-color);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .about h3 {
     color: var(--main-text-color);
     font-size: 1.8em;
+    animation: slideInLeft 1s ease-out forwards;
 }
+
+.about h3:hover {
+    color: var(--secondary-color);
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 .about h4 {
     width: 68vw;
@@ -274,7 +316,25 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-emphasis-color: transparent;
+    animation: gradientMove 5s ease-in-out infinite;
 }
+
+.about h4:hover {
+    background-position: 100% 0;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 
 .aboutMe {
     display: flex;
@@ -335,17 +395,72 @@ body {
     background-color: var(--main-color); /* Set background color */
     color: var(--secondary-color); /* Set text color */
     cursor: pointer;
-    outline: 2px solid;
+    outline: 2px solid ; /* Ensure the outline is initially transparent */
     font-family: 'Inika';
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Add transitions for smooth animation */
 }
 
 .getintouchButton button:hover {
     background-color: var(--secondary-color); /* Change background color on hover */
     color: var(--main-color); /* Change text color on hover */
-
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+    outline-color: var(--secondary-color); /* Change outline color on hover */
 }
 
 @media (max-width: 768px) {
+
+    .about {
+        padding: 10px;
+    }
+
+    .about h5 {
+        animation: fadeInDownMobile 0.8s ease-out forwards;
+    }
+    
+    .about h3 {
+        animation: slideInLeftMobile 0.8s ease-out forwards;
+    }
+    
+    .about h4 {
+        animation: gradientMoveMobile 3s ease-in-out infinite;
+    }
+    
+    /* Define mobile-specific keyframes */
+    @keyframes fadeInDownMobile {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideInLeftMobile {
+        from {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes gradientMoveMobile {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+    
+
     .aboutMe {
         display: flex;
         flex-direction: column;
