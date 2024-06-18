@@ -278,6 +278,7 @@ body {
 .aboutMe {
     display: flex;
     flex-direction: row;
+    margin-top: 10vh;
 }
 
 .aboutInformation {
@@ -303,6 +304,11 @@ body {
     width: 50vw;
     font-family: 'JetBrains Mono';
     font-size: 0.9em;
+}
+
+.profilePicture {
+    margin-top: -8vh;
+    margin-right: 5vw;
 }
 
 @media (max-width: 768px) {
@@ -336,8 +342,48 @@ body {
         color: #D65D0E;
     }
 
+    .profilePicture {
+        margin-top: auto;
+        margin-right: 5vw;
+    }
+
     
 
+}
+
+
+/* Experience styles start here */
+
+
+.experience p {
+    margin-left: 65vw;
+    font-size: 1.3em;
+    
+}
+
+.experience hr {
+    width: 20vw;
+    margin-top: -3.5vh;
+    margin-bottom: 2vh;
+    margin-left: 75vw;
+    color: #D65D0E;
+}
+
+@media (max-width: 768px) {
+    .experience p {
+        margin-left: 60vw;
+        font-size: 1.3em;
+        
+    }
+
+    .experience hr {
+        width: 35vw;
+        margin-top: -1.0vh;
+        margin-bottom: 2vh;
+        margin-left: 60vw;
+        color: #D65D0E;
+    }
+    
 }
 
 
