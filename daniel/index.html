@@ -36,42 +36,49 @@
 <body>
     <!--Navbar-->
     <div class="Navbar">
-
-        <div class="Nav_Content">     
+        <div class="Nav_Content">
+            <div class="Left_Nav">
                 <div class="Logo">
-                    <div class="G_Than">></div>
-                    <div class="Cursor">|</div>
                     <div class="L_Text">daniel.me</div>
+                    <div class="G_Than">></div>
+                    <div class="Cursor"></div>
+                    <!-- <div class="Cursor">|</div> -->
                 </div>
                 <div>
                     <div class="S_Text">
                         <input class="Search" type="search" placeholder="Search ..." aria-label="Search">
                     </div>
                 </div>
+            </div>
+            <div class="Right_Nav">
                 <div class="Menu">
                     <ul class="Menu_Content">
-                        <li class="menu_item">Projects</li>
-                        <li class="menu_item">Resume</li>
-                        <li class="menu_item">About</li>
+                        <li class="menu-item-link"> <a href="#Projects" class="menu_item"> Projects </a> </li>
+                        <li class="menu-item-link"> <a href="#Resume" class="menu_item"> Resume </a> </li>
+                        <li class="menu-item-link"> <a href="#About" class="menu_item"> About </a> </li>
                     </ul>
                 </div>
                 <button class="Theme">
                     <img class="T_Img" src="./assets/sun.png" alt="Theme">
                 </button>
-                <label for="check" class="checkbox">
-                    <i class="ri-menu-line"></i>
-                </label>
-
+            </div>
+            <!-- Menu Icon -->
+            <label for="check" class="checkbox" onclick="toggleLeftSection(); Change(this);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+            <input class="Check_Box" type="checkbox" name="check" id="check" />
         </div>
     </div>
-
+    
     <!-- The main body container -->
         <div class="body-container">
         
             <!-- main body section that has every other portfolio detail including projects, work experience and education -->
             <div class="right-section">
                 <div class="projects-Section">
-                    <h1 class="heading">My Projects</h1>
+                    <h1 class="heading" id="Projects">My Projects</h1>
                     <div class="project1">
                         <div class="projectTitle">
                             <h3>Offline Music Player for Android</h3>
@@ -84,6 +91,8 @@
                         <div class="projectImage">
                             <img src="./assets/project.jpg" alt="projectImage" class="pImage">
                         </div>
+
+                        <div><a href="#" class="coloured">Read More ></a></div>
                     </div>
                     <div class="project">
                         <div class="projectTitle">
@@ -96,10 +105,11 @@
                         <div class="projectImage">
                             <img src="./assets/project.jpg" alt="projectImage" class="pImage">
                         </div>
+                        <div><a href="#" class="coloured">Read More ></a></div>
                     </div>
                 </div>
 
-                <div class="experience-Section">
+                <div class="experience-Section" id="Resume">
                     <h1 class="heading">Work</h1>
                     <div class="area">
                         <div class="workSection">
@@ -179,6 +189,35 @@
     <div class="footer">
         <span>Copyright &copy; 2024 Bennavi Softsolution</span>
     </div>
-     
+    <script>
+        // Script to trigger the display of about section when menu Icon Is clicked //
+        function toggleLeftSection() {
+            const leftSection = document.querySelector('.left-section');
+            const rightSection = document.querySelector('.right-section');
+            leftSection.classList.toggle('active');
+            rightSection.classList.toggle('active');
+        }
+        //Script to change hamburger icon to x(close) icon //
+        function Change(x){
+		x.classList.toggle("change");}
+        //Script to disable Scrolling When menu icon is clicked //
+        document.addEventListener('DOMContentLoaded', () => {
+        const checkbox = document.getElementById('check');
+        const body = document.body;
+        checkbox.addEventListener('change', (event) => {
+            if (event.target.checked) {
+                body.classList.add('no-scroll');
+            } else {
+                body.classList.remove('no-scroll');
+            }
+        });
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            body.classList.remove('no-scroll');
+            checkbox.checked = false;
+        });
+    });
+});
+    </script>
 </body>
 </html>
