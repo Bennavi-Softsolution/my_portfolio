@@ -89,7 +89,6 @@
   /* begining of contact me part */
   .imagebackground{
     background-image: url('./Assets/rectangle.png' );
-    padding:0%;
     height: 60vw; /* Maintain aspect ratio */
     background-repeat: no-repeat;
     background-size: auto;
