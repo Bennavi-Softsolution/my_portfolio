@@ -19,10 +19,10 @@
   }
   .projectbackground {
   background-image: url('./Assets/background.png' );
-  width:100%;
+  background-size: cover; /* Ensure the background image covers the entire div */
+  width:80%;
   background-repeat: no-repeat;
-  height:100%;
-  margin: 10;
+  margin: 10px auto;
   border-radius: 10px;
   
   }
@@ -162,6 +162,7 @@
 body {
     background: #085E72;
     font-family: 'JetBrains Mono', monospace;
+    overflow-x: hidden; /* Hide horizontal overflow */
     }
     
   
