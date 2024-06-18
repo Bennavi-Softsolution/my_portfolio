@@ -289,6 +289,11 @@ a{
         transform: translateX(0);
     }
 
+    .right-section.active{
+        display: none;
+        transform: translateX(1);
+    }
+
     .about-content{
         padding: 20px;
     }
@@ -316,6 +321,8 @@ a{
     .right-section{
         width: 100vw;
         font-size: 17px;
+        position: absolute;
+        top: -10vh;
     }
 
     .heading{
@@ -323,7 +330,6 @@ a{
     }
 
     .footer{
-        position: absolute;
-        bottom: 0;
+        display: none;
     }
 }

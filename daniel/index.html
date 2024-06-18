@@ -191,7 +191,9 @@
         // Script to trigger the display of about section when menu Icon Is clicked //
         function toggleLeftSection() {
             const leftSection = document.querySelector('.left-section');
+            const rightSection = document.querySelector('.right-section');
             leftSection.classList.toggle('active');
+            rightSection.classList.toggle('active')
         }
         //Script to disable Scrolling When menu icon is clicked //
         document.addEventListener('DOMContentLoaded', () => {
