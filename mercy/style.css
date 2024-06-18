@@ -11,6 +11,7 @@ body {
     background-color: var(--main-color); /* Set background color */
     color: var(--main-text-color); /* Set text color */
     font-family: 'Inika';
+    width:100%;
 }
 
 /* Styling for the navigation bar */
