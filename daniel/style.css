@@ -1,6 +1,6 @@
 /* Body Section */
 :root{
-    --max-width: 1400px;
+    --max-width: 1000px;
 }
 
 body{
@@ -17,7 +17,7 @@ body{
 .Navbar {
     background-color: #1D2021;
     position: 100%;
-    width: auto;
+    width: 100%;
     height: 53px;
     left: 0px;
     top: 0px;
@@ -33,13 +33,13 @@ body{
     padding: 0 5%;
 }
 
-.Left_Section, .Right_Section {
+.Left_Nav, .Right_Nav {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.Left_Section {
+.Left_Nav {
     margin-right: auto;
 }
 
@@ -54,12 +54,14 @@ body{
     height: auto;
     background: #282828;
     border-radius: 8px;
+    border-style: none;
 }
+
 
 .Menu_Content {
     display: flex;
     align-items: center;
-    gap: 2rem; 
+    gap: 2rem;
     list-style: none;
 }
 
@@ -72,8 +74,16 @@ body{
     height: 20px;
     width: 20px;
 }
-.Menu_Icon{
+.Nav_Content .checkbox {
     display: none;
+}
+.Nav_Content .Check_Box {
+    display: none;
+}
+.Nav_Content .checkbox i {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 
@@ -93,6 +103,7 @@ body{
     margin-right: 60px;
     position: sticky;
     top: 2vh;
+    max-width: var(--max-width);
 }
 
 .about-section{
@@ -154,6 +165,7 @@ body{
     font-weight: 300;
     font-style: normal;
     font-size: 22px;
+    max-width: var(--max-width);
 }
 
 .heading{
@@ -203,3 +215,82 @@ a{
     font-style: normal;
     text-align: center;
     font-size: 13px;
+}
+/* Phone Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .Navbar .checkbox{
+        display: block;
+    }
+    .L_Text{
+        display: none;
+    }
+    }
+    .Menu_Content{
+        display: none;
+    }
+    .Navbar #check:checked ~ .Nav_Content .Menu_Content{
+        left: 0;
+    }
+    body{
+        font-weight: 300;
+        font-size: 17px;
+    }
+    .body-container{
+        width: 100vw;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+            /* left-section css */
+
+    .left-section{
+        display: none;
+        position: relative;
+        background-color: #1D2021;
+        width: max-content;
+        padding: 20px;
+        height: 90vh;
+        top: 0;
+        right: 0;
+    }
+
+    .about-content{
+        padding: 20px;
+    }
+    .profile{
+        height: 120px;
+        width: 120px;
+        margin: 0 35%;
+    }
+
+    .profileImage{
+        height: 100px;
+        width: 100px;
+    }
+
+    .socials{
+        position: relative;
+        bottom: -20vh;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+
+            /* right-section styling */
+    .right-section{
+        /* display: none; */
+        width: 100vw;
+        font-size: 17px;
+    }
+
+    .heading{
+        width: 60%;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
