@@ -1218,7 +1218,30 @@ position: absolute;
 width: 777px;
 height: 436px;
 left: 81px;
+top: 1100px;
+
+}
+.skill-title{
+
+/* 3. SKILLS */
+position: absolute;
+width: 405px;
+height: 102px;
+left: 81px;
 top: 1193px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
 
 }
 
