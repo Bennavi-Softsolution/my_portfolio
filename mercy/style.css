@@ -125,6 +125,7 @@ body {
 
     .menuBar.show .closeButton {
         display: block;
+        
     }
     .navBar {
         flex-direction: row;
@@ -237,7 +238,7 @@ body {
         
     }
 
-    .resumeContainerMobile button:hover {
+    .resumeContainerMobile button:active {
         background-color: var(--secondary-color); /* Set background color */
         color: var(--sidebar-color); /* Set text color */
                 
@@ -312,6 +313,15 @@ body {
     margin-right: 5vw;
 }
 
+.profilepictureResponsive {
+    display: none; /* hides image in desktop view */
+}
+
+.getintouchbuttonResponsive {
+    display: none;/* hides this in mobile view */
+    
+}
+
 .getintouchButton {
     margin-top: 3vh;
     margin-left: 0.3vw;
@@ -344,7 +354,8 @@ body {
     }
 
     .aboutInformation {
-        width: 100vw;
+        width: 98vw;
+        margin-right: 5vw;
     }
     
     .aboutInformation p {
@@ -352,6 +363,7 @@ body {
         width:40vw;
         margin-bottom: 3vh;
         text-align: center;
+        
     }
 
     .paragraph {
@@ -368,20 +380,47 @@ body {
     }
 
     .profilePicture {
-        margin-top: auto;
+        display: none;
+        
+    }
+
+    .profilepictureResponsive {
+        display: block; /* hides image in desktop view */
         margin-right: 5vw;
+        
     }
 
     .getintouchButton {
-        margin-top: 3vh;
+        display: none;/* hides this in mobile view */
+        
+    }
+
+    .getintouchbuttonResponsive {
+        display: block;
+        margin-top: -11vh;
         margin-left: 33vw;
-        margin-bottom: 3vh;
-    
+        
+    }
+
+    .getintouchbuttonResponsive button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--main-color); /* Set background color */
+        color: var(--secondary-color); /* Set text color */
+        cursor: pointer;
+        outline: 2px solid;
+        font-family: 'Inika';
     }
     
+    .getintouchbuttonResponsive button:active {
+        background-color: var(--secondary-color); /* Change background color on hover */
+        color: var(--main-color); /* Change text color on hover */
+    
+    }
+
 
 }
-
 
 /* Experience styles start here */
 
