@@ -12,16 +12,16 @@
     display:flex;
     flex-direction:row ;
     justify-content: center;
-    height: 1250px;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     align-items: center;
     font-size: 30px;
   }
   .projectbackground {
   background-image: url('./Assets/background.png' );
-  width:80vw;
+  width:100%;
   background-repeat: no-repeat;
-  height:600px;
+  height:100%;
   margin: 10;
   border-radius: 10px;
   
@@ -365,8 +365,7 @@ align-items: center;
   .projectbackground{
     text-align: left;
     font-size: medium;
-    width: 230px;
-    height: 160vw;
+    width: 100%;
     overflow-block: none;
   }
   table{
