@@ -1322,7 +1322,22 @@ text-transform: capitalize;
 color: #F8CBA5;
 }
 
+.css-icon{
+/* Vector */
 
+box-sizing: border-box;
+
+position: absolute;
+left: 515px;
+right: 44.27%;
+top: 1279px;
+bottom: 53.8%;
+
+background: #D65D0E;
+border: 1px solid rgba(214, 93, 14, 0.8);
+
+
+}
 
 
 
