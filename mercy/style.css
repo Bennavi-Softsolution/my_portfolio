@@ -1292,7 +1292,7 @@ color: #F8CBA5;
 box-sizing: border-box;
 
 position: absolute;
-left: 450px;
+left: 408px;
 right: 55.09%;
 top: 1279px;
 bottom: 54.08%;
@@ -1301,7 +1301,26 @@ background: #D65D0E;
 border: 1px solid rgba(214, 93, 14, 0.8);
 
 }
+.html-title{
+/* HTML */
 
+position: absolute;
+width: 138px;
+height: 33px;
+left: 408px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+}
 
 
 
