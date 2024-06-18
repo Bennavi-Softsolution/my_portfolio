@@ -88,20 +88,51 @@
   
   /* begining of contact me part */
   .imagebackground{
-    background-image: url('./Assets/rectangle.png' );
-    height: 60vw; /* Maintain aspect ratio */
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-color: #085E72;
+   
+    position: absolute;
+    bottom: 40%;
   
   }
   .rectangle {
-    background-color: #afc5ca;
-    max-width: var(--max-width);
+    /* background-color:#085E72; */
+    background-image: url('./Assets/rectangle.png' );
+    /* max-width: var(--max-width); */
+    width: 100%;
     height: 100%;
-    text-align: center; /* Center the content */
+    text-align: left; /* Center the content */
+    position: relative;
+    justify-content: center;
+    height: 120vh; /* Maintain aspect ratio */
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #085E72;
+   
+    
+  } 
+  .contactme{
+    color: white;
+    position:static;
+    display: flex;
+    margin:auto;
+    padding:5%;
+  }
+  .contactmebuton{
+    border: 1px solid #0DB5BA;
+    background-color:#0DB5BA;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+   
 
   }
+  .profilephoto{
+    background-image: url('./Asset/Levis.png' );
+    position: 50px 40px;
+
+  }
+
+
+
   table{
     width: 80%;
     margin: auto;
