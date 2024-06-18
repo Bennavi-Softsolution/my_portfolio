@@ -1392,6 +1392,47 @@ color: #F8CBA5;
 
 
 }
+.javascript-icon{
+/* Vector */
+
+box-sizing: border-box;
+left: 278px;
+position: absolute;
+right: 66.91%;
+top: 1480px;
+bottom: 46.97%;
+
+}
+.javascript-title{
+    /* JAVASCRIPT */
+
+position: absolute;
+width: 203px;
+height: 38px;
+left: 258px;
+top: 1591px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+
+
+
+
+
+
+
+
 
 
 
