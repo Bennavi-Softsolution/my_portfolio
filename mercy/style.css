@@ -2153,3 +2153,27 @@ color: #F8CBA5;
 
 
 /*skill section ends here*/
+.about-line{
+/* Line 7 */
+/* Line 7 */
+
+position: absolute;
+top: 540px;
+left: 300px;
+
+
+}
+.experience-line{
+
+    /* Line 7 */
+
+position: absolute;
+
+left: 300px;
+top: 936px;
+
+}
+.experience-width{
+width: 45%;
+
+}
