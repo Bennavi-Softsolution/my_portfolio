@@ -1,6 +1,6 @@
 /* Body Section */
 :root{
-    --max-width: 1400px;
+    --max-width: 1000px;
 }
 
 body{
@@ -14,52 +14,114 @@ body{
 }
 
 /* beginning Navbar Section */
-.Navbar{
+.Navbar {
     background-color: #1D2021;
-    position: absolute;
+    position: 100%;
     width: 100%;
     height: 53px;
     left: 0px;
     top: 0px;
 }
-.Nav_Content{
-    margin: auto;
+
+.Nav_Content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'JetBrains Mono', monospace;
     color: #EBDBB2;
     font-size: 20px;
+    padding: 0 5%;
 }
-.Logo{
+
+.Left_Nav, .Right_Nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Left_Nav {
+    margin-right: auto;
+}
+
+.Logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-    transition: left 0.3s;
-    margin-left: 5%;
 }
-.Search{
-width: auto;
-height: auto;
-background: #282828;
-border-radius: 8px;
+
+.Search {
+    width: auto;
+    height: 30px;
+    background: #282828;
+    border-radius: 8px;
+    border-style: none;
+    color:#ebd7a7;
 }
-.Menu_Content{
+
+.Cursor{
+    background-color: #EBDBB2;
+    width: 16px;
+    height: 20px;
+}
+
+
+.Menu_Content {
     display: flex;
-    align-items:end;
-    gap: 3rem;
+    align-items: center;
+    gap: 2rem;
     list-style: none;
-    transition: left 0.3s;
 }
-.Theme{
+
+.menu_item{
+    text-decoration: none;
+    color: #EBDBB2;
+}
+
+.menu-item-link:hover{
+    background-color: #2b2727;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+
+}
+
+.Theme {
     background-color: transparent;
-    margin-right: 2%;
     border: none;
 }
-.T_Img{
+
+.T_Img {
     height: 20px;
     width: 20px;
 }
+.Nav_Content .checkbox {
+    display: none;
+    cursor: pointer;
+}
+.Nav_Content .Check_Box {
+    display: none;
+}
+.Nav_Content .checkbox i {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    height: 3px;
+    width: 25px;
+    margin: 7px;
+    background: #fff;
+    border-radius: 5px;
+}
+.change .bar1{transform: rotate(-45deg) translate(-5px, 8px);
+transition: 0.4s;
+}
+.change .bar2{opacity: 0;}
+.change .bar3{transform: rotate(45deg) translate(-5px, -9px);
+transition: 0.4s;
+}
+
 
 /* beginning of the body section */
 .body-container{
@@ -77,6 +139,7 @@ border-radius: 8px;
     margin-right: 60px;
     position: sticky;
     top: 2vh;
+    max-width: var(--max-width);
 }
 
 .about-section{
@@ -138,6 +201,7 @@ border-radius: 8px;
     font-weight: 300;
     font-style: normal;
     font-size: 22px;
+    max-width: var(--max-width);
 }
 
 .heading{
@@ -162,7 +226,8 @@ border-radius: 8px;
 }
 
 .project{
-    border-top: 0.05px solid #EBDBB2;
+    border-top: 0.05px dashed #EBDBB2;
+    width: 60%;
 }
 
 a{
@@ -186,19 +251,31 @@ a{
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
-    font-size: 12px;
-    position: relative;
-    bottom: -10vh;
+    font-size: 13px;
 }
-
-
-
 /* Phone Responsiveness */
 
 @media only screen and (max-width: 768px) {
+    /* Beginning of Navbar */
+    .Navbar .checkbox{
+        display: block;
+    }
+    .L_Text{
+        display: none;
+    }
+
+    .Menu_Content{
+        display: none;
+    }
+
+    /* body section */
+
     body{
         font-weight: 300;
         font-size: 17px;
+    }
+    body.no-scroll {
+        overflow: hidden;
     }
     .body-container{
         width: 100vw;
@@ -207,16 +284,31 @@ a{
     }
 
             /* left-section css */
-
+  
     .left-section{
         display: none;
-        position: relative;
+        position: fixed;
         background-color: #1D2021;
         width: max-content;
         padding: 20px;
         height: 90vh;
-        top: 0;
-        right: 0;
+        margin-top: 5.6%;
+        margin-left: 20.7%;
+        left: -100%;
+        z-index: 1000;
+        transition: transform 0.5s cubic-bezier(0.9, 0, 0.1,1);
+    }
+    /* css styling when menu Icon is clicked */
+    .left-section.active {
+        display: block;
+        left: 0;
+        transform: translateX(0);
+        transition: transform 0.5s;
+    }
+
+    .right-section.active{
+        display: none;
+        transform: translateX(1);
     }
 
     .about-content{
@@ -225,12 +317,12 @@ a{
     .profile{
         height: 120px;
         width: 120px;
-        margin: 0 35%;
+        margin: 20% 30%;
     }
 
     .profileImage{
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
     }
 
     .socials{
@@ -244,9 +336,10 @@ a{
 
             /* right-section styling */
     .right-section{
-        /* display: none; */
         width: 100vw;
         font-size: 17px;
+        position: absolute;
+        top: -10vh;
     }
 
     .heading{
@@ -254,7 +347,22 @@ a{
     }
 
     .footer{
-        position: absolute;
-        bottom: 0;
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    /*Left section styling*/
+    .left-section{
+        width: fit-content;
+        margin-right: 2%;
+    }
+    .profile{
+        margin: 20% 9%;
+    }
+    .socials{
+        position: relative;
+        bottom: -20vh;
+        width: 100%;
+        margin: 0 auto;
     }
 }
