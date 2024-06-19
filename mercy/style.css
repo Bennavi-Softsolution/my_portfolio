@@ -1157,7 +1157,7 @@ color: #F8CBA5;
 
 /* MERCY_1 */
 position: relative;
-background: #1D1B1A;
+
 
 top: 390px;
 
@@ -2142,20 +2142,6 @@ color: #F8CBA5;
         }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*skill section ends here*/
 .about-line{
 /* Line 7 */
@@ -2179,5 +2165,21 @@ top: 936px;
 }
 .experience-width{
 width: 35%;
+
+}
+
+
+    .part1-left{
+/* REACT JS PHP PYTHON GR GH SWWE */
+margin-left: 20vw;
+top: 100px;
+padding-top: 65px;
+font-size: 28px;
+    }
+.part1-right{
+margin-left: 40vw;
+top: 100px;
+padding-top: -10px;
+font-size: 28px;
 
 }
