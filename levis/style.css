@@ -345,3 +345,246 @@ align-items: center;
     }
 }
 
+/* CSS for the Resume */
+
+/* Resume Title */
+.resume-title {
+  position: absolute;
+  width: 582.1px;
+  height: 92px;
+  left: 226.08px;
+  top: 1323px;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+/* Line 5 */
+.line-5 {
+  position: absolute;
+  width: 331.28px;
+  height: 0px;
+  left: 613.8px;
+  top: 1489px;
+
+  border: 0.2px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Line 6 */
+.line-6 {
+  position: absolute;
+  width: 331.28px;
+  height: 0px;
+  left: 67.22px;
+  top: 1712.5px;
+
+  border: 0.2px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Line 4 */
+.line-4 {
+  position: absolute;
+  width: 331.28px;
+  height: 0px;
+  left: 60.97px;
+  top: 1498px;
+
+  background: #D9D9D9;
+  border: 0.2px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Line 3 */
+.line-3 {
+  position: absolute;
+  width: 514px;
+  height: 0px;
+  left: 552.14px;
+  top: 1432px;
+
+  border: 0.5px solid #FFFFFF;
+  transform: rotate(90deg);
+}
+
+/* School Attended */
+.school-attended {
+  position: absolute;
+  width: 471.32px;
+  height: 66px;
+  left: 45.29px;
+  top: 1445px;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+/* Schools List */
+.schools-list {
+  position: absolute;
+  width: 432px;
+  height: 119px;
+  left: 67px;
+  top: 1505px;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+/* Achievements Made */
+.achievements-made {
+  position: absolute;
+  width: 487px;
+  height: 66px;
+  left: 45px;
+  top: 1656px;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+/* Achievements List */
+.achievements-list {
+  position: absolute;
+  width: 453px;
+  height: 134px;
+  left: 68px;
+  top: 1720px;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+/* Languages */
+.languages {
+  position: absolute;
+  width: 471.32px;
+  height: 66px;
+  left: 587.68px;
+  top: 1439px;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+/* Languages List */
+.languages-list {
+  position: absolute;
+  width: 433px;
+  height: 93px;
+  left: 606px;
+  top: 1505px;
+
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+}
+
+.resume-container {
+  background-image: url('levis\Assets\Rectangle 24.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 20px; /* Adjust padding as needed */
+}
+
+.resume-content {
+  max-width: 100%; /* Ensure content stretches to full width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Optional: Adds a semi-transparent overlay */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.custom-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for two sections */
+  gap: 20px; /* Adjust gap between sections */
+}
+
+.resume-section {
+  text-align: left; /* Ensure content is left-aligned */
+}
+
+.section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+.list-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+
