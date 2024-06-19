@@ -31,6 +31,7 @@ body {
 
 .menuBar a {
     text-decoration: none;
+    font-size: 1.2em;
     color: var(--secondary-color);
     transition: color 0.3s ease; /* Add transition for color change */
 }
@@ -72,7 +73,11 @@ body {
     position: absolute; /* Position the dot absolutely */
     left: -15px; /* Adjust the position of the dot */
 
-  }
+}
+
+.resumeContainer {
+    margin-right:13vw;
+}
 
 .resumeContainer button {
     padding: 10px 20px;
@@ -248,16 +253,18 @@ body {
 }
 
 .about {
+    margin-left: 6vw;
+    margin-right: 6vw;
     padding: 20px;
     
     border-radius: 10px;
 
-    transition: box-shadow 0.3s ease-in-out;
+    /*transition: box-shadow 0.3s ease-in-out; */
 }
-
+/* unnecessary box shadow removed
 .about:hover {
     box-shadow: 0 8px 16px var(--secondary-color);
-}
+} */
 
 
 .about h5 {
@@ -348,16 +355,16 @@ body {
 }
 
 .aboutInformation p {
-    font-size: 1.3em;
+    font-size: 1.8em;
     width: 14vw;
     
 }
 
 .aboutInformation hr {
     width: 40vw;
-    margin-top: -3.5vh;
+    margin-top: -2.5vh;
     margin-bottom: 2vh;
-    margin-left: 15vw;
+    margin-left: 14vw;
     color: #D65D0E;
 }
 
@@ -365,12 +372,16 @@ body {
     margin-top: 3vh;
     width: 50vw;
     font-family: 'JetBrains Mono';
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 
 .profilePicture {
     margin-top: -8vh;
     margin-right: 5vw;
+}
+
+.profilePicture img {
+    /* not sure how to resize without deformities */
 }
 
 .profilepictureResponsive {
@@ -469,7 +480,7 @@ body {
     }
 
     .aboutInformation {
-        width: 98vw;
+        width: 100vw;
         margin-right: 5vw;
     }
     
@@ -539,31 +550,36 @@ body {
 
 /* Experience styles start here */
 
+.experience {
+    margin-top: -13vh;
+}
 
 .experience p {
-    margin-left: 65vw;
-    font-size: 1.3em;
+    margin-left: 5vw;
+    font-size: 1.8em;
     
 }
 
 .experience h5 {
-    margin-left: 65vw;
-    font-size: 1.0em;
+    margin-top: -1.2vh;
+    margin-left: 10vw;
+    font-size: 1.2em;
     color: #ebdbb2;
 }
 
 .experience hr {
-    width: 15vw;
-    margin-top: -3.5vh;
+    width:40vw;
+    margin-top: -2.5vh;
     margin-bottom: 2vh;
-    margin-left: 80vw;
+    margin-left: 21vw;
     color: #D65D0E;
+    
 }
 
 .experienceContainer {
     display: flex;
     align-items: center;
-    margin-left: 63vw;
+    margin-left: 3vw;
 }
 
 .experienceContainer p {
@@ -573,6 +589,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .experience {
+        margin-top: -7.5vh;
+    }
     .experience p {
         margin-left: 60vw;
         font-size: 1.3em;
@@ -619,7 +638,7 @@ position: absolute;
 width: 529px;
 height: 30px;
 left: 35%;
-top: 3000px;
+top: 520px;
 
 font-family: 'Inria Sans';
 font-style: normal;
@@ -651,14 +670,14 @@ position: absolute;
 width: 50px;
 height: 278px;
 left: 42px;
-top: 2700px;
+top: 250px;
 
 }
 
 
 @media screen and (max-width:768px){
 
-    .contact-section{
+    .social-section{
         /* Auto layout */
         display: flex;
         flex-direction: column;
@@ -831,7 +850,7 @@ position: absolute;
 width: 610.44px;
 height: 230px;
 left: 95px;
-top: 2950px;
+top: 2130px;
 }
 @media screen and (max-width:768px){
     .contact-section{
@@ -1136,7 +1155,7 @@ color: #F8CBA5;
 position: relative;
 background: #1D1B1A;
 
-top: 1450px;
+top: 390px;
 
 }
 @media screen and (max-width:768px){
@@ -1178,15 +1197,9 @@ border-radius: 30px;
         /* Group 47 */
 
     /* Rectangle 56 */ 
-    position: absolute;
-    width: 100%;
-    height: 348px;
-    left: 10%;
-    right: 10%;
-    top: 70px;
-    background: rgba(242, 138, 42, 0.74);
-    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+    
+    width: 80vw;
+    height: 50vh;
     
     }
 
@@ -1230,6 +1243,7 @@ color: #F8CBA5;
        text-transform: capitalize;
        
        color: #F8CBA5;
+       width: auto;
        
        
        }
@@ -1347,6 +1361,7 @@ font-size: 30px;
 line-height: 39px;
 
 color: #000000;
+margin-right: -20vw;
 
 
 }
@@ -1400,9 +1415,9 @@ color: #000000;
         
         position: absolute;
         height: 87px;
-        left: 10px;
-        top: 30%;
-        width:50%;
+        left: 30px;
+        top: 50%;
+        width:100%;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400px;
@@ -1439,9 +1454,10 @@ top: 10%;
         
         }
         .img-width{
-            width:20px;
-            width: 75%;
-            height: 90%;
+            margin-top: 40px;
+            margin-left: -30vw;
+            width: 100%;
+            height: 50%;
             border-radius: 20px;
         }
 
@@ -1474,9 +1490,8 @@ top: 60%;
 /* https://github.com/name/repo */
 
 position: absolute;
-width: 354.37px;
-height: 24.81px;
-left: 252px;
+
+margin-left: -20px;
 top: 65%;
 
 font-family: 'Inika';
@@ -1517,3 +1532,648 @@ a{
     color:#000000;
 }
 /*Project section ends here*/
+/*Skill section starts here*/
+.skill-section{
+
+/* Group 56 */
+
+position: absolute;
+width: 80vw;
+height: 436px;
+left: 81px;
+top: 10px;
+
+}
+@media screen and (max-width:768px){
+    .skill-section{
+
+        /* Group 56 */
+        
+        position: absolute;
+        width: 100vw;
+        height: 436px;
+        left: 10px;
+        top: 600px;
+        
+        }
+
+
+}
+.skill-title{
+
+/* 3. SKILLS */
+position: absolute;
+width: 405px;
+height: 102px;
+left: 81px;
+top: 1193px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+
+}
+@media screen and (max-width:768px){
+
+    .skill-title{
+
+        /* 3. SKILLS */
+        position: absolute;
+        width: 405px;
+        height: 102px;
+        left: 7%;
+        top: 1193px;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F8CBA5;
+        
+        
+        }
+
+
+}
+.skill-line{
+/* Line 1 */
+
+position: absolute;
+width: 575px;
+height: 0px;
+left: 283px;
+top: 1244px;
+}
+.line-width{
+
+    width: 100%;
+}
+@media screen and (max-width:760px){
+
+    .skill-line{
+        /* Line 1 */
+        
+        position: absolute;
+        height: 0px;
+        left: 20%;
+        top: 1230px;
+        }
+.line-width{
+
+    width: 250px;
+}
+
+}
+.python-icon{
+
+    /* Frame 68 */
+position: absolute;
+width: 60px;
+height: 80px;
+left: 260px;
+top: 1279px;
+
+}
+@media screen and (max-width:768px){
+    .python-icon{
+
+        /* Frame 68 */
+    position: absolute;
+    width: 63px;
+    height: 80px;
+    left: 80px;
+    top: 1279px;
+    
+    }
+
+}
+.python-title{
+
+    /* python */
+
+position: absolute;
+width: 138px;
+height: 33px;
+left: 260px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+@media screen and (max-width:768px){
+
+    .python-title{
+
+        /* python */
+    
+    position: absolute;
+    width: 138px;
+    height: 33px;
+    left: 80px;
+    top: 1330px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+.mobile-width{
+
+    width: 40px;
+}
+}
+
+
+.html-icon{
+
+/* Vector */
+box-sizing: border-box;
+
+position: absolute;
+left: 408px;
+right: 55.09%;
+top: 1279px;
+bottom: 54.08%;
+
+}
+@media screen and (max-width:768px){
+    .html-icon{
+        /* Vector */
+        
+        position: absolute;
+        left: 160px;
+        top: 1279px;
+        
+        }
+
+}
+.html-title{
+/* HTML */
+
+position: absolute;
+width: 138px;
+height: 33px;
+left: 408px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+}
+@media screen and (max-width:768px){
+    .html-title{
+        /* HTML */
+        
+        position: absolute;
+        width: 138px;
+        height: 33px;
+        left: 160px;
+        top: 1330px;
+
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F8CBA5;
+        }
+
+}
+
+.css-icon{
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 560px;
+top: 1279px;
+bottom: 53.8%;
+
+
+}
+@media screen and (max-width:768px){
+    .css-icon{
+        /* Vector */
+        
+        box-sizing: border-box;
+        
+        position: absolute;
+        left: 240px;
+        top: 1279px;
+        bottom: 53.8%;
+        
+
+        }
+
+
+}
+.css-title{
+    /* CSS */
+
+position: absolute;
+width: 138px;
+height: 33px;
+left: 560px;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+@media screen and (max-width:768px){
+
+    .css-title{
+        /* CSS */
+    
+    position: absolute;
+    width: 138px;
+    height: 33px;
+    left: 240px;
+    top: 1330px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+
+}
+.php-icon{
+    /* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 79.73%;
+right: 32.82%;
+top: 1279px;
+bottom: 54.08%;
+}
+@media screen and (max-width:768px){
+    .php-icon{
+        /* Vector */
+    
+    box-sizing: border-box;
+    
+    position: absolute;
+    left: 320px;
+    top: 1279px;
+    }
+}
+.php-title{
+    /* phP */
+position: absolute;
+width: 138px;
+height: 33px;
+left: 79.73%;
+top: 1385px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+@media screen and (max-width:768px){
+
+    .php-title{
+        /* phP */
+    position: absolute;
+    width: 138px;
+    height: 33px;
+    left: 320px;
+    top: 1330px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+
+}
+.javascript-icon{
+/* Vector */
+
+box-sizing: border-box;
+left: 260px;
+position: absolute;
+top: 1480px;
+bottom: 46.97%;
+
+}
+@media screen and (max-width:768px){
+    .javascript-icon{
+        /* Vector */
+        
+        box-sizing: border-box;
+        left: 80px;
+        position: absolute;
+        right: 66.91%;
+        top: 1390px;
+        bottom: 46.97%;
+        
+        }
+
+}
+.javascript-title{
+    /* JAVASCRIPT */
+
+position: absolute;
+width: 203px;
+height: 38px;
+left: 258px;
+top: 1591px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+@media screen and (max-width:768px){
+    .javascript-title{
+        /* JAVASCRIPT */
+    
+    position: absolute;
+    width: 203px;
+    height: 38px;
+    left: 80px;
+    top: 1440px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    
+    }
+
+}
+.react-icon{
+    /* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 408px;
+right: 51.18%;
+top: 1480px;
+bottom: 46.84%;
+
+}
+@media screen and (max-width:768px){
+    .react-icon{
+        /* Vector */
+    
+    box-sizing: border-box;
+    
+    position: absolute;
+    left: 200px;
+    right: 51.18%;
+    top: 1390px;
+    bottom: 46.84%;
+    
+    }
+
+}
+.react-title{
+    /* REACT */
+
+position: absolute;
+width: 147px;
+height: 38px;
+left: 408px;
+top: 1591px;
+
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+}
+@media screen and (max-width:678px){
+    .react-title{
+        /* REACT */
+    
+    position: absolute;
+    width: 147px;
+    height: 38px;
+    left: 200px;
+    top: 1440px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    
+    color: #F8CBA5;
+    
+    }
+
+}
+.sql-icon{
+    /* Vector */
+box-sizing: border-box;
+position: absolute;
+left: 730px;
+top: 1285px;
+
+
+}
+@media screen and (max-width:768px){
+    
+    .sql-icon{
+        /* Vector */
+    box-sizing: border-box;
+    position: absolute;
+    left: 320px;
+    right: 38.18%;
+    top: 1390px;
+    
+    }
+
+}
+.sql-title{
+/* SQL */
+position: absolute;
+width: 203px;
+height: 38px;
+left: 730px;
+top: 1385px;
+font-family: 'Inika';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #F8CBA5;
+
+
+
+}
+@media screen and (max-width:768px){
+
+    .sql-title{
+        /* SQL */
+        position: absolute;
+        width: 203px;
+        height: 38px;
+        left: 320px;
+        top: 1440px;
+        
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        
+        color: #F8CBA5;
+        
+        
+        
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*skill section ends here*/
+.about-line{
+/* Line 7 */
+/* Line 7 */
+
+position: absolute;
+top: 540px;
+left: 300px;
+
+
+}
+.experience-line{
+
+    /* Line 7 */
+
+position: absolute;
+
+left: 300px;
+top: 936px;
+
+}
+.experience-width{
+width: 45%;
+
+}
