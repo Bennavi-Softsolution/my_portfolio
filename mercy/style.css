@@ -1539,7 +1539,7 @@ a{
 /* Group 56 */
 
 position: absolute;
-width: 777px;
+width: 80vw;
 height: 436px;
 left: 81px;
 top: 10px;
@@ -1618,6 +1618,10 @@ height: 0px;
 left: 283px;
 top: 1244px;
 }
+.line-width{
+
+    width: 100%;
+}
 @media screen and (max-width:760px){
 
     .skill-line{
@@ -1638,9 +1642,9 @@ top: 1244px;
 
     /* Frame 68 */
 position: absolute;
-width: 63px;
+width: 60px;
 height: 80px;
-left: 290px;
+left: 260px;
 top: 1279px;
 
 }
@@ -1664,7 +1668,7 @@ top: 1279px;
 position: absolute;
 width: 138px;
 height: 33px;
-left: 278px;
+left: 260px;
 top: 1385px;
 
 font-family: 'Inika';
@@ -1785,7 +1789,7 @@ color: #F8CBA5;
 box-sizing: border-box;
 
 position: absolute;
-left: 515px;
+left: 560px;
 top: 1279px;
 bottom: 53.8%;
 
@@ -1813,7 +1817,7 @@ bottom: 53.8%;
 position: absolute;
 width: 138px;
 height: 33px;
-left: 530px;
+left: 560px;
 top: 1385px;
 
 font-family: 'Inika';
@@ -1927,9 +1931,8 @@ color: #F8CBA5;
 /* Vector */
 
 box-sizing: border-box;
-left: 320px;
+left: 260px;
 position: absolute;
-right: 66.91%;
 top: 1480px;
 bottom: 46.97%;
 
@@ -2071,9 +2074,9 @@ color: #F8CBA5;
     /* Vector */
 box-sizing: border-box;
 position: absolute;
-left: 535px;
-right: 38.18%;
-top: 1480px;
+left: 730px;
+top: 1285px;
+
 
 }
 @media screen and (max-width:768px){
@@ -2094,9 +2097,8 @@ top: 1480px;
 position: absolute;
 width: 203px;
 height: 38px;
-left: 530px;
-top: 1583px;
-
+left: 730px;
+top: 1385px;
 font-family: 'Inika';
 font-style: normal;
 font-weight: 700;
