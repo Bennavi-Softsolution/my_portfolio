@@ -31,6 +31,7 @@ body {
 
 .menuBar a {
     text-decoration: none;
+    font-size: 1.2em;
     color: var(--secondary-color);
     transition: color 0.3s ease; /* Add transition for color change */
 }
@@ -72,7 +73,11 @@ body {
     position: absolute; /* Position the dot absolutely */
     left: -15px; /* Adjust the position of the dot */
 
-  }
+}
+
+.resumeContainer {
+    margin-right: 5vw;
+}
 
 .resumeContainer button {
     padding: 10px 20px;
@@ -248,16 +253,18 @@ body {
 }
 
 .about {
+    margin-left: 6vw;
+    margin-right: 6vw;
     padding: 20px;
     
     border-radius: 10px;
 
-    transition: box-shadow 0.3s ease-in-out;
+    /*transition: box-shadow 0.3s ease-in-out; */
 }
-
+/* unnecessary box shadow removed
 .about:hover {
     box-shadow: 0 8px 16px var(--secondary-color);
-}
+} */
 
 
 .about h5 {
@@ -348,7 +355,7 @@ body {
 }
 
 .aboutInformation p {
-    font-size: 1.3em;
+    font-size: 1.8em;
     width: 14vw;
     
 }
@@ -357,7 +364,7 @@ body {
     width: 40vw;
     margin-top: -3.5vh;
     margin-bottom: 2vh;
-    margin-left: 15vw;
+    margin-left: 10vw;
     color: #D65D0E;
 }
 
@@ -365,12 +372,16 @@ body {
     margin-top: 3vh;
     width: 50vw;
     font-family: 'JetBrains Mono';
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 
 .profilePicture {
     margin-top: -8vh;
     margin-right: 5vw;
+}
+
+.profilePicture img {
+    /* not sure how to resize without deformities */
 }
 
 .profilepictureResponsive {
@@ -541,29 +552,30 @@ body {
 
 
 .experience p {
-    margin-left: 65vw;
-    font-size: 1.3em;
+    margin-left: 40vw;
+    font-size: 1.8em;
     
 }
 
 .experience h5 {
     margin-left: 65vw;
-    font-size: 1.0em;
+    font-size: 1.2em;
     color: #ebdbb2;
 }
 
 .experience hr {
-    width: 15vw;
+    width:45vw;
     margin-top: -3.5vh;
     margin-bottom: 2vh;
-    margin-left: 80vw;
+    margin-left: 50vw;
+    
     color: #D65D0E;
 }
 
 .experienceContainer {
     display: flex;
     align-items: center;
-    margin-left: 63vw;
+    margin-left: 40vw;
 }
 
 .experienceContainer p {
