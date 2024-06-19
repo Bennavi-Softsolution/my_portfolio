@@ -11,8 +11,6 @@ body {
     background-color: var(--main-color); /* Set background color */
     color: var(--main-text-color); /* Set text color */
     font-family: 'Inika';
-    width:100%;
-    
 }
 
 /* Styling for the navigation bar */
@@ -341,7 +339,7 @@ body {
 .aboutMe {
     display: flex;
     flex-direction: row;
-    margin-top: 35vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
 }
 
@@ -354,6 +352,15 @@ body {
     width: 14vw;
     
 }
+
+.aboutInformation hr {
+    width: 40vw;
+    margin-top: -3.5vh;
+    margin-bottom: 2vh;
+    margin-left: 15vw;
+    color: #D65D0E;
+}
+
 .paragraph {
     margin-top: 3vh;
     width: 50vw;
@@ -2115,47 +2122,17 @@ color: #F8CBA5;
 }
 
 
-.profile-Information{
 
-/* Group 28 */
-position: absolute;
-width: 850px;
-height: 165px;
-left: 100px;
-top: 150px;
 
-}
 
-.about-line{
 
-   /* Line 1 */
 
-position: absolute;
-height: 0px;
-left: 160px;
-top: 18px;
- 
-}
+
+
+
+
+
+
 
 
 /*skill section ends here*/
-.align-section{
-
-/* Group 15 */
-position: absolute;
-width: 586px;
-height: 242px;
-left: 100px;
-top: 487px;
-
-}
-.picture-align{
-    /* Frame 50 */
-
-position: absolute;
-width: 340px;
-height: 447px;
-left: 850px;
-top: 444px;
-
-}
