@@ -116,7 +116,7 @@ a{
 
 /* Projects section */
 .Projects {
-    width: 100%;
+    width: 100vw;
     height: 20vh;
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ a{
 }
 
 .imgContainer {
-    width: 100%;
+    width: 100vw;
     height: 600px;
     position: absolute;
     left: 0;
@@ -291,7 +291,7 @@ a{
 
 /* Footer content */
 .Footer {
-    width: 100vw;
+    width: 95vw;
     text-align: center;
     margin-top: auto;
     background-color: #0f0f0f;
@@ -391,15 +391,19 @@ a{
     }
 
     .Skills{
-        width: 90vw;
+        width: 100vw;
         margin: auto;
         border-radius: 10px;
         padding-left: 30px;
         margin-top: 30vh;
     }
+
+    .skill{
+        font-size: 17px;
+    }
     
     .title{
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .userImage{
@@ -415,8 +419,22 @@ a{
     }
     
     .img {
-        height: 40vh;
-        width: 50vw;
+        height: 30vh;
+        width: 40vw;
+    }
+
+    /* project section */
+
+    /* .Projects{
+        height: 10vh;
+    } */
+
+    /* footer section */
+    .Footer{
+        width: 100vw;
+        position: relative;
+        bottom: 0;
+        margin: 2rem auto;
     }
 
     
