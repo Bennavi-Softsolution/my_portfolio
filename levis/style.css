@@ -295,6 +295,61 @@ color: #FFFFFF;
     cursor: pointer;
   }
 
+  /* Footer section */
+
+.footer{
+  background-color: #085f72d8;
+  color: white;
+
+}
+.socials{
+  width: 90vw;
+  height: max-content;
+  margin: 10px auto;
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-social{
+  text-decoration: none;
+  color: #4BDDB5;
+}
+
+.social{
+  font-size: 40px;
+  padding: 0 30px;
+}
+
+.contacts{
+  text-align: center;
+  width: 90vw;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 0 2rem;
+}
+
+.contact{
+  display: flex;
+  margin: 1rem 0.5rem;
+}
+
+.contact-icon{
+  font-size: 25px;
+  margin-right: 7px;
+  color: #a3dfcf;
+}
+
+.contact p{
+  margin-left: 1rem;
+}
+
+.company-info{
+  text-align: center;
+  width: 70vw;
+  margin: 0 auto;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -347,6 +402,45 @@ color: #FFFFFF;
         display: block;
         padding: 1rem; /* Ensure the label is clickable */
     }
+
+    /* footer section */
+    .footer{
+      width: 100vw;
+      font-size: 17px;
+    }
+
+    .socials{
+      margin: 5px 0;
+      padding: 0.2rem;
+    }
+
+    .social{
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+
+    .contacts{
+      margin: 5px 0;
+      padding: 0.2rem;
+    }
+
+    .contact{
+      margin: 0.5rem 0.2rem;
+    }
+
+    .contact-icon{
+      font-size: 17px;
+    }
+
+    .contact p{
+      margin-left: 0.2rem;
+      font-size: 16px;
+    }
+
+    .company-info{
+      width: 90vw;
+    }
+
 }
 
 @media (min-width: 769px) {
