@@ -21,8 +21,14 @@
 <nav>
     <div class="nav_contents">
         <p class="Levis"> Levis Chisira</p>
-        <!--navigation links-->
-            <ul class="itame">
+        
+               <!--hamburger menu icon-->
+   
+               <button class="nav-toggle" id="nav-toggle">
+                <span class="nav-icon">&equiv;</span> <!-- Hamburger icon -->
+            </button>
+<!--navigation links-->
+            <ul class="itame" id="itame">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#resume">RESUME</a></li>
                 <li><a href="#Skills">SKILLS</a></li>
@@ -36,17 +42,12 @@
                 <img class="logo" src = "./assets/vectormail.png" alt="mail"/>
             </div>
 
-            <!--hamburger menu icon-->
-    <label for="check" class="checkbox">
-      <i class="ri-menu-2-line"></i>
-    </label>
-    <input type="checkbox" name="check" id="check" />
         </div>
 </nav>
 
     </div>
 
-    <div class="abt">
+    <div id="About" class="abt">
         <div class="text-container">
              <p class="text"> Hey! I'm Levis Chisira</p>
              <p class="txt"> I am a software Engineer 
@@ -59,7 +60,7 @@
         
     </div>
 
-    <div id="skills" class="skills_container" >
+    <div id="Skills" class="skills_container" >
         <div class="my_skills">
             SKILLS
           </div>
@@ -80,13 +81,13 @@
         
     </div>
 
-    <div>
+    <div id="Resume">
         <h1>My Resume</h1>
     </div>
 
     <div >
        
-        <div class="project projectname"> 
+        <div id="Projects"   class="project projectname"> 
             <h3 class="pro">MY PROJECTS</h3>
             <div class="projectbackground">
                 <table>
@@ -132,14 +133,15 @@
                   
                 </table>
 
+                </div>
+
             </div>
            
         </div>    
-        
-    </div>
+
     
 
-    <div class="rectangle">
+    <div id="Contact" class="rectangle">
         <div class="profilephoto">
             <img src="./Assets/Levis.png" alt="profilephoto">
         </div>
@@ -164,6 +166,25 @@
         <h1>Footer</h1>
         
     </div>
-    
+    <script>
+// script.js
+
+function toggleDescription(id) {
+        var description = document.getElementById(id);
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const itame = document.getElementById('itame');
+
+    navToggle.addEventListener('click', () => {
+        itame.classList.toggle('show');
+    });
+});
+    </script>
 </body>
 </html>
