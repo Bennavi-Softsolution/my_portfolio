@@ -677,3 +677,65 @@ text-align: left;
             line-height: 25px;
         }
     }
+
+
+    .resume-container {
+      display: flex;
+      justify-content: center;
+      background: #062C2E; /* Background color */
+      padding: 20px;
+    }
+    
+    .resume-content {
+      width: 100%;
+      max-width: 1000px; /* Adjust max-width as needed */
+      background:#062C2E;
+      padding: 20px;
+    }
+    
+    .custom-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.2;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .resume-section {
+      margin-bottom: 40px;
+    }
+    
+    .resume-grid {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .section-left,
+    .section-right {
+      width: calc(50% - 10px); /* Adjust width for two columns with spacing */
+    }
+    
+    .section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    
+    .list-decimal {
+      list-style-type: decimal;
+      margin-left: 20px;
+      padding-left: 0;
+    }
+    
+    .list-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    
