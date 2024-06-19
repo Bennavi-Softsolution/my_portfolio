@@ -190,38 +190,43 @@
   font-size: 30px; */
 }
 
+ .align-horizontal img
+  {   margin-right: 10px; /* Space between the image and the text */
+   }
+
+
  
 /* DEFAULT SPECIFICATION */
 :root {
-    --max-width: 1200px;
-  }
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  a {
-    text-decoration: none;
-  }
- 
-  /* LEVIS' PORTFOLIO */
+  --max-width: 1200px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+/* LEVIS' PORTFOLIO */
 body {
-    background: #085E72;
-    font-family: 'JetBrains Mono', monospace;
+  background: #085E72;
+  font-family: 'JetBrains Mono', monospace;
     overflow-x: hidden; /* Hide horizontal overflow */
     margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-    }
-    
-  
-  /*NAVBAR STYLING */
-  
-  nav {
-    width: 100%;
-    position: relative;
-    background: #063643;
-    z-index: 99;
   }
+  
+
+/*NAVBAR STYLING */
+
+nav {
+  width: 100%;
+  position: relative;
+  background: #063643;
+  z-index: 99;
+}
 
   .nav_contents {
     max-width: var(--max-width);
@@ -266,6 +271,36 @@ color: #FFFFFF;
 }
 .itame li a:hover {
     background-color: #4c9e9e;
+
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+  }
+
+  .icone:hover {
+      transform: scale(1.2);
+    }
+
+nav .checkbox {
+  display: none;
+}
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+=======
     border-radius: 1px;
     transition: 0.3s ease;
   }
@@ -306,9 +341,38 @@ color: #FFFFFF;
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
+
 }
 
   /* Footer section */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav_contents {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .itame {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    nav input:checked ~ .itame {
+        display: flex;
+    }
+
+  .itame li {
+      width: 100%;
+  }
+
+  .itame li a {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #ffffff;
 
 .footer{
   background-color: #085f72d8;
@@ -405,20 +469,26 @@ color: #FFFFFF;
   .nav-toggle {
     display: block;
     align-self: flex-start; /* Align to the left */  
+
   }
 
-    .nav_contents > div {
-        display: none;
-    }
+  .nav_contents > div {
+      display: none;
+  }
+
+
+  .social-icons {
+      display: none;
+  }
 
 
     .social-icons {
         display: none;
     }
 
+
     .nav_contents > label {
         display: block;
-        padding: 1rem; /* Ensure the label is clickable */
     }
 
     /* Contact me section */
@@ -547,6 +617,15 @@ align-items: center;
   .abt .text, .abt .txt {
       width: 100%;
   }
+
+
+  .abt .imag {
+      max-width: 200px;
+      height: 150px;
+      margin-right: 0; /* Remove right margin on mobile */
+      margin-bottom: 20px; /* Add margin-bottom for spacing */
+  }
+
 
   .abt .imag {
       max-width: 200px;
@@ -837,6 +916,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 1.5;
 color: #FFFFFF;
+
 }
 /* continuation of media queries */
 @media(max-width:480px){
@@ -853,6 +933,151 @@ color: #FFFFFF;
   table{
     margin: -6vw;
     padding: -1vw;
+
+/* CSS for the Resume */
+
+/* Resume Container */
+.resume-container {
+  background-image: url('levis/Assets/Rectangle 24.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  justify-content: center;
+}
+
+/* Resume Content */
+.resume-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem; /* Keep padding for the container */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better readability */
+  border-radius: 8px;
+}
+
+.resume-content .resume-section {
+  margin-left: 50%; /* Moves the content towards the right */
+  padding-left: 2rem; /* Maintain some padding on the left */
+}
+
+
+/* Custom Title */
+.custom-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+/* Resume Grid */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Resume Section */
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* List Item */
+.list-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+/* Achievements Section */
+.achievements-section {
+  margin-top: 2rem;
+}
+
+/* Achievements Title */
+.achievements-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+/* Achievements List */
+.achievements-list {
+  list-style: decimal inside;
+  space-y-2: 0.5rem;
+}
+
+
+.resume-container {
+background-image: url('levis\Assets\Rectangle 24.png');
+background-size: cover;
+background-position: center;
+text-align: center;
+padding: 0px; /* Adjust padding as needed */
+}
+
+.resume-content {
+max-width: 100%; /* Ensure content stretches to full width */
+margin: 0 auto;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.6); /* Optional: Adds a semi-transparent overlay */
+border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.custom-title {
+font-family: 'JetBrains Mono', monospace;
+font-weight: 700;
+font-size: 40px;
+line-height: 1.2;
+color: #FFFFFF;
+}
+
+.resume-grid {
+display: grid;
+grid-template-columns: 1fr 1fr; /* Two columns for two sections */
+gap: 20px; /* Adjust gap between sections */
+}
+
+.resume-section {
+text-align: left; /* Ensure content is left-aligned */
+}
+
+.section-title {
+font-family: 'JetBrains Mono', monospace;
+font-weight: 700;
+font-size: 25px;
+line-height: 1.2;
+color: #FFFFFF;
+}
+
+.list-item {
+font-family: 'JetBrains Mono', monospace;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.5;
+color: #FFFFFF;
+}
+
 
 
   }
@@ -964,3 +1189,68 @@ text-align: left;
             line-height: 25px;
         }
     }
+
+
+
+    .resume-container {
+      display: flex;
+      justify-content: center;
+      background: #062C2E; /* Background color */
+      padding: 20px;
+    }
+    
+    .resume-content {
+      width: 100%;
+      max-width: 1000px; /* Adjust max-width as needed */
+      background:#062C2E;
+      padding: 20px;
+    }
+    
+    .custom-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.2;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .resume-section {
+      margin-bottom: 40px;
+    }
+    
+    .resume-grid {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .section-left,
+    .section-right {
+      width: calc(50% - 10px); /* Adjust width for two columns with spacing */
+    }
+    
+    .section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    
+    .list-decimal {
+      list-style-type: decimal;
+      margin-left: 20px;
+      padding-left: 0;
+    }
+    
+    .list-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 20px;
+      line-height: 1.5;
+      color: #FFFFFF;
+    }
+    
+=======
+
