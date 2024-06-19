@@ -589,6 +589,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .experience {
+        margin-top: -7.5vh;
+    }
     .experience p {
         margin-left: 60vw;
         font-size: 1.3em;
