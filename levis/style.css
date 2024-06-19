@@ -91,15 +91,13 @@
   /* begining of contact me part */
   .imagebackground{
     position: absolute;
-    bottom: 40%;
+    bottom: 15%;
+    left: 3%;
   
   }
-  .rectangle {
-    /* background-color:#085E72; */
+  .contactme-section {
     background-image: url('./Assets/rectangle.png' );
-    /* max-width: var(--max-width); */
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     text-align: left; /* Center the content */
     position: relative;
     justify-content: center;
@@ -111,35 +109,39 @@
     
   } 
   .contactme{
-    font-size: xx-large;
+    font-size:30px;
     color: white;
     position:static;
     display: flex;
     margin:auto;
     padding:3%;
   }
+
   .contactmebuton{
-    border: 1px solid #0DB5BA;
+    border: none;
     background-color:#0DB5BA;
     color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-   
-
+    border-radius: 10px;
+    width: max-content;
+    font-size: 20px;
+    padding: 1rem;
+    height: max-content;
+    margin: 1rem 0;
   }
 
 .profilephoto{
-  top: -80px;
+  /* bottom: -10vw; */
   position:relative;
-  left: 500px;
+  left: 60vw;
   flex-direction:grid;
 }
 .contactmeicons{
-  font-size:larger;
   display: flex;
   flex-direction: row;
   height: 2vw;
   color: #ffffff;
+  margin: 1rem 0;
+  align-items: center;
 }
 
 
@@ -403,9 +405,33 @@ color: #FFFFFF;
         padding: 1rem; /* Ensure the label is clickable */
     }
 
+    /* Contact me section */
+    .contactme-section{
+      height: 70vh;
+    }
+
+    .contactme{
+      font-size: 25px;
+    }
+
+    .contactmebuton{
+      border-radius: 8px;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .profilephoto{
+      left: 40vw;
+      /* bottom: 40vw; */
+    }
+
+    .contact-photo{
+      height: 70vw;
+    }
+
     /* footer section */
     .footer{
-      width: 100vw;
+      width: 80vw;
       font-size: 17px;
     }
 
@@ -429,7 +455,7 @@ color: #FFFFFF;
     }
 
     .contact-icon{
-      font-size: 17px;
+      font-size: 20px;
     }
 
     .contact p{
@@ -439,6 +465,7 @@ color: #FFFFFF;
 
     .company-info{
       width: 90vw;
+      font-size: 13px;
     }
 
 }
