@@ -1197,15 +1197,9 @@ border-radius: 30px;
         /* Group 47 */
 
     /* Rectangle 56 */ 
-    position: absolute;
-    width: 100%;
-    height: 348px;
-    left: 10%;
-    right: 10%;
-    top: 70px;
-    background: rgba(242, 138, 42, 0.74);
-    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+    
+    width: 80vw;
+    height: 50vh;
     
     }
 
@@ -1249,6 +1243,7 @@ color: #F8CBA5;
        text-transform: capitalize;
        
        color: #F8CBA5;
+       width: auto;
        
        
        }
@@ -1366,6 +1361,7 @@ font-size: 30px;
 line-height: 39px;
 
 color: #000000;
+margin-right: -20vw;
 
 
 }
@@ -1419,9 +1415,9 @@ color: #000000;
         
         position: absolute;
         height: 87px;
-        left: 10px;
-        top: 30%;
-        width:50%;
+        left: 30px;
+        top: 50%;
+        width:100%;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400px;
@@ -1458,9 +1454,10 @@ top: 10%;
         
         }
         .img-width{
-            width:20px;
-            width: 75%;
-            height: 90%;
+            margin-top: 40px;
+            margin-left: -30vw;
+            width: 100%;
+            height: 50%;
             border-radius: 20px;
         }
 
@@ -1493,9 +1490,8 @@ top: 60%;
 /* https://github.com/name/repo */
 
 position: absolute;
-width: 354.37px;
-height: 24.81px;
-left: 252px;
+
+margin-left: -20px;
 top: 65%;
 
 font-family: 'Inika';
@@ -1542,7 +1538,7 @@ a{
 /* Group 56 */
 
 position: absolute;
-width: 777px;
+width: 80vw;
 height: 436px;
 left: 81px;
 top: 10px;
@@ -1554,7 +1550,7 @@ top: 10px;
         /* Group 56 */
         
         position: absolute;
-        width: 777px;
+        width: 100vw;
         height: 436px;
         left: 10px;
         top: 600px;
@@ -1621,6 +1617,10 @@ height: 0px;
 left: 283px;
 top: 1244px;
 }
+.line-width{
+
+    width: 100%;
+}
 @media screen and (max-width:760px){
 
     .skill-line{
@@ -1641,9 +1641,9 @@ top: 1244px;
 
     /* Frame 68 */
 position: absolute;
-width: 63px;
+width: 60px;
 height: 80px;
-left: 290px;
+left: 260px;
 top: 1279px;
 
 }
@@ -1667,7 +1667,7 @@ top: 1279px;
 position: absolute;
 width: 138px;
 height: 33px;
-left: 278px;
+left: 260px;
 top: 1385px;
 
 font-family: 'Inika';
@@ -1788,7 +1788,7 @@ color: #F8CBA5;
 box-sizing: border-box;
 
 position: absolute;
-left: 515px;
+left: 560px;
 top: 1279px;
 bottom: 53.8%;
 
@@ -1816,7 +1816,7 @@ bottom: 53.8%;
 position: absolute;
 width: 138px;
 height: 33px;
-left: 530px;
+left: 560px;
 top: 1385px;
 
 font-family: 'Inika';
@@ -1930,9 +1930,8 @@ color: #F8CBA5;
 /* Vector */
 
 box-sizing: border-box;
-left: 320px;
+left: 260px;
 position: absolute;
-right: 66.91%;
 top: 1480px;
 bottom: 46.97%;
 
@@ -2074,9 +2073,9 @@ color: #F8CBA5;
     /* Vector */
 box-sizing: border-box;
 position: absolute;
-left: 535px;
-right: 38.18%;
-top: 1480px;
+left: 730px;
+top: 1285px;
+
 
 }
 @media screen and (max-width:768px){
@@ -2097,9 +2096,8 @@ top: 1480px;
 position: absolute;
 width: 203px;
 height: 38px;
-left: 530px;
-top: 1583px;
-
+left: 730px;
+top: 1385px;
 font-family: 'Inika';
 font-style: normal;
 font-weight: 700;
