@@ -1934,10 +1934,9 @@ color: #F8CBA5;
 /* Vector */
 
 box-sizing: border-box;
-left: 260px;
+left: 72vw;
 position: absolute;
-top: 1480px;
-bottom: 46.97%;
+top: 1280px;
 
 }
 @media screen and (max-width:768px){
@@ -1960,8 +1959,8 @@ bottom: 46.97%;
 position: absolute;
 width: 203px;
 height: 38px;
-left: 258px;
-top: 1591px;
+left: 72vw;
+top: 1380px;
 
 font-family: 'Inika';
 font-style: normal;
@@ -2007,9 +2006,8 @@ color: #F8CBA5;
 box-sizing: border-box;
 
 position: absolute;
-left: 408px;
-right: 51.18%;
-top: 1480px;
+left: 56vw;
+top: 1290px;
 bottom: 46.84%;
 
 }
@@ -2034,8 +2032,8 @@ bottom: 46.84%;
 position: absolute;
 width: 147px;
 height: 38px;
-left: 408px;
-top: 1591px;
+left: 56vw;
+top: 1380px;
 
 font-family: 'Inika';
 font-style: normal;
