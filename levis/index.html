@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <title>Levis Chisira</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 <body >
 
 <nav>
-    <div class="nav_contents">
+    <div class="nav_contents">    
         <p class="Levis"> Levis Chisira</p>
-        <!--navigation links-->
-            <ul class="itame">
+
+    
+               <!--hamburger menu icon-->
+   
+               <button class="nav-toggle" id="nav-toggle">
+                <span class="nav-icon">&equiv;</span> <!-- Hamburger icon -->
+            </button>
+
+<!--navigation links-->
+            <ul class="itame" id="itame">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#resume">RESUME</a></li>
                 <li><a href="#Skills">SKILLS</a></li>
@@ -35,18 +40,12 @@
                 <img class="logo" src = "./assets/vectorgithub.png" alt="github"/>
                 <img class="logo" src = "./assets/vectormail.png" alt="mail"/>
             </div>
-
-            <!--hamburger menu icon-->
-    <label for="check" class="checkbox">
-      <i class="ri-menu-2-line"></i>
-    </label>
-    <input type="checkbox" name="check" id="check" />
         </div>
 </nav>
 
     </div>
 
-    <div class="abt">
+    <div id="About" class="abt">
         <div class="text-container">
              <p class="text"> Hey! I'm Levis Chisira</p>
              <p class="txt"> I am a software Engineer 
@@ -59,7 +58,7 @@
         
     </div>
 
-    <div id="skills" class="skills_container" >
+    <div id="Skills" class="skills_container" >
         <div class="my_skills">
             SKILLS
           </div>
@@ -80,13 +79,45 @@
         
     </div>
 
-    <div>
-        <h1>My Resume</h1>
-    </div>
+    <div id="resume" class="resume-container">
+        <div class="resume-content">
+          <h1 class="custom-title font-bold">MY RESUME</h1>
+          <div class="resume-grid">
+            <div class="resume-section">
+              <h2 class="section-title school-attended">SCHOOL ATTENDED:</h2>
+              <ol class="list-decimal list-inside space-y-2 schools-list">
+                <li class="list-item">ABC SCHOOL</li>
+                <li class="list-item">DEF SCHOOL</li>
+                <li class="list-item">GHI SCHOOL</li>
+              </ol>
+            </div>
+            <div class="resume-section">
+              <h2 class="section-title languages">LANGUAGES:</h2>
+              <ol class="list-decimal list-inside space-y-2 languages-list">
+                <li class="list-item">LOREM</li>
+                <li class="list-item">IPSUM</li>
+                <li class="list-item">WHO</li>
+              </ol>
+            </div>
+          </div>
+          <div class="resume-section">
+            <h2 class="section-title achievements-made">ACHIEVEMENTS MADE:</h2>
+            <ol class="list-decimal list-inside space-y-2 achievements-list">
+              <li class="list-item">Created 123</li>
+              <li class="list-item">Created 456</li>
+              <li class="list-item">Participated In 789</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      
+    
+    
+    
 
     <div >
        
-        <div class="project projectname"> 
+        <div id="Projects"   class="project projectname"> 
             <h3 class="pro">MY PROJECTS</h3>
             <div class="projectbackground">
                 <table>
@@ -131,39 +162,94 @@
                   </tr>
                   
                 </table>
-
+                </div>
             </div>
            
         </div>    
-        
-    </div>
+
     
 
-    <div class="rectangle">
+    <div class="contactme-section">
         <div class="profilephoto">
-            <img src="./Assets/Levis.png" alt="profilephoto">
+            <img src="./Assets/Levis.png" alt="profilephoto" class="contact-photo">
         </div>
-                <div class="imagebackground">
-                 <h1 class="contactme">Contact Me</h1>
-                  <div class="contactmeicons"> 
-                    <i class="fa-solid fa-phone"></i> &nbsp; <button class="contactmebuton">+254704907555</button>
-                  </div><br>
-                 <div class="contactmeicons">
-                  <i class="fa-solid fa-location-dot"></i> &nbsp; <button class="contactmebuton">Eldoret, Kenya</button>
-                 </div><br>
-                    <div class="contactmeicons">
-                        <i class="fa-solid fa-envelope"></i> &nbsp; <button class="contactmebuton">info@bennavi-softsolution.co.ke</button><br>
-                    </div>
-
-     </div>
-       
-        
-    </div>
-
-    <div>
-        <h1>Footer</h1>
-        
-    </div>
+        <div class="imagebackground">
+            <h1 class="contactme">Contact Me</h1>
+            <div class="contactmeicons">
+                <i class="fa-solid fa-phone contact-icon"></i> &nbsp;
+                <button class="contactmebuton">+254704907555</button>
+            </div><br>
+            <div class="contactmeicons">
+                <i class="fa-solid fa-location-dot contact-icon"></i> &nbsp; 
+                <button class="contactmebuton">Eldoret, Kenya</button>
+            </div><br>
+            <div class="contactmeicons">
+                <i class="fa-solid fa-envelope contact-icon"></i> &nbsp; 
+                <button class="contactmebuton">info@bennavi-softsolution.co.ke</button><br>
+            </div>
     
+        </div>        
+    </div>
+
+    <div class="footer" >
+        <div class="socials">
+            <div class="left-socials">
+                <a href="#" class="link-social"><i class="fa-brands fa-github social"></i></a>
+                <a href="#" class="link-social"><i class="fa-brands fa-linkedin social"></i></a>
+                <a href="#" class="link-social"><i class="fa-brands fa-x-twitter social"></i></a>
+                <a href="#" class="link-social"><i class="fa-brands fa-instagram social"></i></a>
+            </div>
+            <div class="right-socials">
+                <a href="#" class="link-social"><i class="fa-solid fa-chevron-up social"></i></a>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="contact">
+                <i class="fa-regular fa-envelope contact-icon "></i>:
+                <p>info@bennavi-softsolution.co.ke</p>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-phone contact-icon"></i>:
+                <p>+254704907555</p>
+            </div>
+        </div>
+        <div class="company-info">
+            <p>Designed and Developed by Bennavi Softsolution</p>
+            <span>&copy; Copyright 2024</span>
+        </div>
+    </div>
+    <script>
+// script.js
+
+function toggleDescription(id) {
+        var description = document.getElementById(id);
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('nav-toggle');
+    const itame = document.getElementById('itame');
+    const navLinks = document.querySelectorAll('.itame a');
+
+
+    navToggle.addEventListener('click', () => {
+        itame.classList.toggle('show');
+    });
+    
+    navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                itame.classList.remove('show');
+            });
+        });
+});
+    </script>
 </body>
 </html>
+
+
+
+
+

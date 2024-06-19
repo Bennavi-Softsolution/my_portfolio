@@ -350,3 +350,19 @@ a{
         display: none;
     }
 }
+@media only screen and (max-width: 480px) {
+    /*Left section styling*/
+    .left-section{
+        width: fit-content;
+        margin-right: 2%;
+    }
+    .profile{
+        margin: 20% 9%;
+    }
+    .socials{
+        position: relative;
+        bottom: -20vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
