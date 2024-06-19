@@ -619,7 +619,7 @@ position: absolute;
 width: 529px;
 height: 30px;
 left: 35%;
-top: 3000px;
+top: 520px;
 
 font-family: 'Inria Sans';
 font-style: normal;
@@ -651,14 +651,14 @@ position: absolute;
 width: 50px;
 height: 278px;
 left: 42px;
-top: 2700px;
+top: 250px;
 
 }
 
 
 @media screen and (max-width:768px){
 
-    .contact-section{
+    .social-section{
         /* Auto layout */
         display: flex;
         flex-direction: column;
@@ -831,7 +831,7 @@ position: absolute;
 width: 610.44px;
 height: 230px;
 left: 95px;
-top: 2950px;
+top: 2130px;
 }
 @media screen and (max-width:768px){
     .contact-section{
@@ -1136,7 +1136,7 @@ color: #F8CBA5;
 position: relative;
 background: #1D1B1A;
 
-top: 1450px;
+top: 320px;
 
 }
 @media screen and (max-width:768px){
@@ -1526,7 +1526,7 @@ position: absolute;
 width: 777px;
 height: 436px;
 left: 81px;
-top: 600px;
+top: 10px;
 
 }
 @media screen and (max-width:768px){
