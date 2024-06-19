@@ -5,28 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <title>Levis Chisira</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 
 </head>
 <body >
 
 <nav>
-    <div class="nav_contents">
+    <div class="nav_contents">    
         <p class="Levis"> Levis Chisira</p>
-        
+    
                <!--hamburger menu icon-->
    
                <button class="nav-toggle" id="nav-toggle">
                 <span class="nav-icon">&equiv;</span> <!-- Hamburger icon -->
             </button>
+
 <!--navigation links-->
             <ul class="itame" id="itame">
                 <li><a href="#about">ABOUT</a></li>
@@ -81,9 +78,40 @@
         
     </div>
 
-    <div id="Resume">
-        <h1>My Resume</h1>
+    <div id="resume" class="resume-container">
+        <div class="resume-content">
+            <h1 class="custom-title font-bold">MY RESUME</h1>
+            <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="resume-section">
+                    <h2 class="section-title">SCHOOL ATTENDED:</h2>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li class="list-item">ABC SCHOOL</li>
+                        <li class="list-item">DEF SCHOOL</li>
+                        <li class="list-item">GHI SCHOOL</li>
+                    </ol>
+                </div>
+                <div class="resume-section">
+                    <h2 class="section-title">LANGUAGES:</h2>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li class="list-item">LOREM</li>
+                        <li class="list-item">IPSUM</li>
+                        <li class="list-item">WHO</li>
+                    </ol>
+                </div>
+                <div class="resume-section">
+                    <h2 class="section-title">ACHIEVEMENTS MADE:</h2>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li class="list-item">Created 123</li>
+                        <li class="list-item">Created 456</li>
+                        <li class="list-item">Participated In 789</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    
+    
 
     <div >
        
@@ -180,11 +208,22 @@ function toggleDescription(id) {
     document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('nav-toggle');
     const itame = document.getElementById('itame');
+    const navLinks = document.querySelectorAll('.itame a');
+
 
     navToggle.addEventListener('click', () => {
         itame.classList.toggle('show');
     });
+    
+    navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                itame.classList.remove('show');
+            });
+        });
 });
     </script>
 </body>
 </html>
+
+
+
