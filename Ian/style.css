@@ -56,6 +56,32 @@ a{
     background-color: #292727;
     border-radius: 20px;
 }
+.navBar .checkbox {
+    display: none;
+    cursor: pointer;
+}
+.navBar .Check_Box {
+    display: none;
+}
+.navBar .checkbox i {
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    height: 3px;
+    width: 25px;
+    margin: 7px;
+    background: #fff;
+    border-radius: 5px;
+}
+.change .bar1{transform: rotate(-45deg) translate(-5px, 8px);
+transition: 0.4s;
+}
+.change .bar2{opacity: 0;}
+.change .bar3{transform: rotate(45deg) translate(-5px, -9px);
+transition: 0.4s;
+}
 
 /* Designing the about content */
 .aboutContent{
@@ -367,6 +393,35 @@ a{
 @media only screen and (max-width: 800px) {
     .navBar{
         width: 100vw;
+    }
+    /* Beginning of Navbar */
+    .checkbox{
+        margin-right: 20px;
+    }
+    .navBar .checkbox{
+        display: block;
+    }
+    .navLinks{
+        position: absolute;
+        width: 100%;
+        height: calc(200vh - 85px);
+        left: -100%;
+        top: 20px;
+        background-color: #590707;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        height: 750px;
+    }
+    .navBar #check:checked ~ .navLinks {
+        left: 0;
+      }
+    .navBar{
+        margin: 1rem 0.5rem;
+        max-height: 1px;
+      }
+    .navLinks li a{
+        font-size: 1.25rem;
     }
 
     .link{
