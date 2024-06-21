@@ -1,29 +1,42 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const drawer = document.getElementById('myDrawer');
-    const toggleButtonMobile = document.querySelector('.openDrawerMobileButton');
-    const closeButton = document.querySelector('.closeDrawerMobileButton');
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebarToggle = document.querySelector('.sidebarToggle');
+    const menuBar = document.querySelector('.menuBar');
+    const closeButton = document.querySelector('.closeButton');
+    const body = document.querySelector('body');
 
-    toggleButtonMobile.addEventListener('click', function () {
-        drawer.classList.toggle('open');
-        toggleButtonMobile.classList.toggle('open');
+    let sidebarOpen = false;
+
+    // Function to toggle sidebar
+    function toggleSidebar() {
+        sidebarOpen = !sidebarOpen;
+        if (sidebarOpen) {
+            menuBar.classList.add('show');
+        } else {
+            menuBar.classList.remove('show');
+        }
+    }
+
+    // Toggle sidebar on sidebar toggle button click
+    sidebarToggle.addEventListener('click', function() {
+        toggleSidebar();
     });
 
-    closeButton.addEventListener('click', function () {
-        drawer.classList.remove('open');
-        toggleButtonMobile.classList.remove('open');
+    // Close sidebar on close button click
+    closeButton.addEventListener('click', function() {
+        menuBar.classList.remove('show');
+        sidebarOpen = false; // Ensure sidebarOpen is updated
+    });
+
+    // Close sidebar when tapping outside of it on mobile
+    body.addEventListener('click', function(event) {
+        if (sidebarOpen && !menuBar.contains(event.target) && !sidebarToggle.contains(event.target)) {
+            toggleSidebar();
+        }
     });
     
 
-    // Optional: Close drawer if clicked outside
-    document.addEventListener('click', function (event) {
-        if (!drawer.contains(event.target) && event.target !== toggleButtonMobile) {
-            drawer.classList.remove('open');
-            toggleButtonMobile.classList.remove('open');
-        }
-    });
+    // Show sidebar initially on larger screens. uncomment if needed
+   // if (window.innerWidth > 768) {
+    //    menuBar.classList.add('show');
+   // }
 });
-
-
-
-
-
