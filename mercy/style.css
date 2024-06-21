@@ -1157,7 +1157,7 @@ color: #F8CBA5;
 
 /* MERCY_1 */
 position: relative;
-background: #1D1B1A;
+
 
 top: 390px;
 
@@ -1934,10 +1934,9 @@ color: #F8CBA5;
 /* Vector */
 
 box-sizing: border-box;
-left: 260px;
+left: 72vw;
 position: absolute;
-top: 1480px;
-bottom: 46.97%;
+top: 1280px;
 
 }
 @media screen and (max-width:768px){
@@ -1960,8 +1959,8 @@ bottom: 46.97%;
 position: absolute;
 width: 203px;
 height: 38px;
-left: 258px;
-top: 1591px;
+left: 72vw;
+top: 1380px;
 
 font-family: 'Inika';
 font-style: normal;
@@ -2007,9 +2006,8 @@ color: #F8CBA5;
 box-sizing: border-box;
 
 position: absolute;
-left: 408px;
-right: 51.18%;
-top: 1480px;
+left: 56vw;
+top: 1290px;
 bottom: 46.84%;
 
 }
@@ -2034,8 +2032,8 @@ bottom: 46.84%;
 position: absolute;
 width: 147px;
 height: 38px;
-left: 408px;
-top: 1591px;
+left: 56vw;
+top: 1380px;
 
 font-family: 'Inika';
 font-style: normal;
@@ -2142,20 +2140,6 @@ color: #F8CBA5;
         }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*skill section ends here*/
 .about-line{
 /* Line 7 */
@@ -2179,5 +2163,21 @@ top: 936px;
 }
 .experience-width{
 width: 35%;
+
+}
+
+
+    .part1-left{
+/* REACT JS PHP PYTHON GR GH SWWE */
+margin-left: 20vw;
+top: 100px;
+padding-top: 65px;
+font-size: 28px;
+    }
+.part1-right{
+margin-left: 40vw;
+top: 100px;
+padding-top: -10px;
+font-size: 28px;
 
 }

@@ -13,6 +13,10 @@ Welcome to the project repository! This repository contains various directories,
 4. **[mercy](mercy)**: 📷 Mercy's portfolio displaying her captivating photography projects and visual storytelling.
 
 5. **[onyango](onyango)**: 🎶 Onyango's portfolio presenting his musical compositions and audio productions.
+6. **[levis](levis)**: 🎶 Levi's portfolio presenting his musical compositions and audio productions.
+7. **[daniel](daniel)**: 🎶 Daniel's portfolio presenting his musical compositions and audio productions.
+
+   
 
 ## Navigation
 
@@ -23,14 +27,4 @@ Similarly, to navigate to Mercy's portfolio, click on **[mercy](mercy)**.
 Feel free to explore each portfolio to understand its contents and appreciate the diverse talents showcased in this project repository.
 
 Happy browsing!
-
-
-<style>
-a {
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #FF69B4; /* Change color on hover */
-}
-</style>
+Developed By Bennavi softsolution & Powered By Xiracom
