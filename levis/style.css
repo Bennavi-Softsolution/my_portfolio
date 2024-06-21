@@ -864,7 +864,8 @@ text-align: left;
 /* Achievements List */
 .achievements-list {
   list-style: decimal inside;
-  space-y-2: 0.5rem;
+  /* clarify on this line */
+  /* space-y-2: 0.5rem; */
 }
 
 
