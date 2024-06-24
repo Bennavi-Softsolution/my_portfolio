@@ -19,13 +19,11 @@
   /*NAVBAR STYLING */
   
   nav {
-    width: 95%;
+    width: 100%;
     position: relative;
-    background-color: #B3D8D6;
+    background-color: #0a0a0a;
     z-index: 99;
     border-radius: 20px;
-    top: 2%;
-    left: 2%;
   }
   .nav_content {
     max-width: var(--max-width);
@@ -65,7 +63,7 @@
     transition: 0.3s;
   }
   .menu li a:hover {
-      background-color: #4c9e9e;
+      background-color: #62b0b0;
       border-radius: 5px;
       transition: 0.3s ease;
   }
@@ -77,7 +75,6 @@
   }
 
   .section_container {
-    min-height: 40vh;
     max-width: var(--max-width);
     margin: auto;
     padding: 1rem;
@@ -114,6 +111,7 @@
   .action_btn button {
     transition: 0.3s;
     cursor: pointer;
+    
   }
   
   /* HIRE ME BUTTON*/
@@ -178,7 +176,7 @@
     margin-bottom: 20px;
     width: 15%;
     max-width: var(--max-width);
-    background-color: #B3D8D6;
+    background-color: #62b0b0;
     border-radius: 12px;
     height: 8%;
     color: #ffffff;
@@ -196,7 +194,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-    background-color: #B3D8D6;
+    background-color: #1b1e1e;
     border-radius: 20px;
   }
   .skills {
@@ -241,7 +239,7 @@
   @media (max-width: 480px) {
     nav .checkbox {
       display: block;
-      background-color: #B3D8D6;
+      background-color: #223736;
     }
   /* DISABLE SCROLLING*/
   body.no-scroll {
@@ -251,14 +249,13 @@
     .menu {
       position: absolute;
       width: 100%;
-      height: calc(200vh - 85px);
+      height: 100vh;
       left: -100%;
       top: 50px;
       background-color: #074C59;
       flex-direction: column;
       justify-content: center;
       gap: 3rem;
-      height: 750px;
     }
     nav #check:checked ~ .menu {
       left: 0;
@@ -271,7 +268,6 @@
       max-height: 1px;
     }
     .logo{
-      max-width: var(--max-width);
       height: 40px;
       width: 40px;
     }
@@ -285,7 +281,7 @@
   .section_container {
     padding: 1rem 1rem 5rem 1rem;
     text-align: center;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
   .image {
     grid-area: 1/1/2/2;
@@ -295,24 +291,27 @@
   }
 
     .my_skills{
-      width: 40%;
+      width: 100%;
       font-size: 20PX;
     }
     .level {
       height: 5px;
-      width: 150px;
+      width: 50px;
     }
     .skill-item{
-      grid-template-columns: 140px 1fr;
+      grid-template-columns: 1fr;
+      font-size: 0.8rem;
     }
    
     }
     .skills{
       font-size: 20px;
+      grid-template-columns: 1fr;
+
     }
     @media (max-width: 750px) {
       .level {
-        max-width: 450px;
+        height: 8px;
       }
     }
    @media (max-width:960px){
@@ -320,10 +319,10 @@
       width: 200px;
     }
     .skill-item{
-      grid-template-columns: 150px  1fr;
+      grid-template-columns:  1fr;
     }
     .level{
-      max-width: 490px;
+      max-width: 100px;
     }
    }
    @media (min-width:960px) and  (max-width:1120px){
@@ -351,7 +350,7 @@
   /* button for my project */
 .proj {
 text-align: center;
-background-color: #B3D8D6;
+background-color: #62b0b0;
 border-radius: 20px;
 width: 200px;
 height: 50px;
@@ -404,7 +403,7 @@ width: 20px;
 .cvitae {
 width: 200.58px;
 height: 50px;
-background-color: #B3D8D6;
+background-color: #62b0b0;
 border-radius: 10px;
 display: flex;
 align-items: center;
@@ -432,15 +431,15 @@ margin: 20px; /* Add margin to center and create space */
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
-
+}
 
 /* TALK TO ME: text */
-.last_sect .tt {
+.last-sect .tt {
 font-family: 'JetBrains Mono';
 font-style: normal;
 font-weight: 700;
 font-size: 30px;
-color: #e2ca8d;
+color: #FFFFFF;
 margin-bottom: 20px;
 }
 
@@ -450,7 +449,7 @@ display: flex;
 justify-content: center;
 gap: 10px;
 padding: 5px;
-background-color: #B3D8D6;
+background-color: #0a0a0a;
 border-radius: 10px;
 }
 
@@ -466,6 +465,6 @@ border-radius: 10px;
   }
   
 
-}
+
 
   
